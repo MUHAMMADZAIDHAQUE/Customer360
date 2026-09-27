@@ -106,7 +106,7 @@ async def list_customers(
     FROM main_marts.mart_customer_360 c
     LEFT JOIN (
         SELECT customer_id, churn_probability, risk_tier 
-        FROM read_parquet('ml/artifacts/customer_churn_predictions.parquet')
+        FROM read_parquet('{analytics_service.predictions_parquet_path}')
     ) p ON c.customer_id = p.customer_id
     WHERE {where_sql}
     ORDER BY {sort_column} {order_dir}
@@ -133,7 +133,7 @@ async def list_customers(
     description="Retrieve full 360-degree demographic, behavioral, financial, and ML risk profile for an account."
 )
 async def get_customer(customer_id: str):
-    sql = """
+    sql = f"""
     SELECT 
         c.customer_id,
         c.first_name,
@@ -182,7 +182,7 @@ async def get_customer(customer_id: str):
     FROM main_marts.mart_customer_360 c
     LEFT JOIN (
         SELECT customer_id, churn_probability, risk_tier, top_risk_factors, top_protective_factors
-        FROM read_parquet('ml/artifacts/customer_churn_predictions.parquet')
+        FROM read_parquet('{analytics_service.predictions_parquet_path}')
     ) p ON c.customer_id = p.customer_id
     WHERE c.customer_id = ?;
     """

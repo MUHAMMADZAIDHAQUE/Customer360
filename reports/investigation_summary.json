@@ -84,16 +84,6 @@
           "active_mrr": 3668.0
         },
         {
-          "gender": "Female",
-          "country": "United States",
-          "region": "Washington",
-          "count": 51,
-          "avg_age": 35.3,
-          "churned_count": 19.0,
-          "churn_rate_pct": 37.25,
-          "active_mrr": 3248.0
-        },
-        {
           "gender": "Male",
           "country": "United States",
           "region": "Massachusetts",
@@ -102,6 +92,16 @@
           "churned_count": 18.0,
           "churn_rate_pct": 35.29,
           "active_mrr": 5477.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "Washington",
+          "count": 51,
+          "avg_age": 35.3,
+          "churned_count": 19.0,
+          "churn_rate_pct": 37.25,
+          "active_mrr": 3248.0
         },
         {
           "gender": "Female",
@@ -174,16 +174,6 @@
           "active_mrr": 3131.0
         },
         {
-          "gender": "Male",
-          "country": "United States",
-          "region": "Texas",
-          "count": 42,
-          "avg_age": 38.2,
-          "churned_count": 12.0,
-          "churn_rate_pct": 28.57,
-          "active_mrr": 3380.0
-        },
-        {
           "gender": "Female",
           "country": "United States",
           "region": "California",
@@ -192,6 +182,16 @@
           "churned_count": 15.0,
           "churn_rate_pct": 35.71,
           "active_mrr": 3023.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "Texas",
+          "count": 42,
+          "avg_age": 38.2,
+          "churned_count": 12.0,
+          "churn_rate_pct": 28.57,
+          "active_mrr": 3380.0
         },
         {
           "gender": "Male",
@@ -344,16 +344,6 @@
           "active_mrr": 3007.0
         },
         {
-          "gender": "Male",
-          "country": "United Kingdom",
-          "region": "West Midlands",
-          "count": 23,
-          "avg_age": 35.7,
-          "churned_count": 10.0,
-          "churn_rate_pct": 43.48,
-          "active_mrr": 1127.0
-        },
-        {
           "gender": "Female",
           "country": "Canada",
           "region": "Quebec",
@@ -362,6 +352,16 @@
           "churned_count": 8.0,
           "churn_rate_pct": 34.78,
           "active_mrr": 1605.0
+        },
+        {
+          "gender": "Male",
+          "country": "United Kingdom",
+          "region": "West Midlands",
+          "count": 23,
+          "avg_age": 35.7,
+          "churned_count": 10.0,
+          "churn_rate_pct": 43.48,
+          "active_mrr": 1127.0
         },
         {
           "gender": "Female",
@@ -395,16 +395,6 @@
         },
         {
           "gender": "Male",
-          "country": "Canada",
-          "region": "Ontario",
-          "count": 20,
-          "avg_age": 36.2,
-          "churned_count": 11.0,
-          "churn_rate_pct": 55.0,
-          "active_mrr": 1131.0
-        },
-        {
-          "gender": "Male",
           "country": "Australia",
           "region": "Victoria",
           "count": 20,
@@ -414,14 +404,14 @@
           "active_mrr": 811.0
         },
         {
-          "gender": "Female",
-          "country": "France",
-          "region": "\u00cele-de-France",
-          "count": 19,
-          "avg_age": 42.4,
-          "churned_count": 6.0,
-          "churn_rate_pct": 31.58,
-          "active_mrr": 2067.0
+          "gender": "Male",
+          "country": "Canada",
+          "region": "Ontario",
+          "count": 20,
+          "avg_age": 36.2,
+          "churned_count": 11.0,
+          "churn_rate_pct": 55.0,
+          "active_mrr": 1131.0
         },
         {
           "gender": "Male",
@@ -445,6 +435,16 @@
         },
         {
           "gender": "Female",
+          "country": "France",
+          "region": "\u00cele-de-France",
+          "count": 19,
+          "avg_age": 42.4,
+          "churned_count": 6.0,
+          "churn_rate_pct": 31.58,
+          "active_mrr": 2067.0
+        },
+        {
+          "gender": "Female",
           "country": "Germany",
           "region": "Berlin",
           "count": 19,
@@ -465,16 +465,6 @@
         },
         {
           "gender": "Female",
-          "country": "Germany",
-          "region": "Hesse",
-          "count": 18,
-          "avg_age": 39.1,
-          "churned_count": 3.0,
-          "churn_rate_pct": 16.67,
-          "active_mrr": 2395.0
-        },
-        {
-          "gender": "Female",
           "country": "Australia",
           "region": "Queensland",
           "count": 18,
@@ -482,6 +472,16 @@
           "churned_count": 3.0,
           "churn_rate_pct": 16.67,
           "active_mrr": 1505.0
+        },
+        {
+          "gender": "Female",
+          "country": "Germany",
+          "region": "Hesse",
+          "count": 18,
+          "avg_age": 39.1,
+          "churned_count": 3.0,
+          "churn_rate_pct": 16.67,
+          "active_mrr": 2395.0
         },
         {
           "gender": "Female",
@@ -1327,18 +1327,18 @@
       ],
       "churn_vs_payment": [
         {
-          "has_payment_delinquency": true,
-          "total_customers": 13,
-          "churned": 13.0,
-          "churn_rate_pct": 100.0,
-          "arr_exposure": 0.0
-        },
-        {
           "has_payment_delinquency": false,
           "total_customers": 1487,
           "churned": 513.0,
           "churn_rate_pct": 34.5,
           "arr_exposure": 1359072.0
+        },
+        {
+          "has_payment_delinquency": true,
+          "total_customers": 13,
+          "churned": 13.0,
+          "churn_rate_pct": 100.0,
+          "arr_exposure": 0.0
         }
       ],
       "churn_vs_engagement": [

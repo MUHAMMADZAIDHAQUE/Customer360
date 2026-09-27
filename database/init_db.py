@@ -100,9 +100,9 @@ def verify_sample_queries(engine_type: str = "duckdb") -> None:
     """Execute sample relational queries demonstrating multi-table join capabilities."""
     from analytics.duckdb_client import DuckDBClient
 
-    print(f"\n=======================================================")
-    print(f"Executing Sample Business Queries on Analytical Engine")
-    print(f"=======================================================")
+    print("\n=======================================================")
+    print("Executing Sample Business Queries on Analytical Engine")
+    print("=======================================================")
 
     client = DuckDBClient()
     client.register_parquet_views()

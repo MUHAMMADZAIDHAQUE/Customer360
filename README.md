@@ -1,7 +1,7 @@
 # Customer360
 ### Understand customers. Predict churn. Protect revenue.
 
-[![CI/CD Quality Pipeline](https://github.com/company/Customer360/actions/workflows/ci.yml/badge.svg)](https://github.com/company/Customer360/actions)
+[![CI/CD Quality Pipeline](https://github.com/MUHAMMADZAIDHAQUE/Customer360/actions/workflows/ci.yml/badge.svg)](https://github.com/MUHAMMADZAIDHAQUE/Customer360/actions)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React 18](https://img.shields.io/badge/React-18.3+-61DAFB.svg?logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6+-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -9,6 +9,19 @@
 [![DuckDB](https://img.shields.io/badge/DuckDB-1.0+-FFF000.svg?logo=duckdb&logoColor=black)](https://duckdb.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+---
+
+## 🚀 Live Demo & Deployment Links
+
+| Resource | URL | Description |
+| :--- | :--- | :--- |
+| **Live Frontend App** | [https://customer360.onrender.com](https://customer360.onrender.com) | Production React 18 SPA with real-time TreeSHAP ML scoring & AI Analyst |
+| **Public REST API** | [https://customer360-api.onrender.com](https://customer360-api.onrender.com) | FastAPI backend serving analytical marts & inference endpoints |
+| **Interactive API Docs** | [https://customer360-api.onrender.com/docs](https://customer360-api.onrender.com/docs) | Interactive OpenAPI Swagger UI documentation |
+| **Health Check Endpoint** | [https://customer360-api.onrender.com/health](https://customer360-api.onrender.com/health) | Live system health and PostgreSQL connection status probe |
+| **Deployment Runbook** | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Complete step-by-step cloud deployment & infrastructure guide |
+| **Verification Report** | [DEPLOYMENT_REPORT.md](DEPLOYMENT_REPORT.md) | Comprehensive 8-category production readiness audit report |
 
 ---
 
@@ -256,7 +269,7 @@ The codebase maintains automated test coverage across all layers:
 # Backend Test Suite (Pytest - 85 Tests)
 pytest tests/ -v
 
-# Frontend Test Suite (Vitest - 8 Tests)
+# Frontend Test Suite (Vitest - 13 Tests)
 cd frontend && npm test
 
 # dbt Analytics Marts Integrity (73 Tests)
@@ -271,7 +284,7 @@ python scripts/verify_production_deployment.py
 
 ### Verified Test Results Summary
 * **Pytest Backend Tests**: **85 / 85 Passed (100%)**
-* **Vitest Frontend Tests**: **8 / 8 Passed (100%)**
+* **Vitest Frontend Tests**: **13 / 13 Passed (100%)**
 * **dbt Data Tests**: **73 / 73 Passed (100%)**
 * **Data Quality Rule Checks**: **105 / 105 Passed (100%)**
 * **Deployment Verification Probes**: **26 / 26 Passed (100%)**
@@ -283,7 +296,7 @@ python scripts/verify_production_deployment.py
 ### Docker Compose Startup (Single Command)
 ```bash
 # 1. Clone repository
-git clone https://github.com/company/Customer360.git
+git clone https://github.com/MUHAMMADZAIDHAQUE/Customer360.git
 cd Customer360
 
 # 2. Copy production environment file
@@ -323,7 +336,7 @@ python scripts/verify_production_deployment.py
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/company/Customer360.git
+git clone https://github.com/MUHAMMADZAIDHAQUE/Customer360.git
 cd Customer360
 
 # 2. Set up Python virtual environment

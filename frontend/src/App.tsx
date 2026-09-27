@@ -34,7 +34,7 @@ export const App: React.FC = () => {
 
   const [healthState, setHealthState] = useState<HealthState>({
     status: 'idle',
-    endpointUrl: 'http://127.0.0.1:8000/health',
+    endpointUrl: api.getEndpointUrl('/health'),
   });
 
   const checkHealth = useCallback(async () => {
@@ -54,7 +54,7 @@ export const App: React.FC = () => {
           version: data.version,
           latencyMs,
           lastChecked: new Date().toLocaleTimeString(),
-          endpointUrl: 'http://127.0.0.1:8000/health',
+          endpointUrl: api.getEndpointUrl('/health'),
         });
       } else {
         setHealthState({
@@ -62,7 +62,7 @@ export const App: React.FC = () => {
           message: `Service status: ${data.status}`,
           latencyMs,
           lastChecked: new Date().toLocaleTimeString(),
-          endpointUrl: 'http://127.0.0.1:8000/health',
+          endpointUrl: api.getEndpointUrl('/health'),
         });
       }
     } catch (err: any) {
@@ -72,7 +72,7 @@ export const App: React.FC = () => {
         message: err.message || 'FastAPI service unavailable',
         latencyMs,
         lastChecked: new Date().toLocaleTimeString(),
-        endpointUrl: 'http://127.0.0.1:8000/health',
+        endpointUrl: api.getEndpointUrl('/health'),
       });
     }
   }, []);

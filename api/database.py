@@ -52,8 +52,9 @@ class AnalyticalDataService:
     """High-performance analytical repository querying DuckDB and Parquet stores."""
 
     def __init__(self, db_path: str = None):
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        self.db_path = db_path or os.path.join(base_dir, "data", "processed", "customer360.duckdb")
+        self.base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.db_path = db_path or os.path.join(self.base_dir, "data", "processed", "customer360.duckdb")
+        self.predictions_parquet_path = os.path.join(self.base_dir, "ml", "artifacts", "customer_churn_predictions.parquet")
 
     def get_connection(self):
         return duckdb.connect(self.db_path, read_only=True)

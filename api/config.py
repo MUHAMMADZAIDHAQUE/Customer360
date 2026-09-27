@@ -2,7 +2,7 @@
 
 from functools import lru_cache
 from typing import List, Union
-from pydantic import Field, field_validator
+from pydantic import Field, field_validator, AliasChoices
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -28,8 +28,8 @@ class Settings(BaseSettings):
 
     # API Server
     API_HOST: str = "0.0.0.0"
-    API_PORT: int = 8000
-    API_RELOAD: bool = True
+    API_PORT: int = Field(default=8000, validation_alias=AliasChoices("PORT", "API_PORT"))
+    API_RELOAD: bool = False
 
     # CORS
     CORS_ORIGINS: Union[str, List[str]] = [

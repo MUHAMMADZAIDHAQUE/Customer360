@@ -28,11 +28,21 @@ import {
   SuggestedQuestion,
 } from '../types';
 
-const API_BASE = '/api';
-const DIRECT_API_BASE = 'http://127.0.0.1:8000';
+const ENV_API_URL = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, '') || '';
+const API_BASE = ENV_API_URL || '/api';
+const DIRECT_API_BASE = ENV_API_URL || 'http://127.0.0.1:8000';
 
 class ApiService {
   private activeBase: string = API_BASE;
+
+  public getApiBaseUrl(): string {
+    return this.activeBase;
+  }
+
+  public getEndpointUrl(path: string): string {
+    const cleanPath = path.startsWith('/') ? path : `/${path}`;
+    return `${this.activeBase}${cleanPath}`;
+  }
 
   private async request<T>(path: string, options?: RequestInit): Promise<T> {
     const url = `${this.activeBase}${path}`;

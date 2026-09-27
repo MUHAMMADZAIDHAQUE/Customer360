@@ -48,7 +48,7 @@ async def get_all_predictions(
     risk_level: Optional[str] = Query(None, description="Filter by risk tier (Low, Medium, High, Critical)"),
     limit: int = Query(100, ge=1, le=1000, description="Max accounts to return")
 ):
-    sql = """
+    sql = f"""
     SELECT 
         p.customer_id,
         ROUND(p.churn_probability, 4) as probability,
@@ -56,7 +56,7 @@ async def get_all_predictions(
         CAST(p.churn_probability >= 0.50 AS BOOLEAN) as is_at_risk,
         p.primary_risk_factor,
         ROUND(CAST(c.current_arr AS DOUBLE), 2) as annual_arr_at_risk
-    FROM read_parquet('ml/artifacts/customer_churn_predictions.parquet') p
+    FROM read_parquet('{analytics_service.predictions_parquet_path}') p
     JOIN main_marts.mart_customer_360 c ON p.customer_id = c.customer_id
     WHERE (? IS NULL OR p.risk_tier = ?)
     ORDER BY p.churn_probability DESC
@@ -64,12 +64,12 @@ async def get_all_predictions(
     """
     rows = analytics_service.query_dicts(sql, [risk_level, risk_level, limit])
 
-    agg_sql = """
+    agg_sql = f"""
     SELECT 
         COUNT(*) as total_scored,
         SUM(CASE WHEN risk_tier IN ('High', 'Critical') THEN 1 ELSE 0 END) as high_risk_count,
         ROUND(CAST(SUM(CASE WHEN risk_tier IN ('High', 'Critical') THEN c.current_arr ELSE 0 END) AS DOUBLE), 2) as total_arr_at_risk
-    FROM read_parquet('ml/artifacts/customer_churn_predictions.parquet') p
+    FROM read_parquet('{analytics_service.predictions_parquet_path}') p
     JOIN main_marts.mart_customer_360 c ON p.customer_id = c.customer_id;
     """
     agg = analytics_service.query_one(agg_sql)

@@ -48,8 +48,8 @@ class AIAnalystService:
         q = query.lower().strip()
 
         # High-Value At-Risk Customers
-        if any(w in q for w in ["high-value", "high value", "top customer", "biggest customer", "customers at risk", "show me accounts", "which customers", "who is at risk"]):
-            if any(w in q for w in ["risk", "churn", "leaving", "vulnerable"]):
+        if any(w in q for w in ["high-value", "high value", "top customer", "biggest customer", "customers at risk", "show me accounts", "which customers", "who is at risk", "high revenue", "highest revenue", "high arr", "high spend"]):
+            if any(w in q for w in ["risk", "churn", "leaving", "vulnerable", "probability"]):
                 return "HIGH_VALUE_AT_RISK"
 
         # Revenue at Risk
@@ -65,11 +65,11 @@ class AIAnalystService:
             return "PLAN_RETENTION"
 
         # Churn Drivers / "Why is churn high / why did churn increase"
-        if any(w in q for w in ["why did churn", "why is churn", "churn increase", "churn high", "what drives churn", "why are customers leaving", "churn cause", "reasons for churn", "cancellation reasons"]):
+        if any(w in q for w in ["why did churn", "why is churn", "churn increase", "churn high", "what drives churn", "why are customers leaving", "churn cause", "reasons for churn", "cancellation reasons", "churn driver", "observed churn driver"]):
             return "CHURN_DRIVERS"
 
-        # Cohort Retention
-        if any(w in q for w in ["cohort", "retention curve", "month 1 retention", "month 12 retention", "signup month", "survival"]):
+        # Cohort Retention & Trends
+        if any(w in q for w in ["cohort", "retention curve", "month 1 retention", "month 12 retention", "signup month", "survival", "over time", "churn trend", "retention trend"]):
             return "COHORT_RETENTION"
 
         # ML Model / SHAP Explainability

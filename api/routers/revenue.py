@@ -71,7 +71,7 @@ async def get_revenue_at_risk(
     """
     summary = analytics_service.query_one(summary_sql)
 
-    accounts_sql = """
+    accounts_sql = f"""
     SELECT 
         c.customer_id,
         c.full_name,
@@ -90,7 +90,7 @@ async def get_revenue_at_risk(
     FROM main_marts.mart_customer_360 c
     LEFT JOIN (
         SELECT customer_id, churn_probability, risk_tier
-        FROM read_parquet('ml/artifacts/customer_churn_predictions.parquet')
+        FROM read_parquet('{analytics_service.predictions_parquet_path}')
     ) p ON c.customer_id = p.customer_id
     WHERE c.is_at_risk
     ORDER BY c.revenue_at_risk DESC

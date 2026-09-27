@@ -27,7 +27,7 @@ def get_engine():
 
 def apply_migrations(dry_run: bool = False):
     """Executes schema DDL and performance index definitions."""
-    print(f"=== Customer360 Database Migration Engine ===")
+    print("=== Customer360 Database Migration Engine ===")
     schema_path = os.path.join(BASE_DIR, "database", "schema.sql")
     indexes_path = os.path.join(BASE_DIR, "database", "indexes.sql")
 
