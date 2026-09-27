@@ -71,6 +71,9 @@ jobs:
       - name: Run TypeScript Typecheck
         run: npx tsc --noEmit
 
+      - name: Run Vitest Frontend Unit & Component Tests
+        run: npm test
+
       - name: Build Production Frontend Bundle
         run: npm run build
 
