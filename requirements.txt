@@ -16,3 +16,9 @@ plotly>=5.20.0
 matplotlib>=3.8.0
 scipy>=1.13.0
 seaborn>=0.13.0
+
+# Phase 4 Production Churn Prediction & Explainability
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+shap>=0.45.0
+joblib>=1.3.0

@@ -1,0 +1,190 @@
+[
+  {
+    "feature": "monthly_price",
+    "mean_abs_shap": 0.2237018933934212
+  },
+  {
+    "feature": "has_support_friction",
+    "mean_abs_shap": 0.057539329037749685
+  },
+  {
+    "feature": "avg_resolution_hours",
+    "mean_abs_shap": 0.047552870548220494
+  },
+  {
+    "feature": "high_urgency_tickets_count",
+    "mean_abs_shap": 0.03361499090408273
+  },
+  {
+    "feature": "urgent_ticket_ratio",
+    "mean_abs_shap": 0.03298501316696912
+  },
+  {
+    "feature": "avg_satisfaction_score",
+    "mean_abs_shap": 0.028636262457242233
+  },
+  {
+    "feature": "recency_days",
+    "mean_abs_shap": 0.028237596610732215
+  },
+  {
+    "feature": "total_tickets_count",
+    "mean_abs_shap": 0.015501023965598309
+  },
+  {
+    "feature": "active_day_ratio",
+    "mean_abs_shap": 0.01473362213818776
+  },
+  {
+    "feature": "session_frequency_per_month",
+    "mean_abs_shap": 0.013750020932442828
+  },
+  {
+    "feature": "login_frequency_per_month",
+    "mean_abs_shap": 0.012485462458264191
+  },
+  {
+    "feature": "total_sessions",
+    "mean_abs_shap": 0.008966840483664938
+  },
+  {
+    "feature": "total_logins",
+    "mean_abs_shap": 0.008387239507524522
+  },
+  {
+    "feature": "total_active_days",
+    "mean_abs_shap": 0.007791803874617387
+  },
+  {
+    "feature": "total_session_minutes",
+    "mean_abs_shap": 0.006430592746690596
+  },
+  {
+    "feature": "tenure_days",
+    "mean_abs_shap": 0.0051435779798587175
+  },
+  {
+    "feature": "tenure_months",
+    "mean_abs_shap": 0.004331391060650329
+  },
+  {
+    "feature": "contract_type_annual",
+    "mean_abs_shap": 0.003995394309843657
+  },
+  {
+    "feature": "avg_session_minutes",
+    "mean_abs_shap": 0.003904132554467099
+  },
+  {
+    "feature": "is_engagement_declining",
+    "mean_abs_shap": 0.003604891885782901
+  },
+  {
+    "feature": "failed_transactions_count",
+    "mean_abs_shap": 0.0031134903969285053
+  },
+  {
+    "feature": "payment_failure_rate",
+    "mean_abs_shap": 0.002356408594622576
+  },
+  {
+    "feature": "historical_revenue",
+    "mean_abs_shap": 0.0020713762248788107
+  },
+  {
+    "feature": "total_invoices_count",
+    "mean_abs_shap": 0.001987522217148849
+  },
+  {
+    "feature": "contract_type_monthly",
+    "mean_abs_shap": 0.0018402198898145308
+  },
+  {
+    "feature": "age",
+    "mean_abs_shap": 0.0010377574617569743
+  },
+  {
+    "feature": "plan_tier_Starter",
+    "mean_abs_shap": 0.0008435203219321434
+  },
+  {
+    "feature": "acquisition_channel_Paid Ads",
+    "mean_abs_shap": 0.0007518099753633885
+  },
+  {
+    "feature": "plan_tier_Growth",
+    "mean_abs_shap": 0.0007377756596027144
+  },
+  {
+    "feature": "plan_tier_Professional",
+    "mean_abs_shap": 0.0006430255437772241
+  },
+  {
+    "feature": "acquisition_channel_Referral",
+    "mean_abs_shap": 0.00044198274473930484
+  },
+  {
+    "feature": "acquisition_channel_Social Media",
+    "mean_abs_shap": 0.000368125074205409
+  },
+  {
+    "feature": "gender_Male",
+    "mean_abs_shap": 0.00029306534562238267
+  },
+  {
+    "feature": "gender_Female",
+    "mean_abs_shap": 0.00021923747201748285
+  },
+  {
+    "feature": "acquisition_channel_Organic Search",
+    "mean_abs_shap": 0.00020994514835662265
+  },
+  {
+    "feature": "country_United States",
+    "mean_abs_shap": 0.00020824825034183942
+  },
+  {
+    "feature": "country_United Kingdom",
+    "mean_abs_shap": 0.00020404713121239127
+  },
+  {
+    "feature": "country_Australia",
+    "mean_abs_shap": 0.0001957037836380214
+  },
+  {
+    "feature": "plan_tier_Enterprise",
+    "mean_abs_shap": 0.00017195658697742364
+  },
+  {
+    "feature": "acquisition_channel_Partner",
+    "mean_abs_shap": 8.079990209647212e-05
+  },
+  {
+    "feature": "acquisition_channel_Direct",
+    "mean_abs_shap": 7.576164844957956e-05
+  },
+  {
+    "feature": "country_France",
+    "mean_abs_shap": 7.352783697300119e-05
+  },
+  {
+    "feature": "country_Germany",
+    "mean_abs_shap": 6.74741604385532e-05
+  },
+  {
+    "feature": "contract_type_multi_year",
+    "mean_abs_shap": 6.722971155091376e-05
+  },
+  {
+    "feature": "distinct_features_used",
+    "mean_abs_shap": 5.885157647399229e-05
+  },
+  {
+    "feature": "country_Canada",
+    "mean_abs_shap": 4.671202935729253e-05
+  },
+  {
+    "feature": "has_payment_delinquency",
+    "mean_abs_shap": 4.267694795330704e-05
+  }
+]

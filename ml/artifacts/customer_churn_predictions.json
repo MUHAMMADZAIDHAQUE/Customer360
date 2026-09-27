@@ -1,0 +1,2002 @@
+[
+  {
+    "customer_id":"CUST-00001",
+    "is_churned_actual":0,
+    "churn_probability":0.0134,
+    "risk_tier":"Low",
+    "primary_risk_factor":"tenure_days",
+    "primary_risk_shap":0.0043,
+    "top_risk_factors":"[{\"feature\": \"tenure_days\", \"shap\": 0.004278637204655538}, {\"feature\": \"tenure_months\", \"shap\": 0.0037915465194865634}, {\"feature\": \"total_session_minutes\", \"shap\": 0.0035180961825401137}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2030985270713573}, {\"feature\": \"has_support_friction\", \"shap\": -0.0513741303938788}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.046435513007638644}]"
+  },
+  {
+    "customer_id":"CUST-00002",
+    "is_churned_actual":1,
+    "churn_probability":0.9918,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1922,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19216942696492248}, {\"feature\": \"has_support_friction\", \"shap\": 0.05523004226746095}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04142264876699244}]",
+    "top_protective_factors":"[{\"feature\": \"contract_type_annual\", \"shap\": -0.007312232555725432}, {\"feature\": \"contract_type_monthly\", \"shap\": -0.0035755966120345132}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0032571482693644987}]"
+  },
+  {
+    "customer_id":"CUST-00003",
+    "is_churned_actual":0,
+    "churn_probability":0.0351,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0253,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.025288053736875333}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.02350200754303596}, {\"feature\": \"total_session_minutes\", \"shap\": 0.005693977501189632}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22720907855340186}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.07324029212812384}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.07079150631332119}]"
+  },
+  {
+    "customer_id":"CUST-00004",
+    "is_churned_actual":0,
+    "churn_probability":0.0777,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0309,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.030884131941193473}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.027314853225860018}, {\"feature\": \"recency_days\", \"shap\": 0.02346028838424805}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2255968531859565}, {\"feature\": \"has_support_friction\", \"shap\": -0.08758886500621221}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.08584028050293545}]"
+  },
+  {
+    "customer_id":"CUST-00005",
+    "is_churned_actual":1,
+    "churn_probability":0.9817,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2087,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20871951931887078}, {\"feature\": \"has_support_friction\", \"shap\": 0.06419159985125159}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.035333797449545144}]",
+    "top_protective_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": -0.018371123661809242}, {\"feature\": \"active_day_ratio\", \"shap\": -0.008587335593632077}, {\"feature\": \"acquisition_channel_Referral\", \"shap\": -0.0025119999528488996}]"
+  },
+  {
+    "customer_id":"CUST-00006",
+    "is_churned_actual":1,
+    "churn_probability":0.9476,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2396,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.239557061760159}, {\"feature\": \"has_support_friction\", \"shap\": 0.08728269664706956}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.0381381931848213}]",
+    "top_protective_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": -0.017767898152276546}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.015085899812886902}, {\"feature\": \"active_day_ratio\", \"shap\": -0.009636441780091352}]"
+  },
+  {
+    "customer_id":"CUST-00007",
+    "is_churned_actual":0,
+    "churn_probability":0.0918,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0355,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.035481901889373724}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.027997550649628656}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.010744638048150252}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2564063199495595}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.08342554775480428}, {\"feature\": \"has_support_friction\", \"shap\": -0.06470094112292414}]"
+  },
+  {
+    "customer_id":"CUST-00008",
+    "is_churned_actual":1,
+    "churn_probability":0.9893,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.191,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.1909674277343904}, {\"feature\": \"has_support_friction\", \"shap\": 0.06087155061408366}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.03894860663867637}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.03200066365992254}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0011025579096477197}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0008431737738431571}]"
+  },
+  {
+    "customer_id":"CUST-00009",
+    "is_churned_actual":0,
+    "churn_probability":0.0109,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0362,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.03623298062451114}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0020585427858515466}, {\"feature\": \"plan_tier_Starter\", \"shap\": 0.00046221449981898505}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.1969411409237137}, {\"feature\": \"has_support_friction\", \"shap\": -0.0581035351731687}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05624063024466701}]"
+  },
+  {
+    "customer_id":"CUST-00010",
+    "is_churned_actual":1,
+    "churn_probability":0.7825,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2817,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2816803314101372}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.09641081736851738}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.030200781466275684}]",
+    "top_protective_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": -0.09741814411545135}, {\"feature\": \"has_support_friction\", \"shap\": -0.04601605041576523}, {\"feature\": \"total_tickets_count\", \"shap\": -0.014224435377940018}]"
+  },
+  {
+    "customer_id":"CUST-00011",
+    "is_churned_actual":0,
+    "churn_probability":0.0204,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0132,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013176779641148065}, {\"feature\": \"total_active_days\", \"shap\": 0.0059393577011577405}, {\"feature\": \"tenure_days\", \"shap\": 0.003998582501057304}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20560570881456897}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05391773691649241}, {\"feature\": \"has_support_friction\", \"shap\": -0.05163103610247324}]"
+  },
+  {
+    "customer_id":"CUST-00012",
+    "is_churned_actual":1,
+    "churn_probability":0.947,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2114,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21136015380837914}, {\"feature\": \"has_support_friction\", \"shap\": 0.06982464288285459}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05212857097808286}]",
+    "top_protective_factors":"[{\"feature\": \"total_sessions\", \"shap\": -0.013338575879184909}, {\"feature\": \"total_active_days\", \"shap\": -0.008381397062628084}, {\"feature\": \"tenure_days\", \"shap\": -0.007737338841809225}]"
+  },
+  {
+    "customer_id":"CUST-00013",
+    "is_churned_actual":1,
+    "churn_probability":0.9836,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2177,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21769947662944147}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.08187893850608015}, {\"feature\": \"has_support_friction\", \"shap\": 0.07288638887805939}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.019432884524350356}, {\"feature\": \"active_day_ratio\", \"shap\": -0.011009702166737743}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.007249926279064119}]"
+  },
+  {
+    "customer_id":"CUST-00014",
+    "is_churned_actual":1,
+    "churn_probability":0.9956,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2161,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21612023157945073}, {\"feature\": \"has_support_friction\", \"shap\": 0.07641904079345552}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05362352815444298}]",
+    "top_protective_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": -0.009245055084371302}, {\"feature\": \"total_active_days\", \"shap\": -0.006023798919286126}, {\"feature\": \"total_logins\", \"shap\": -0.003956032865540492}]"
+  },
+  {
+    "customer_id":"CUST-00015",
+    "is_churned_actual":1,
+    "churn_probability":0.9491,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.206,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20604374118156865}, {\"feature\": \"has_support_friction\", \"shap\": 0.06818745580620926}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04982376645987594}]",
+    "top_protective_factors":"[{\"feature\": \"total_active_days\", \"shap\": -0.014256476234274068}, {\"feature\": \"total_sessions\", \"shap\": -0.012190661734675317}, {\"feature\": \"tenure_months\", \"shap\": -0.011243215132491947}]"
+  },
+  {
+    "customer_id":"CUST-00016",
+    "is_churned_actual":0,
+    "churn_probability":0.0455,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0235,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.023497531089310218}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013079685662858654}, {\"feature\": \"total_logins\", \"shap\": 0.007058285442187057}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22537217650262353}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.06141598754678777}, {\"feature\": \"has_support_friction\", \"shap\": -0.049102995544095446}]"
+  },
+  {
+    "customer_id":"CUST-00017",
+    "is_churned_actual":0,
+    "churn_probability":0.0273,
+    "risk_tier":"Low",
+    "primary_risk_factor":"tenure_days",
+    "primary_risk_shap":0.0058,
+    "top_risk_factors":"[{\"feature\": \"tenure_days\", \"shap\": 0.005796848118989316}, {\"feature\": \"total_active_days\", \"shap\": 0.005294830351082571}, {\"feature\": \"total_session_minutes\", \"shap\": 0.00448048265530234}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21615258966056958}, {\"feature\": \"has_support_friction\", \"shap\": -0.0574831963357589}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04730020889235099}]"
+  },
+  {
+    "customer_id":"CUST-00018",
+    "is_churned_actual":0,
+    "churn_probability":0.0204,
+    "risk_tier":"Low",
+    "primary_risk_factor":"acquisition_channel_Social Media",
+    "primary_risk_shap":0.0035,
+    "top_risk_factors":"[{\"feature\": \"acquisition_channel_Social Media\", \"shap\": 0.0035327986087193186}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0019382170258855215}, {\"feature\": \"contract_type_monthly\", \"shap\": 0.0015861914487102597}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19618358601755326}, {\"feature\": \"has_support_friction\", \"shap\": -0.04492778233746001}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04388907336480101}]"
+  },
+  {
+    "customer_id":"CUST-00019",
+    "is_churned_actual":0,
+    "churn_probability":0.0653,
+    "risk_tier":"Low",
+    "primary_risk_factor":"session_frequency_per_month",
+    "primary_risk_shap":0.0366,
+    "top_risk_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": 0.036622331449104685}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.035454433370154526}, {\"feature\": \"tenure_months\", \"shap\": 0.003084285007828399}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22494013732060522}, {\"feature\": \"has_support_friction\", \"shap\": -0.05131223556046635}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.043855429652546164}]"
+  },
+  {
+    "customer_id":"CUST-00020",
+    "is_churned_actual":0,
+    "churn_probability":0.028,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0294,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.029389880022528028}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.018737390638133275}, {\"feature\": \"contract_type_annual\", \"shap\": 0.00279996025842134}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21335107174175894}, {\"feature\": \"has_support_friction\", \"shap\": -0.0665567257615861}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.06630073285378565}]"
+  },
+  {
+    "customer_id":"CUST-00021",
+    "is_churned_actual":1,
+    "churn_probability":0.9248,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2559,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2558758274508354}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.08305113401780136}, {\"feature\": \"recency_days\", \"shap\": 0.0373422467945527}]",
+    "top_protective_factors":"[{\"feature\": \"has_support_friction\", \"shap\": -0.04717256876567714}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.021119485046776628}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.01658884151850705}]"
+  },
+  {
+    "customer_id":"CUST-00022",
+    "is_churned_actual":1,
+    "churn_probability":0.9919,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1955,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19545107168995327}, {\"feature\": \"has_support_friction\", \"shap\": 0.05471403850553815}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.036142435504776804}]",
+    "top_protective_factors":"[{\"feature\": \"avg_session_minutes\", \"shap\": -0.0033749944924056237}, {\"feature\": \"acquisition_channel_Direct\", \"shap\": -0.0023981677951627053}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.0018592794108202504}]"
+  },
+  {
+    "customer_id":"CUST-00023",
+    "is_churned_actual":0,
+    "churn_probability":0.0697,
+    "risk_tier":"Low",
+    "primary_risk_factor":"total_active_days",
+    "primary_risk_shap":0.0142,
+    "top_risk_factors":"[{\"feature\": \"total_active_days\", \"shap\": 0.014224596767705745}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01337787882292468}, {\"feature\": \"total_sessions\", \"shap\": 0.013100155622910557}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2196715301255397}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05740599039942518}, {\"feature\": \"recency_days\", \"shap\": -0.05619993911492867}]"
+  },
+  {
+    "customer_id":"CUST-00024",
+    "is_churned_actual":1,
+    "churn_probability":0.9932,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2087,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20871199923480394}, {\"feature\": \"has_support_friction\", \"shap\": 0.06918384769987036}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.061550918013503764}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.015040206468979762}, {\"feature\": \"active_day_ratio\", \"shap\": -0.003862560553236014}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.002569000820231748}]"
+  },
+  {
+    "customer_id":"CUST-00025",
+    "is_churned_actual":0,
+    "churn_probability":0.0551,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0434,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.0433585177839034}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.028454502534170308}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.02440790450534053}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.23127647197122816}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.08148042410667003}, {\"feature\": \"has_support_friction\", \"shap\": -0.07864337832425182}]"
+  },
+  {
+    "customer_id":"CUST-00026",
+    "is_churned_actual":1,
+    "churn_probability":0.9736,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2052,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2051982533817955}, {\"feature\": \"has_support_friction\", \"shap\": 0.06691258991147415}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.040077128271136284}]",
+    "top_protective_factors":"[{\"feature\": \"login_frequency_per_month\", \"shap\": -0.008200694040211908}, {\"feature\": \"total_logins\", \"shap\": -0.007492174942284329}, {\"feature\": \"total_sessions\", \"shap\": -0.007280360619785766}]"
+  },
+  {
+    "customer_id":"CUST-00027",
+    "is_churned_actual":1,
+    "churn_probability":0.9958,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1948,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.1948335563371088}, {\"feature\": \"has_support_friction\", \"shap\": 0.04839516677616775}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.033944508936085985}]",
+    "top_protective_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": -0.012668523867721666}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0009216402480955066}, {\"feature\": \"plan_tier_Starter\", \"shap\": -0.0007291415563774843}]"
+  },
+  {
+    "customer_id":"CUST-00028",
+    "is_churned_actual":1,
+    "churn_probability":0.9757,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2168,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21683881986987197}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.040518054968239854}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.029443170144892228}]",
+    "top_protective_factors":"[{\"feature\": \"has_support_friction\", \"shap\": -0.04920170851129037}, {\"feature\": \"plan_tier_Starter\", \"shap\": -0.001114756579194048}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0005831219375246159}]"
+  },
+  {
+    "customer_id":"CUST-00029",
+    "is_churned_actual":1,
+    "churn_probability":0.9919,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2166,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2165945008379301}, {\"feature\": \"has_support_friction\", \"shap\": 0.06818157360925697}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.0500029963422578}]",
+    "top_protective_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": -0.016474937639113778}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.0028278352331575565}, {\"feature\": \"avg_session_minutes\", \"shap\": -0.0017972145798102715}]"
+  },
+  {
+    "customer_id":"CUST-00030",
+    "is_churned_actual":0,
+    "churn_probability":0.0172,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0143,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014298734466222639}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0017552647606891578}, {\"feature\": \"contract_type_monthly\", \"shap\": 0.0010508720330725243}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20501570596324134}, {\"feature\": \"has_support_friction\", \"shap\": -0.050633734983474406}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04980211049170391}]"
+  },
+  {
+    "customer_id":"CUST-00031",
+    "is_churned_actual":0,
+    "churn_probability":0.0393,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0123,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.012330975516130672}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.006963455985847928}, {\"feature\": \"age\", \"shap\": 0.003705924111109352}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2230013785482299}, {\"feature\": \"has_support_friction\", \"shap\": -0.052541543273440294}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.04552053207987949}]"
+  },
+  {
+    "customer_id":"CUST-00032",
+    "is_churned_actual":0,
+    "churn_probability":0.0293,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0173,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.017296816056451926}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.014395664658645495}, {\"feature\": \"acquisition_channel_Social Media\", \"shap\": 0.002936924462544039}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22046723410542088}, {\"feature\": \"has_support_friction\", \"shap\": -0.06105324437247624}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05485724131586097}]"
+  },
+  {
+    "customer_id":"CUST-00033",
+    "is_churned_actual":1,
+    "churn_probability":0.7718,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.346,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.3460018637061294}, {\"feature\": \"recency_days\", \"shap\": 0.04967979989427852}, {\"feature\": \"is_engagement_declining\", \"shap\": 0.026889838072018123}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.040840981122856224}, {\"feature\": \"has_support_friction\", \"shap\": -0.03913511253033836}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.023150579983723225}]"
+  },
+  {
+    "customer_id":"CUST-00034",
+    "is_churned_actual":0,
+    "churn_probability":0.0145,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0118,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.01180655704909875}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.0011573494757701323}, {\"feature\": \"plan_tier_Starter\", \"shap\": 0.0005362294131678248}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19736732301452367}, {\"feature\": \"has_support_friction\", \"shap\": -0.05117167974194521}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.050497209064641044}]"
+  },
+  {
+    "customer_id":"CUST-00035",
+    "is_churned_actual":1,
+    "churn_probability":1.0,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1876,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.18760641271987813}, {\"feature\": \"has_support_friction\", \"shap\": 0.052059927516887455}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.038867856088901497}]",
+    "top_protective_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": -0.0006399237885399173}, {\"feature\": \"failed_transactions_count\", \"shap\": -0.0005559253074703902}, {\"feature\": \"country_Australia\", \"shap\": -0.0005383832028346186}]"
+  },
+  {
+    "customer_id":"CUST-00036",
+    "is_churned_actual":0,
+    "churn_probability":0.0916,
+    "risk_tier":"Low",
+    "primary_risk_factor":"session_frequency_per_month",
+    "primary_risk_shap":0.0419,
+    "top_risk_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": 0.041934287930855796}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.03439689988781769}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.012952115873200628}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.24210182602887806}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05361538578180633}, {\"feature\": \"has_support_friction\", \"shap\": -0.049504350153160716}]"
+  },
+  {
+    "customer_id":"CUST-00037",
+    "is_churned_actual":0,
+    "churn_probability":0.0096,
+    "risk_tier":"Low",
+    "primary_risk_factor":"total_tickets_count",
+    "primary_risk_shap":0.0157,
+    "top_risk_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": 0.015677681634663668}, {\"feature\": \"recency_days\", \"shap\": 0.008446233188063717}, {\"feature\": \"contract_type_annual\", \"shap\": 0.002355646387847472}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19761780250980554}, {\"feature\": \"has_support_friction\", \"shap\": -0.05110809627449234}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04990747710138823}]"
+  },
+  {
+    "customer_id":"CUST-00038",
+    "is_churned_actual":0,
+    "churn_probability":0.0977,
+    "risk_tier":"Low",
+    "primary_risk_factor":"high_urgency_tickets_count",
+    "primary_risk_shap":0.0236,
+    "top_risk_factors":"[{\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.023627569615275016}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.022873724812064684}, {\"feature\": \"total_tickets_count\", \"shap\": 0.020976926975300875}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2541179387384016}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.08380142983691188}, {\"feature\": \"has_support_friction\", \"shap\": -0.07695766505197627}]"
+  },
+  {
+    "customer_id":"CUST-00039",
+    "is_churned_actual":0,
+    "churn_probability":0.0581,
+    "risk_tier":"Low",
+    "primary_risk_factor":"session_frequency_per_month",
+    "primary_risk_shap":0.0356,
+    "top_risk_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": 0.03559156459246589}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.03168362496172803}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.011211747890050427}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.23761714964021735}, {\"feature\": \"recency_days\", \"shap\": -0.06504695860167051}, {\"feature\": \"has_support_friction\", \"shap\": -0.055193648986361886}]"
+  },
+  {
+    "customer_id":"CUST-00040",
+    "is_churned_actual":0,
+    "churn_probability":0.1561,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0414,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.04142920943287088}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.03548567022225558}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.019751304508931117}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.24920969416798766}, {\"feature\": \"has_support_friction\", \"shap\": -0.08266260250659307}, {\"feature\": \"total_tickets_count\", \"shap\": -0.03089567840729022}]"
+  },
+  {
+    "customer_id":"CUST-00041",
+    "is_churned_actual":0,
+    "churn_probability":0.0836,
+    "risk_tier":"Low",
+    "primary_risk_factor":"session_frequency_per_month",
+    "primary_risk_shap":0.0456,
+    "top_risk_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": 0.045572061293767036}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.036383475211316026}, {\"feature\": \"is_engagement_declining\", \"shap\": 0.010725067353690438}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.24153694171842888}, {\"feature\": \"recency_days\", \"shap\": -0.06149411831666101}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.053180142043403114}]"
+  },
+  {
+    "customer_id":"CUST-00042",
+    "is_churned_actual":0,
+    "churn_probability":0.0592,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0304,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.03044176448713328}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.015983699134625287}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014674047846006665}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22094625853759323}, {\"feature\": \"has_support_friction\", \"shap\": -0.04995940927873884}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04609718776493276}]"
+  },
+  {
+    "customer_id":"CUST-00043",
+    "is_churned_actual":0,
+    "churn_probability":0.031,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0133,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013269298583502356}, {\"feature\": \"total_logins\", \"shap\": 0.007860977933698334}, {\"feature\": \"tenure_months\", \"shap\": 0.004482382988069796}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20735884969028504}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.056214380256605204}, {\"feature\": \"has_support_friction\", \"shap\": -0.05112986828330219}]"
+  },
+  {
+    "customer_id":"CUST-00044",
+    "is_churned_actual":1,
+    "churn_probability":0.9888,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.205,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20503749082694023}, {\"feature\": \"has_support_friction\", \"shap\": 0.06620156142675054}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.060776066209246755}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.025342916615192244}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.007205807000573184}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.0038681432224791537}]"
+  },
+  {
+    "customer_id":"CUST-00045",
+    "is_churned_actual":1,
+    "churn_probability":0.9962,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.205,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20502871734401942}, {\"feature\": \"has_support_friction\", \"shap\": 0.06027461197479165}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05850732742215518}]",
+    "top_protective_factors":"[{\"feature\": \"total_logins\", \"shap\": -0.0071380580363146345}, {\"feature\": \"contract_type_annual\", \"shap\": -0.006907152357287214}, {\"feature\": \"total_sessions\", \"shap\": -0.006635226413772069}]"
+  },
+  {
+    "customer_id":"CUST-00046",
+    "is_churned_actual":0,
+    "churn_probability":0.0269,
+    "risk_tier":"Low",
+    "primary_risk_factor":"age",
+    "primary_risk_shap":0.0052,
+    "top_risk_factors":"[{\"feature\": \"age\", \"shap\": 0.005246647641101392}, {\"feature\": \"tenure_days\", \"shap\": 0.004553412038194526}, {\"feature\": \"total_active_days\", \"shap\": 0.0043495797503959755}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19840032131448107}, {\"feature\": \"recency_days\", \"shap\": -0.04824161631607339}, {\"feature\": \"has_support_friction\", \"shap\": -0.04545510535283175}]"
+  },
+  {
+    "customer_id":"CUST-00047",
+    "is_churned_actual":0,
+    "churn_probability":0.0638,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0153,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01526856561768629}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.0122483065916536}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.012146555655817234}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22162522250014943}, {\"feature\": \"has_support_friction\", \"shap\": -0.04908101300820206}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04638483115853432}]"
+  },
+  {
+    "customer_id":"CUST-00048",
+    "is_churned_actual":1,
+    "churn_probability":0.9945,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2077,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20771344178866635}, {\"feature\": \"has_support_friction\", \"shap\": 0.06789936008567485}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05209843656792039}]",
+    "top_protective_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": -0.006131213833136832}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.005145400072133519}, {\"feature\": \"avg_session_minutes\", \"shap\": -0.0026287144949715823}]"
+  },
+  {
+    "customer_id":"CUST-00049",
+    "is_churned_actual":1,
+    "churn_probability":0.9848,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2156,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21555504337424444}, {\"feature\": \"has_support_friction\", \"shap\": 0.07427306592760251}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.06199519296320304}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.019034401319773436}, {\"feature\": \"contract_type_annual\", \"shap\": -0.007478117913335834}, {\"feature\": \"active_day_ratio\", \"shap\": -0.004716820156130842}]"
+  },
+  {
+    "customer_id":"CUST-00050",
+    "is_churned_actual":1,
+    "churn_probability":0.9927,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2007,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20070392006864216}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.06344842993238763}, {\"feature\": \"has_support_friction\", \"shap\": 0.061017099058917966}]",
+    "top_protective_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": -0.008224231106037424}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.003884456042367286}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.002430385119754946}]"
+  },
+  {
+    "customer_id":"CUST-00051",
+    "is_churned_actual":1,
+    "churn_probability":0.9254,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2472,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.24715376698034608}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.043373156107342686}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.03457159428228632}]",
+    "top_protective_factors":"[{\"feature\": \"has_support_friction\", \"shap\": -0.06432694671413212}, {\"feature\": \"active_day_ratio\", \"shap\": -0.013081739023787434}, {\"feature\": \"total_active_days\", \"shap\": -0.008256822306599444}]"
+  },
+  {
+    "customer_id":"CUST-00052",
+    "is_churned_actual":1,
+    "churn_probability":0.8626,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2922,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.29223331772914124}, {\"feature\": \"recency_days\", \"shap\": 0.05605759311124324}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.04706617929535962}]",
+    "top_protective_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": -0.058407817202982056}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.051295881914442905}, {\"feature\": \"has_support_friction\", \"shap\": -0.04387295287236637}]"
+  },
+  {
+    "customer_id":"CUST-00053",
+    "is_churned_actual":1,
+    "churn_probability":0.9917,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1986,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19860035458773245}, {\"feature\": \"has_support_friction\", \"shap\": 0.05731754631953186}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04872751720449693}]",
+    "top_protective_factors":"[{\"feature\": \"contract_type_annual\", \"shap\": -0.006297808595781317}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0037252879437333552}, {\"feature\": \"contract_type_monthly\", \"shap\": -0.0022350932540787863}]"
+  },
+  {
+    "customer_id":"CUST-00054",
+    "is_churned_actual":0,
+    "churn_probability":0.018,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0073,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.007261411780634232}, {\"feature\": \"contract_type_annual\", \"shap\": 0.001850594220631958}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.001415291664392871}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21046021647088314}, {\"feature\": \"has_support_friction\", \"shap\": -0.058316732221868686}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05091760460590127}]"
+  },
+  {
+    "customer_id":"CUST-00055",
+    "is_churned_actual":1,
+    "churn_probability":0.94,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.3017,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.30174298245118647}, {\"feature\": \"recency_days\", \"shap\": 0.07954791791163376}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.052927014973964986}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.03800167913199046}, {\"feature\": \"has_support_friction\", \"shap\": -0.03348923087146986}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.02620998909145112}]"
+  },
+  {
+    "customer_id":"CUST-00056",
+    "is_churned_actual":0,
+    "churn_probability":0.1099,
+    "risk_tier":"Low",
+    "primary_risk_factor":"has_support_friction",
+    "primary_risk_shap":0.069,
+    "top_risk_factors":"[{\"feature\": \"has_support_friction\", \"shap\": 0.06899984728485314}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.030247329731815653}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.029918697285830857}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.28318390094295487}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.11719956719173352}, {\"feature\": \"recency_days\", \"shap\": -0.024331392446779777}]"
+  },
+  {
+    "customer_id":"CUST-00057",
+    "is_churned_actual":0,
+    "churn_probability":0.035,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0274,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.027374783831431035}, {\"feature\": \"recency_days\", \"shap\": 0.0232641494536366}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.018657692356613655}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21240922331478265}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.06359747853044236}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05459664199698658}]"
+  },
+  {
+    "customer_id":"CUST-00058",
+    "is_churned_actual":1,
+    "churn_probability":0.9505,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2531,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2530790614688833}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.049901932399351465}, {\"feature\": \"recency_days\", \"shap\": 0.048943003609803686}]",
+    "top_protective_factors":"[{\"feature\": \"has_support_friction\", \"shap\": -0.05526263755422533}, {\"feature\": \"active_day_ratio\", \"shap\": -0.008987292201245976}, {\"feature\": \"contract_type_annual\", \"shap\": -0.004867939933465553}]"
+  },
+  {
+    "customer_id":"CUST-00059",
+    "is_churned_actual":0,
+    "churn_probability":0.0245,
+    "risk_tier":"Low",
+    "primary_risk_factor":"is_engagement_declining",
+    "primary_risk_shap":0.0142,
+    "top_risk_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": 0.014158859412029889}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013838241353129135}, {\"feature\": \"tenure_months\", \"shap\": 0.004083177504205665}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20982194483159475}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05943323755607655}, {\"feature\": \"has_support_friction\", \"shap\": -0.0514792210301504}]"
+  },
+  {
+    "customer_id":"CUST-00060",
+    "is_churned_actual":0,
+    "churn_probability":0.0114,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0155,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.015533970698365717}, {\"feature\": \"acquisition_channel_Paid Ads\", \"shap\": 0.0022155799274879216}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0020190676424100737}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.1928304460847599}, {\"feature\": \"has_support_friction\", \"shap\": -0.04375047930619029}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.0422459008335103}]"
+  },
+  {
+    "customer_id":"CUST-00061",
+    "is_churned_actual":1,
+    "churn_probability":0.8228,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.3101,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.3101416032275559}, {\"feature\": \"has_support_friction\", \"shap\": 0.0821863121800555}, {\"feature\": \"recency_days\", \"shap\": 0.05079143988755881}]",
+    "top_protective_factors":"[{\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.03824936156276477}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.035512099184298054}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.030011581622004364}]"
+  },
+  {
+    "customer_id":"CUST-00062",
+    "is_churned_actual":0,
+    "churn_probability":0.1643,
+    "risk_tier":"Low",
+    "primary_risk_factor":"has_support_friction",
+    "primary_risk_shap":0.0833,
+    "top_risk_factors":"[{\"feature\": \"has_support_friction\", \"shap\": 0.08325490028391518}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.041901619287330945}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.021629916668803324}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2412589362341112}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.04982877251368059}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.049683990759256044}]"
+  },
+  {
+    "customer_id":"CUST-00063",
+    "is_churned_actual":0,
+    "churn_probability":0.0114,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0181,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.018074815962420863}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013813426227229007}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.001487012320932019}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20447412769843804}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04692220951720533}, {\"feature\": \"has_support_friction\", \"shap\": -0.046728047261460154}]"
+  },
+  {
+    "customer_id":"CUST-00064",
+    "is_churned_actual":0,
+    "churn_probability":0.106,
+    "risk_tier":"Low",
+    "primary_risk_factor":"high_urgency_tickets_count",
+    "primary_risk_shap":0.0283,
+    "top_risk_factors":"[{\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.028305785494125667}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.026557953753461754}, {\"feature\": \"total_tickets_count\", \"shap\": 0.025728861020554456}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.24655350534104092}, {\"feature\": \"has_support_friction\", \"shap\": -0.07091761557757228}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05531811652228289}]"
+  },
+  {
+    "customer_id":"CUST-00065",
+    "is_churned_actual":0,
+    "churn_probability":0.014,
+    "risk_tier":"Low",
+    "primary_risk_factor":"total_tickets_count",
+    "primary_risk_shap":0.0158,
+    "top_risk_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": 0.015752623824213028}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0025624415498147974}, {\"feature\": \"contract_type_monthly\", \"shap\": 0.001343904823346349}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2074982832237468}, {\"feature\": \"has_support_friction\", \"shap\": -0.06096225407539464}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.04239175471130877}]"
+  },
+  {
+    "customer_id":"CUST-00066",
+    "is_churned_actual":0,
+    "churn_probability":0.0169,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0061,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.006096304182698106}, {\"feature\": \"age\", \"shap\": 0.0029585345228561083}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.0009411310126755366}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20602672216516835}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.048642475654232346}, {\"feature\": \"has_support_friction\", \"shap\": -0.042941558661924485}]"
+  },
+  {
+    "customer_id":"CUST-00067",
+    "is_churned_actual":0,
+    "churn_probability":0.0401,
+    "risk_tier":"Low",
+    "primary_risk_factor":"session_frequency_per_month",
+    "primary_risk_shap":0.0321,
+    "top_risk_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": 0.03209198365375465}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.028367620955632705}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01021981361704823}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.24146359525610508}, {\"feature\": \"recency_days\", \"shap\": -0.072298679576077}, {\"feature\": \"has_support_friction\", \"shap\": -0.05690038959547779}]"
+  },
+  {
+    "customer_id":"CUST-00068",
+    "is_churned_actual":0,
+    "churn_probability":0.0286,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.015,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.015007900411777858}, {\"feature\": \"tenure_months\", \"shap\": 0.003093230991242856}, {\"feature\": \"country_France\", \"shap\": 0.0011593557534310493}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20713902470718248}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05526424293615083}, {\"feature\": \"has_support_friction\", \"shap\": -0.04752693588363106}]"
+  },
+  {
+    "customer_id":"CUST-00069",
+    "is_churned_actual":0,
+    "churn_probability":0.0663,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0325,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.032465025663016914}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.02111209277984134}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.008519256410160414}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.23666988417526652}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.07993675794306844}, {\"feature\": \"has_support_friction\", \"shap\": -0.07084424784468893}]"
+  },
+  {
+    "customer_id":"CUST-00070",
+    "is_churned_actual":1,
+    "churn_probability":0.9845,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2057,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20568165260370455}, {\"feature\": \"has_support_friction\", \"shap\": 0.0673879997940155}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.03890862855237653}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.02781392582854827}, {\"feature\": \"recency_days\", \"shap\": -0.011947408699193715}, {\"feature\": \"contract_type_annual\", \"shap\": -0.007920873082076478}]"
+  },
+  {
+    "customer_id":"CUST-00071",
+    "is_churned_actual":0,
+    "churn_probability":0.015,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0373,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.037301242271694054}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.002325693314272129}, {\"feature\": \"country_Australia\", \"shap\": 0.000433613798587356}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.1935377634012861}, {\"feature\": \"has_support_friction\", \"shap\": -0.043419898394212626}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04189677594360644}]"
+  },
+  {
+    "customer_id":"CUST-00072",
+    "is_churned_actual":0,
+    "churn_probability":0.1744,
+    "risk_tier":"Low",
+    "primary_risk_factor":"has_support_friction",
+    "primary_risk_shap":0.0771,
+    "top_risk_factors":"[{\"feature\": \"has_support_friction\", \"shap\": 0.07714678292227292}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.030747058902148076}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.030335448930658645}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2964674953115559}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.1179081432821875}, {\"feature\": \"recency_days\", \"shap\": -0.038657603765073496}]"
+  },
+  {
+    "customer_id":"CUST-00073",
+    "is_churned_actual":0,
+    "churn_probability":0.027,
+    "risk_tier":"Low",
+    "primary_risk_factor":"total_session_minutes",
+    "primary_risk_shap":0.0051,
+    "top_risk_factors":"[{\"feature\": \"total_session_minutes\", \"shap\": 0.005111596068382934}, {\"feature\": \"tenure_months\", \"shap\": 0.00500845760790693}, {\"feature\": \"tenure_days\", \"shap\": 0.004534006600324964}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22763571978354294}, {\"feature\": \"has_support_friction\", \"shap\": -0.05853688445704432}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.044276246289662646}]"
+  },
+  {
+    "customer_id":"CUST-00074",
+    "is_churned_actual":1,
+    "churn_probability":0.9209,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.262,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.26197733246857596}, {\"feature\": \"failed_transactions_count\", \"shap\": 0.0469005461796734}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.03276389447114417}]",
+    "top_protective_factors":"[{\"feature\": \"has_support_friction\", \"shap\": -0.05013541857008136}, {\"feature\": \"recency_days\", \"shap\": -0.024554223010160112}, {\"feature\": \"total_tickets_count\", \"shap\": -0.014928822982503928}]"
+  },
+  {
+    "customer_id":"CUST-00075",
+    "is_churned_actual":0,
+    "churn_probability":0.0482,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0139,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013881269954028915}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.012020118087255697}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.004445265642648496}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22683201050330654}, {\"feature\": \"has_support_friction\", \"shap\": -0.052373162932605376}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.050758204913008864}]"
+  },
+  {
+    "customer_id":"CUST-00076",
+    "is_churned_actual":1,
+    "churn_probability":0.9412,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2395,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.23945549552846115}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.06733782397100324}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.03674974424937087}]",
+    "top_protective_factors":"[{\"feature\": \"has_support_friction\", \"shap\": -0.04803368026067616}, {\"feature\": \"active_day_ratio\", \"shap\": -0.02977864836379505}, {\"feature\": \"total_tickets_count\", \"shap\": -0.014884468312473812}]"
+  },
+  {
+    "customer_id":"CUST-00077",
+    "is_churned_actual":0,
+    "churn_probability":0.0182,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0323,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.0323194826090754}, {\"feature\": \"recency_days\", \"shap\": 0.009096466072579282}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0024717594639797258}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20190135830481215}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.06159464838920657}, {\"feature\": \"has_support_friction\", \"shap\": -0.0574818051947963}]"
+  },
+  {
+    "customer_id":"CUST-00078",
+    "is_churned_actual":0,
+    "churn_probability":0.0164,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0217,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.0216863178382696}, {\"feature\": \"contract_type_annual\", \"shap\": 0.002402893173858207}, {\"feature\": \"total_invoices_count\", \"shap\": 0.0018079372895153792}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.1983645833215516}, {\"feature\": \"has_support_friction\", \"shap\": -0.048873667193066066}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.042479296689603194}]"
+  },
+  {
+    "customer_id":"CUST-00079",
+    "is_churned_actual":0,
+    "churn_probability":0.0118,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0138,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01381833940171901}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.0007710807981444078}, {\"feature\": \"plan_tier_Starter\", \"shap\": 0.00033066271694334824}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20267540218474256}, {\"feature\": \"has_support_friction\", \"shap\": -0.04837145188498172}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04775228423675711}]"
+  },
+  {
+    "customer_id":"CUST-00080",
+    "is_churned_actual":0,
+    "churn_probability":0.0328,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0141,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014145827370208303}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.013151604546841092}, {\"feature\": \"total_session_minutes\", \"shap\": 0.003302404212629946}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22079177810306644}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05610173754051171}, {\"feature\": \"has_support_friction\", \"shap\": -0.055555530492405115}]"
+  },
+  {
+    "customer_id":"CUST-00081",
+    "is_churned_actual":0,
+    "churn_probability":0.0201,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0084,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.008398366085925342}, {\"feature\": \"tenure_months\", \"shap\": 0.0029140755288951485}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0023678154383860377}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.221851777914502}, {\"feature\": \"has_support_friction\", \"shap\": -0.05326960494640743}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.03969302940051587}]"
+  },
+  {
+    "customer_id":"CUST-00082",
+    "is_churned_actual":0,
+    "churn_probability":0.0171,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.013,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013029587101718297}, {\"feature\": \"contract_type_annual\", \"shap\": 0.001935492665318316}, {\"feature\": \"total_invoices_count\", \"shap\": 0.0010474752949247781}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20643742132337725}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.049475521941246825}, {\"feature\": \"has_support_friction\", \"shap\": -0.04857798800601458}]"
+  },
+  {
+    "customer_id":"CUST-00083",
+    "is_churned_actual":0,
+    "churn_probability":0.021,
+    "risk_tier":"Low",
+    "primary_risk_factor":"total_logins",
+    "primary_risk_shap":0.0073,
+    "top_risk_factors":"[{\"feature\": \"total_logins\", \"shap\": 0.007316425590060317}, {\"feature\": \"tenure_months\", \"shap\": 0.0026674417060853083}, {\"feature\": \"tenure_days\", \"shap\": 0.0026483478113485965}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20170221156092719}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04982286356346329}, {\"feature\": \"has_support_friction\", \"shap\": -0.0454486025288865}]"
+  },
+  {
+    "customer_id":"CUST-00084",
+    "is_churned_actual":0,
+    "churn_probability":0.0314,
+    "risk_tier":"Low",
+    "primary_risk_factor":"is_engagement_declining",
+    "primary_risk_shap":0.0178,
+    "top_risk_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": 0.01778634139412045}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.009993722542653296}, {\"feature\": \"total_invoices_count\", \"shap\": 0.0022517723212340155}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20743279352118552}, {\"feature\": \"has_support_friction\", \"shap\": -0.05702931558811307}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04893042509139359}]"
+  },
+  {
+    "customer_id":"CUST-00085",
+    "is_churned_actual":1,
+    "churn_probability":0.9961,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1903,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19031742248596054}, {\"feature\": \"has_support_friction\", \"shap\": 0.059279533846158354}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04105963101845149}]",
+    "top_protective_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": -0.0008232885342230561}, {\"feature\": \"plan_tier_Starter\", \"shap\": -0.000661228191301086}, {\"feature\": \"failed_transactions_count\", \"shap\": -0.0006431680551324332}]"
+  },
+  {
+    "customer_id":"CUST-00086",
+    "is_churned_actual":1,
+    "churn_probability":0.9872,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2066,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20655430859947346}, {\"feature\": \"has_support_friction\", \"shap\": 0.06491262945385426}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04170710052617697}]",
+    "top_protective_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": -0.0033270548954221725}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.003096618893243355}, {\"feature\": \"plan_tier_Starter\", \"shap\": -0.0009751502979161809}]"
+  },
+  {
+    "customer_id":"CUST-00087",
+    "is_churned_actual":1,
+    "churn_probability":0.997,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1943,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19429388279600654}, {\"feature\": \"has_support_friction\", \"shap\": 0.06123288616235948}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04127636389608579}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.007974692776740419}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0008317545502479676}, {\"feature\": \"country_Germany\", \"shap\": -0.0007166554951983789}]"
+  },
+  {
+    "customer_id":"CUST-00088",
+    "is_churned_actual":0,
+    "churn_probability":0.0457,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0487,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.04865989795630407}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01312492522116969}, {\"feature\": \"age\", \"shap\": 0.0030837984853211357}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20253679942189926}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04534925235599496}, {\"feature\": \"has_support_friction\", \"shap\": -0.044138124747767675}]"
+  },
+  {
+    "customer_id":"CUST-00089",
+    "is_churned_actual":1,
+    "churn_probability":0.7627,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.3766,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.37661218742884256}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.022983626257184767}, {\"feature\": \"recency_days\", \"shap\": 0.022912173125216317}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.04693470123324542}, {\"feature\": \"has_support_friction\", \"shap\": -0.036894704233477}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.02872983409370429}]"
+  },
+  {
+    "customer_id":"CUST-00090",
+    "is_churned_actual":0,
+    "churn_probability":0.0505,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0304,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.03043691920911455}, {\"feature\": \"recency_days\", \"shap\": 0.02646992032957752}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.022107667955787523}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20448588107533655}, {\"feature\": \"has_support_friction\", \"shap\": -0.0642892395930024}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.06033340422965059}]"
+  },
+  {
+    "customer_id":"CUST-00091",
+    "is_churned_actual":1,
+    "churn_probability":0.9207,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.3011,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.30109200729440605}, {\"feature\": \"failed_transactions_count\", \"shap\": 0.053275261806175825}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.04241387436746516}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.03857706433764253}, {\"feature\": \"has_support_friction\", \"shap\": -0.031699184828115935}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.019753825570138446}]"
+  },
+  {
+    "customer_id":"CUST-00092",
+    "is_churned_actual":1,
+    "churn_probability":0.8939,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2438,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.24377985162115742}, {\"feature\": \"has_support_friction\", \"shap\": 0.07890759678425946}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.05038145839953348}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.024227445492510304}, {\"feature\": \"total_logins\", \"shap\": -0.010880886186874116}, {\"feature\": \"total_session_minutes\", \"shap\": -0.008526351384554327}]"
+  },
+  {
+    "customer_id":"CUST-00093",
+    "is_churned_actual":0,
+    "churn_probability":0.0741,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0536,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.05359187668767793}, {\"feature\": \"total_logins\", \"shap\": 0.0066346797649757755}, {\"feature\": \"total_sessions\", \"shap\": 0.005468692674185733}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21676587220828744}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05773587098501627}, {\"feature\": \"has_support_friction\", \"shap\": -0.05600435550817311}]"
+  },
+  {
+    "customer_id":"CUST-00094",
+    "is_churned_actual":0,
+    "churn_probability":0.0214,
+    "risk_tier":"Low",
+    "primary_risk_factor":"age",
+    "primary_risk_shap":0.0039,
+    "top_risk_factors":"[{\"feature\": \"age\", \"shap\": 0.003912866549856637}, {\"feature\": \"tenure_months\", \"shap\": 0.0030531189977402455}, {\"feature\": \"acquisition_channel_Paid Ads\", \"shap\": 0.002801835011670018}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.200157693406535}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.044316110041538175}, {\"feature\": \"has_support_friction\", \"shap\": -0.04430510837297}]"
+  },
+  {
+    "customer_id":"CUST-00095",
+    "is_churned_actual":0,
+    "churn_probability":0.008,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0136,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01357573867675675}, {\"feature\": \"recency_days\", \"shap\": 0.013232129629231197}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0016918189045275782}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.207901094861521}, {\"feature\": \"has_support_friction\", \"shap\": -0.04947775874569465}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04755216840880658}]"
+  },
+  {
+    "customer_id":"CUST-00096",
+    "is_churned_actual":0,
+    "churn_probability":0.0384,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.028,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.02795791701134225}, {\"feature\": \"total_active_days\", \"shap\": 0.009392911125242069}, {\"feature\": \"total_sessions\", \"shap\": 0.005570560210577004}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.23904045964977275}, {\"feature\": \"has_support_friction\", \"shap\": -0.0628738021465058}, {\"feature\": \"recency_days\", \"shap\": -0.05790427118841261}]"
+  },
+  {
+    "customer_id":"CUST-00097",
+    "is_churned_actual":1,
+    "churn_probability":0.8202,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2992,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.29924302969519523}, {\"feature\": \"has_support_friction\", \"shap\": 0.08006528136484949}, {\"feature\": \"active_day_ratio\", \"shap\": 0.03532743010387735}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.06800238628339056}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.03435707602332621}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.0313529635250399}]"
+  },
+  {
+    "customer_id":"CUST-00098",
+    "is_churned_actual":0,
+    "churn_probability":0.0543,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.041,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.041016245804193566}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013340797116643459}, {\"feature\": \"age\", \"shap\": 0.0036997413617419123}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.204659996992462}, {\"feature\": \"has_support_friction\", \"shap\": -0.04859265425703331}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04538588301130981}]"
+  },
+  {
+    "customer_id":"CUST-00099",
+    "is_churned_actual":0,
+    "churn_probability":0.0532,
+    "risk_tier":"Low",
+    "primary_risk_factor":"is_engagement_declining",
+    "primary_risk_shap":0.0235,
+    "top_risk_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": 0.02349040498841883}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014144345898169737}, {\"feature\": \"contract_type_annual\", \"shap\": 0.002034957926688297}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20601660197505692}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05158870098562605}, {\"feature\": \"has_support_friction\", \"shap\": -0.0503229316778307}]"
+  },
+  {
+    "customer_id":"CUST-00100",
+    "is_churned_actual":0,
+    "churn_probability":0.1598,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0336,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.03355494448300626}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.03212989367103572}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.031162538772721415}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.28852874644130083}, {\"feature\": \"has_support_friction\", \"shap\": -0.07254407112910721}, {\"feature\": \"recency_days\", \"shap\": -0.06154860446246943}]"
+  },
+  {
+    "customer_id":"CUST-00101",
+    "is_churned_actual":0,
+    "churn_probability":0.0306,
+    "risk_tier":"Low",
+    "primary_risk_factor":"tenure_months",
+    "primary_risk_shap":0.0054,
+    "top_risk_factors":"[{\"feature\": \"tenure_months\", \"shap\": 0.005417472346082893}, {\"feature\": \"total_active_days\", \"shap\": 0.004892812056644264}, {\"feature\": \"tenure_days\", \"shap\": 0.004482346081195851}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19041048140523678}, {\"feature\": \"has_support_friction\", \"shap\": -0.04313695029240559}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.042518960870340405}]"
+  },
+  {
+    "customer_id":"CUST-00102",
+    "is_churned_actual":0,
+    "churn_probability":0.0391,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0226,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.02259029954630919}, {\"feature\": \"contract_type_annual\", \"shap\": 0.002675714815436833}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.002308999699871212}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20324664971957482}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.046044949770467726}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.045849449400614736}]"
+  },
+  {
+    "customer_id":"CUST-00103",
+    "is_churned_actual":0,
+    "churn_probability":0.0444,
+    "risk_tier":"Low",
+    "primary_risk_factor":"is_engagement_declining",
+    "primary_risk_shap":0.0196,
+    "top_risk_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": 0.019631116456719687}, {\"feature\": \"recency_days\", \"shap\": 0.017268221103517854}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.016358289647857755}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20386889890432092}, {\"feature\": \"has_support_friction\", \"shap\": -0.04877676707182693}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.045728163073147636}]"
+  },
+  {
+    "customer_id":"CUST-00104",
+    "is_churned_actual":0,
+    "churn_probability":0.2326,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0478,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.04779470863184389}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.043846659671585284}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.031735259396067}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.25303622113385876}, {\"feature\": \"has_support_friction\", \"shap\": -0.0814911878997576}, {\"feature\": \"total_tickets_count\", \"shap\": -0.025427283930168746}]"
+  },
+  {
+    "customer_id":"CUST-00105",
+    "is_churned_actual":0,
+    "churn_probability":0.149,
+    "risk_tier":"Low",
+    "primary_risk_factor":"has_support_friction",
+    "primary_risk_shap":0.084,
+    "top_risk_factors":"[{\"feature\": \"has_support_friction\", \"shap\": 0.08399057692158533}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.02185513214317118}, {\"feature\": \"is_engagement_declining\", \"shap\": 0.020079755469504}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2505815051520803}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.054110835967604305}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.046772992181779174}]"
+  },
+  {
+    "customer_id":"CUST-00106",
+    "is_churned_actual":1,
+    "churn_probability":0.9864,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2026,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20260158862329422}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.061085443453268454}, {\"feature\": \"has_support_friction\", \"shap\": 0.054282137675613594}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.03636958564148163}, {\"feature\": \"total_tickets_count\", \"shap\": -0.01435403607685119}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0010905890691313485}]"
+  },
+  {
+    "customer_id":"CUST-00107",
+    "is_churned_actual":1,
+    "churn_probability":0.7733,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.3717,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.37169931008417223}, {\"feature\": \"recency_days\", \"shap\": 0.030705491213921687}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.02742893756385172}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.042310367534317515}, {\"feature\": \"has_support_friction\", \"shap\": -0.03690364433088873}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.02706620204617545}]"
+  },
+  {
+    "customer_id":"CUST-00108",
+    "is_churned_actual":0,
+    "churn_probability":0.0595,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0316,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.031575835875548124}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.027567457990642114}, {\"feature\": \"active_day_ratio\", \"shap\": 0.01589501528434987}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2401697021741279}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.08624645332416342}, {\"feature\": \"has_support_friction\", \"shap\": -0.0738856806112691}]"
+  },
+  {
+    "customer_id":"CUST-00109",
+    "is_churned_actual":0,
+    "churn_probability":0.0387,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0147,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014748063118065216}, {\"feature\": \"total_logins\", \"shap\": 0.006520454078620425}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0017732034874427503}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20987730154514217}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.058158501051359966}, {\"feature\": \"has_support_friction\", \"shap\": -0.05259605955220999}]"
+  },
+  {
+    "customer_id":"CUST-00110",
+    "is_churned_actual":0,
+    "churn_probability":0.0205,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0153,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.015253164617029838}, {\"feature\": \"total_active_days\", \"shap\": 0.004273026549328098}, {\"feature\": \"tenure_months\", \"shap\": 0.0038668606739274323}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20850734737145113}, {\"feature\": \"has_support_friction\", \"shap\": -0.05258307809336157}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05109503311447272}]"
+  },
+  {
+    "customer_id":"CUST-00111",
+    "is_churned_actual":0,
+    "churn_probability":0.046,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.028,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.02798261421901568}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.020684613570883706}, {\"feature\": \"total_active_days\", \"shap\": 0.00802515988147818}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21393938212238192}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.06242851855874533}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.057221546338233745}]"
+  },
+  {
+    "customer_id":"CUST-00112",
+    "is_churned_actual":0,
+    "churn_probability":0.1729,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0597,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.05969834510689498}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.03163663013989408}, {\"feature\": \"total_tickets_count\", \"shap\": 0.022926744315079593}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.28164390178636145}, {\"feature\": \"has_support_friction\", \"shap\": -0.09065066463934958}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.027638651688813774}]"
+  },
+  {
+    "customer_id":"CUST-00113",
+    "is_churned_actual":1,
+    "churn_probability":0.856,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2835,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2835117932815181}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.0831142093997417}, {\"feature\": \"has_support_friction\", \"shap\": 0.05461969513103688}]",
+    "top_protective_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.049642286982956}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.04259112809756644}, {\"feature\": \"total_logins\", \"shap\": -0.0100715837024954}]"
+  },
+  {
+    "customer_id":"CUST-00114",
+    "is_churned_actual":0,
+    "churn_probability":0.1203,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0626,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.06260342041105656}, {\"feature\": \"total_tickets_count\", \"shap\": 0.026466357476002664}, {\"feature\": \"acquisition_channel_Social Media\", \"shap\": 0.004272296930655847}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.23879380765902705}, {\"feature\": \"has_support_friction\", \"shap\": -0.06503008189035779}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.04765371348416201}]"
+  },
+  {
+    "customer_id":"CUST-00115",
+    "is_churned_actual":1,
+    "churn_probability":0.9863,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.195,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19497244395005744}, {\"feature\": \"has_support_friction\", \"shap\": 0.0557422445428908}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.03649708487711439}]",
+    "top_protective_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": -0.015119553223027929}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0007477723131732115}, {\"feature\": \"plan_tier_Starter\", \"shap\": -0.0005287011152068388}]"
+  },
+  {
+    "customer_id":"CUST-00116",
+    "is_churned_actual":0,
+    "churn_probability":0.0238,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0137,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013684617768593995}, {\"feature\": \"total_logins\", \"shap\": 0.004573410173401073}, {\"feature\": \"historical_revenue\", \"shap\": 0.003952915077177265}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21096011943284917}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.06042373761475733}, {\"feature\": \"has_support_friction\", \"shap\": -0.052808189986404755}]"
+  },
+  {
+    "customer_id":"CUST-00117",
+    "is_churned_actual":1,
+    "churn_probability":0.9404,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2619,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.26192524084238905}, {\"feature\": \"has_support_friction\", \"shap\": 0.07362264767828965}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05431163608763457}]",
+    "top_protective_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.041774607095143815}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.036760627064998566}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.0040248557766411446}]"
+  },
+  {
+    "customer_id":"CUST-00118",
+    "is_churned_actual":0,
+    "churn_probability":0.0492,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0298,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.029832854849565823}, {\"feature\": \"total_tickets_count\", \"shap\": 0.01792883421943758}, {\"feature\": \"total_active_days\", \"shap\": 0.007426876489956992}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22018068629708393}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.06496521771447475}, {\"feature\": \"recency_days\", \"shap\": -0.05621491040012966}]"
+  },
+  {
+    "customer_id":"CUST-00119",
+    "is_churned_actual":0,
+    "churn_probability":0.0381,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0136,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013636262400986475}, {\"feature\": \"total_logins\", \"shap\": 0.008281752172344625}, {\"feature\": \"total_session_minutes\", \"shap\": 0.0034108493376395835}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2164582373815147}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.058839348832853876}, {\"feature\": \"has_support_friction\", \"shap\": -0.0506389279038607}]"
+  },
+  {
+    "customer_id":"CUST-00120",
+    "is_churned_actual":1,
+    "churn_probability":1.0,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1801,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.1800828655829823}, {\"feature\": \"has_support_friction\", \"shap\": 0.04516000368393969}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.034446587243695176}]",
+    "top_protective_factors":"[{\"feature\": \"total_invoices_count\", \"shap\": -0.0007272939444142912}, {\"feature\": \"country_Australia\", \"shap\": -0.0006481503064117458}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0005874396573172909}]"
+  },
+  {
+    "customer_id":"CUST-00121",
+    "is_churned_actual":0,
+    "churn_probability":0.1108,
+    "risk_tier":"Low",
+    "primary_risk_factor":"has_support_friction",
+    "primary_risk_shap":0.0724,
+    "top_risk_factors":"[{\"feature\": \"has_support_friction\", \"shap\": 0.07240721394320271}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.03736793688474337}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.027851208694048283}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.24836454837383962}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.08995805844530887}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.0753291890300708}]"
+  },
+  {
+    "customer_id":"CUST-00122",
+    "is_churned_actual":0,
+    "churn_probability":0.012,
+    "risk_tier":"Low",
+    "primary_risk_factor":"contract_type_annual",
+    "primary_risk_shap":0.0024,
+    "top_risk_factors":"[{\"feature\": \"contract_type_annual\", \"shap\": 0.0024076282234355016}, {\"feature\": \"acquisition_channel_Paid Ads\", \"shap\": 0.0019281603531582953}, {\"feature\": \"acquisition_channel_Referral\", \"shap\": 0.0001557981266903}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19322239346616515}, {\"feature\": \"has_support_friction\", \"shap\": -0.054533270015293275}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04963698255228737}]"
+  },
+  {
+    "customer_id":"CUST-00123",
+    "is_churned_actual":0,
+    "churn_probability":0.0775,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0281,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.02806446834357091}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.020732564635447055}, {\"feature\": \"is_engagement_declining\", \"shap\": 0.01576827926665755}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22334461424704075}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.08731027131636244}, {\"feature\": \"has_support_friction\", \"shap\": -0.07719263851131768}]"
+  },
+  {
+    "customer_id":"CUST-00124",
+    "is_churned_actual":0,
+    "churn_probability":0.0159,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0134,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013448290222275049}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.00048093614707415267}, {\"feature\": \"plan_tier_Starter\", \"shap\": 0.00038629645410193466}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20420458836543443}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04890040742180373}, {\"feature\": \"has_support_friction\", \"shap\": -0.04796610682901299}]"
+  },
+  {
+    "customer_id":"CUST-00125",
+    "is_churned_actual":0,
+    "churn_probability":0.0186,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0143,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014300362249503986}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0017604614360091037}, {\"feature\": \"contract_type_monthly\", \"shap\": 0.0008577111241555329}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2087199061525316}, {\"feature\": \"has_support_friction\", \"shap\": -0.05028163571771725}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04836066763829776}]"
+  },
+  {
+    "customer_id":"CUST-00126",
+    "is_churned_actual":0,
+    "churn_probability":0.013,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0134,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.013415959825844228}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.001028727325237134}, {\"feature\": \"plan_tier_Starter\", \"shap\": 0.0006265314081693148}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.18821316868569046}, {\"feature\": \"has_support_friction\", \"shap\": -0.04486608381017505}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.040533839145333504}]"
+  },
+  {
+    "customer_id":"CUST-00127",
+    "is_churned_actual":0,
+    "churn_probability":0.0488,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0271,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.027118957326126056}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.02381546277270259}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0028486371794404896}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21074470983305707}, {\"feature\": \"has_support_friction\", \"shap\": -0.0523522466629781}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05155815903526991}]"
+  },
+  {
+    "customer_id":"CUST-00128",
+    "is_churned_actual":1,
+    "churn_probability":0.9634,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2084,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20841719566944383}, {\"feature\": \"has_support_friction\", \"shap\": 0.060388173770156116}, {\"feature\": \"recency_days\", \"shap\": 0.04219388929486657}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.03523374761797654}, {\"feature\": \"active_day_ratio\", \"shap\": -0.008478294820227987}, {\"feature\": \"total_active_days\", \"shap\": -0.0045904305905171815}]"
+  },
+  {
+    "customer_id":"CUST-00129",
+    "is_churned_actual":0,
+    "churn_probability":0.0069,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0183,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.018313358426387497}, {\"feature\": \"age\", \"shap\": 0.002450516664331588}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.0011745307046872758}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19090339790006222}, {\"feature\": \"has_support_friction\", \"shap\": -0.0468885350574083}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04418752845077417}]"
+  },
+  {
+    "customer_id":"CUST-00130",
+    "is_churned_actual":0,
+    "churn_probability":0.1228,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0532,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.05316080302975772}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.03848262546352991}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.029752255822763522}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2583070174464164}, {\"feature\": \"recency_days\", \"shap\": -0.07342195455494109}, {\"feature\": \"has_support_friction\", \"shap\": -0.06414701923062352}]"
+  },
+  {
+    "customer_id":"CUST-00131",
+    "is_churned_actual":0,
+    "churn_probability":0.0369,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0189,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.0188530189837203}, {\"feature\": \"age\", \"shap\": 0.005613000593874513}, {\"feature\": \"acquisition_channel_Paid Ads\", \"shap\": 0.003596105649440334}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20663174859576114}, {\"feature\": \"has_support_friction\", \"shap\": -0.048240184046271076}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04569928457126399}]"
+  },
+  {
+    "customer_id":"CUST-00132",
+    "is_churned_actual":1,
+    "churn_probability":0.9939,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1887,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.18866604058007386}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05466543643005494}, {\"feature\": \"has_support_friction\", \"shap\": 0.05436363370315981}]",
+    "top_protective_factors":"[{\"feature\": \"acquisition_channel_Referral\", \"shap\": -0.0021290650057827426}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0007107229737515773}, {\"feature\": \"failed_transactions_count\", \"shap\": -0.0005943476565940948}]"
+  },
+  {
+    "customer_id":"CUST-00133",
+    "is_churned_actual":0,
+    "churn_probability":0.0769,
+    "risk_tier":"Low",
+    "primary_risk_factor":"is_engagement_declining",
+    "primary_risk_shap":0.0246,
+    "top_risk_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": 0.024640486759816265}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.0161885408343946}, {\"feature\": \"tenure_months\", \"shap\": 0.003996758242049481}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21078724666032964}, {\"feature\": \"has_support_friction\", \"shap\": -0.04888180863248083}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.048178659946484195}]"
+  },
+  {
+    "customer_id":"CUST-00134",
+    "is_churned_actual":1,
+    "churn_probability":0.9954,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2195,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21951635799342703}, {\"feature\": \"has_support_friction\", \"shap\": 0.08382072161625881}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05605218413099807}]",
+    "top_protective_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": -0.00781870361528251}, {\"feature\": \"total_logins\", \"shap\": -0.006761145138319676}, {\"feature\": \"total_active_days\", \"shap\": -0.004840078837386669}]"
+  },
+  {
+    "customer_id":"CUST-00135",
+    "is_churned_actual":1,
+    "churn_probability":0.9968,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2006,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20058117059646455}, {\"feature\": \"has_support_friction\", \"shap\": 0.06427261862580279}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05226759470036726}]",
+    "top_protective_factors":"[{\"feature\": \"plan_tier_Starter\", \"shap\": -0.001024391606483272}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0009072340917887739}, {\"feature\": \"failed_transactions_count\", \"shap\": -0.0007131922938518393}]"
+  },
+  {
+    "customer_id":"CUST-00136",
+    "is_churned_actual":0,
+    "churn_probability":0.0263,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0142,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014200747493690616}, {\"feature\": \"tenure_months\", \"shap\": 0.006376155908195932}, {\"feature\": \"total_sessions\", \"shap\": 0.005978592975754352}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2174803150317343}, {\"feature\": \"has_support_friction\", \"shap\": -0.05836530793451932}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05734637790591166}]"
+  },
+  {
+    "customer_id":"CUST-00137",
+    "is_churned_actual":1,
+    "churn_probability":0.8148,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.323,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.3230217833876529}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.09881285395272354}, {\"feature\": \"recency_days\", \"shap\": 0.0536283421534068}]",
+    "top_protective_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05665757059773077}, {\"feature\": \"has_support_friction\", \"shap\": -0.03848555222188816}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.02685830508884095}]"
+  },
+  {
+    "customer_id":"CUST-00138",
+    "is_churned_actual":0,
+    "churn_probability":0.0264,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0127,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.012737592163131922}, {\"feature\": \"age\", \"shap\": 0.0068867282049478425}, {\"feature\": \"tenure_days\", \"shap\": 0.004697260013790623}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2139441135521701}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.06068769936198161}, {\"feature\": \"has_support_friction\", \"shap\": -0.0549694895414291}]"
+  },
+  {
+    "customer_id":"CUST-00139",
+    "is_churned_actual":1,
+    "churn_probability":0.984,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2155,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21546026057978862}, {\"feature\": \"has_support_friction\", \"shap\": 0.07952838295703012}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.05015528689612033}]",
+    "top_protective_factors":"[{\"feature\": \"total_logins\", \"shap\": -0.006051946241656767}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.005760332492268714}, {\"feature\": \"country_Australia\", \"shap\": -0.005218926649771032}]"
+  },
+  {
+    "customer_id":"CUST-00140",
+    "is_churned_actual":0,
+    "churn_probability":0.0271,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0184,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.018447071866311306}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.015002814901166209}, {\"feature\": \"country_France\", \"shap\": 0.0014004387240929871}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20364963465699343}, {\"feature\": \"has_support_friction\", \"shap\": -0.05027678884450044}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04903408211453235}]"
+  },
+  {
+    "customer_id":"CUST-00141",
+    "is_churned_actual":1,
+    "churn_probability":0.9094,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.3108,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.31084180436555814}, {\"feature\": \"has_support_friction\", \"shap\": 0.0808719698205161}, {\"feature\": \"recency_days\", \"shap\": 0.046603266909311034}]",
+    "top_protective_factors":"[{\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.03771464339605404}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.03498399358215419}, {\"feature\": \"total_tickets_count\", \"shap\": -0.012102266567301366}]"
+  },
+  {
+    "customer_id":"CUST-00142",
+    "is_churned_actual":0,
+    "churn_probability":0.0187,
+    "risk_tier":"Low",
+    "primary_risk_factor":"total_tickets_count",
+    "primary_risk_shap":0.0197,
+    "top_risk_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": 0.019735769758128317}, {\"feature\": \"contract_type_annual\", \"shap\": 0.002171748071280844}, {\"feature\": \"total_invoices_count\", \"shap\": 0.0017611700561502722}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20695391634620453}, {\"feature\": \"has_support_friction\", \"shap\": -0.05460694970062766}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05096316309144545}]"
+  },
+  {
+    "customer_id":"CUST-00143",
+    "is_churned_actual":1,
+    "churn_probability":0.9936,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1966,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19662310536061656}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.06110689136842018}, {\"feature\": \"has_support_friction\", \"shap\": 0.056335262572387496}]",
+    "top_protective_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": -0.004845774057155543}, {\"feature\": \"avg_session_minutes\", \"shap\": -0.0034187207803665952}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0025953680632270645}]"
+  },
+  {
+    "customer_id":"CUST-00144",
+    "is_churned_actual":1,
+    "churn_probability":0.9938,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2162,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.21622584048741045}, {\"feature\": \"has_support_friction\", \"shap\": 0.06994792235430768}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.06519190981399453}]",
+    "top_protective_factors":"[{\"feature\": \"contract_type_annual\", \"shap\": -0.007039175090031876}, {\"feature\": \"total_logins\", \"shap\": -0.006295684304520825}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.005310818324457147}]"
+  },
+  {
+    "customer_id":"CUST-00145",
+    "is_churned_actual":0,
+    "churn_probability":0.0107,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0205,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.02048521726423056}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.003012365468452369}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.0010504485188378458}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21003537455957744}, {\"feature\": \"has_support_friction\", \"shap\": -0.0461828621985275}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.044724059574361055}]"
+  },
+  {
+    "customer_id":"CUST-00146",
+    "is_churned_actual":0,
+    "churn_probability":0.0104,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0144,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014411391100994321}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0020117687104923474}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.0011798833026852422}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20185546661310036}, {\"feature\": \"has_support_friction\", \"shap\": -0.05124814122221667}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04973392725219659}]"
+  },
+  {
+    "customer_id":"CUST-00147",
+    "is_churned_actual":1,
+    "churn_probability":0.9932,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.194,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.1940329596240752}, {\"feature\": \"has_support_friction\", \"shap\": 0.05225558798124369}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.03983470706857575}]",
+    "top_protective_factors":"[{\"feature\": \"contract_type_annual\", \"shap\": -0.007167017025166564}, {\"feature\": \"total_invoices_count\", \"shap\": -0.002553846745087165}, {\"feature\": \"contract_type_monthly\", \"shap\": -0.002107165866613625}]"
+  },
+  {
+    "customer_id":"CUST-00148",
+    "is_churned_actual":0,
+    "churn_probability":0.0432,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.034,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.03402860888904541}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.003635056156147319}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.0027168336931993747}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2161137877321761}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04942359663420593}, {\"feature\": \"has_support_friction\", \"shap\": -0.04529647415999303}]"
+  },
+  {
+    "customer_id":"CUST-00149",
+    "is_churned_actual":0,
+    "churn_probability":0.1057,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0506,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.05063333984031006}, {\"feature\": \"total_invoices_count\", \"shap\": 0.018544822996948648}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013854507757175652}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20161725786088575}, {\"feature\": \"has_support_friction\", \"shap\": -0.04584521513816146}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.041811494414926535}]"
+  },
+  {
+    "customer_id":"CUST-00150",
+    "is_churned_actual":1,
+    "churn_probability":0.9272,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2562,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2562268355210695}, {\"feature\": \"has_support_friction\", \"shap\": 0.0775158798254212}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.037700765341802125}]",
+    "top_protective_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": -0.03612953340981096}, {\"feature\": \"total_tickets_count\", \"shap\": -0.018250870935586704}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.009452014872124971}]"
+  },
+  {
+    "customer_id":"CUST-00151",
+    "is_churned_actual":0,
+    "churn_probability":0.0855,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0308,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.030778865854800948}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.023112265632640464}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.016233449404191316}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.23939964476524628}, {\"feature\": \"recency_days\", \"shap\": -0.06269348822981241}, {\"feature\": \"has_support_friction\", \"shap\": -0.0616596733624604}]"
+  },
+  {
+    "customer_id":"CUST-00152",
+    "is_churned_actual":0,
+    "churn_probability":0.0042,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0177,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.01774124066704179}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014031848725654508}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.0012825606296481152}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2000938078872929}, {\"feature\": \"has_support_friction\", \"shap\": -0.05026117587284212}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.047155050055861986}]"
+  },
+  {
+    "customer_id":"CUST-00153",
+    "is_churned_actual":1,
+    "churn_probability":0.9984,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1942,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19423672417346746}, {\"feature\": \"has_support_friction\", \"shap\": 0.05508676406102409}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.034879484168278754}]",
+    "top_protective_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": -0.0073925873843072865}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.000774092075873009}, {\"feature\": \"plan_tier_Starter\", \"shap\": -0.00045676300648730993}]"
+  },
+  {
+    "customer_id":"CUST-00154",
+    "is_churned_actual":1,
+    "churn_probability":0.9951,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2027,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2027252816240207}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.0653648506507893}, {\"feature\": \"has_support_friction\", \"shap\": 0.05630597508112795}]",
+    "top_protective_factors":"[{\"feature\": \"contract_type_annual\", \"shap\": -0.00741377980556017}, {\"feature\": \"contract_type_monthly\", \"shap\": -0.0035875587807791777}, {\"feature\": \"active_day_ratio\", \"shap\": -0.0032790652234829533}]"
+  },
+  {
+    "customer_id":"CUST-00155",
+    "is_churned_actual":1,
+    "churn_probability":0.9948,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.187,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.18696131054824497}, {\"feature\": \"has_support_friction\", \"shap\": 0.054350593828899924}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.03668389156413634}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.004396501504963689}, {\"feature\": \"acquisition_channel_Referral\", \"shap\": -0.003751511548375697}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0009796875211677074}]"
+  },
+  {
+    "customer_id":"CUST-00156",
+    "is_churned_actual":1,
+    "churn_probability":0.8792,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2635,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.26346621852594815}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.06703945505627415}, {\"feature\": \"has_support_friction\", \"shap\": 0.05406775184109271}]",
+    "top_protective_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.048630044277549}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.045615341862890714}, {\"feature\": \"tenure_days\", \"shap\": -0.009456641494349927}]"
+  },
+  {
+    "customer_id":"CUST-00157",
+    "is_churned_actual":0,
+    "churn_probability":0.0389,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0136,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013572969768522996}, {\"feature\": \"contract_type_annual\", \"shap\": 0.002094535024203459}, {\"feature\": \"contract_type_monthly\", \"shap\": 0.0016670747569165552}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21043527565752143}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.055182000034711874}, {\"feature\": \"has_support_friction\", \"shap\": -0.0526104196135383}]"
+  },
+  {
+    "customer_id":"CUST-00158",
+    "is_churned_actual":0,
+    "churn_probability":0.0227,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0149,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014857776506262738}, {\"feature\": \"avg_session_minutes\", \"shap\": 0.0005907581906085081}, {\"feature\": \"gender_Female\", \"shap\": 0.00020632109203871384}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2013046769655119}, {\"feature\": \"has_support_friction\", \"shap\": -0.04979219610193704}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.049117889595189916}]"
+  },
+  {
+    "customer_id":"CUST-00159",
+    "is_churned_actual":0,
+    "churn_probability":0.0249,
+    "risk_tier":"Low",
+    "primary_risk_factor":"tenure_days",
+    "primary_risk_shap":0.005,
+    "top_risk_factors":"[{\"feature\": \"tenure_days\", \"shap\": 0.005020740992718204}, {\"feature\": \"total_active_days\", \"shap\": 0.004757744289044498}, {\"feature\": \"tenure_months\", \"shap\": 0.004691261342897043}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20501045158513093}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.051240272415792786}, {\"feature\": \"recency_days\", \"shap\": -0.05084468595773038}]"
+  },
+  {
+    "customer_id":"CUST-00160",
+    "is_churned_actual":0,
+    "churn_probability":0.4096,
+    "risk_tier":"Medium",
+    "primary_risk_factor":"has_support_friction",
+    "primary_risk_shap":0.0881,
+    "top_risk_factors":"[{\"feature\": \"has_support_friction\", \"shap\": 0.08812578446246332}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.039969355489025256}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.038778169602116885}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2968500217190767}, {\"feature\": \"recency_days\", \"shap\": -0.04056362169676474}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.024261807170047254}]"
+  },
+  {
+    "customer_id":"CUST-00161",
+    "is_churned_actual":1,
+    "churn_probability":0.9936,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1891,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.18911005659611477}, {\"feature\": \"has_support_friction\", \"shap\": 0.054272039011870034}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.0349014152428151}]",
+    "top_protective_factors":"[{\"feature\": \"avg_session_minutes\", \"shap\": -0.002358957427105699}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0007204697207420919}, {\"feature\": \"failed_transactions_count\", \"shap\": -0.0005504084825456969}]"
+  },
+  {
+    "customer_id":"CUST-00162",
+    "is_churned_actual":0,
+    "churn_probability":0.0082,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0223,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.0223159858437103}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.0006954653658151443}, {\"feature\": \"plan_tier_Starter\", \"shap\": 0.0005556387526777227}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20130831029042315}, {\"feature\": \"has_support_friction\", \"shap\": -0.05767177120240623}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05624161558614207}]"
+  },
+  {
+    "customer_id":"CUST-00163",
+    "is_churned_actual":0,
+    "churn_probability":0.0247,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0134,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.013377154357139072}, {\"feature\": \"tenure_days\", \"shap\": 0.004478431560326562}, {\"feature\": \"tenure_months\", \"shap\": 0.003920347127960806}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21083880507013264}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05821805282151059}, {\"feature\": \"has_support_friction\", \"shap\": -0.05488731078928602}]"
+  },
+  {
+    "customer_id":"CUST-00164",
+    "is_churned_actual":0,
+    "churn_probability":0.1054,
+    "risk_tier":"Low",
+    "primary_risk_factor":"urgent_ticket_ratio",
+    "primary_risk_shap":0.0326,
+    "top_risk_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.032647035043385716}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.03114716415501722}, {\"feature\": \"total_active_days\", \"shap\": 0.008919218186376456}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2427745823804458}, {\"feature\": \"has_support_friction\", \"shap\": -0.07495764436317388}, {\"feature\": \"recency_days\", \"shap\": -0.03143278230307179}]"
+  },
+  {
+    "customer_id":"CUST-00165",
+    "is_churned_actual":0,
+    "churn_probability":0.0257,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0135,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.01345434509185538}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01344125862362507}, {\"feature\": \"tenure_days\", \"shap\": 0.005355252163427978}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22374042240672667}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.06279095967470844}, {\"feature\": \"has_support_friction\", \"shap\": -0.053547668990237295}]"
+  },
+  {
+    "customer_id":"CUST-00166",
+    "is_churned_actual":0,
+    "churn_probability":0.0054,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.016,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.015993151462728738}, {\"feature\": \"recency_days\", \"shap\": 0.012818052199756418}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.0008632180611452424}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20821753078113586}, {\"feature\": \"has_support_friction\", \"shap\": -0.05854375898658619}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.054637862010102956}]"
+  },
+  {
+    "customer_id":"CUST-00167",
+    "is_churned_actual":0,
+    "churn_probability":0.0539,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0201,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.020051531680542144}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.01480048986225305}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014508263591539599}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21877242569881722}, {\"feature\": \"has_support_friction\", \"shap\": -0.04945014801378324}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.044831065408786834}]"
+  },
+  {
+    "customer_id":"CUST-00168",
+    "is_churned_actual":1,
+    "churn_probability":0.9818,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1962,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19623408299697845}, {\"feature\": \"has_support_friction\", \"shap\": 0.0518827708405535}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.050648438307018734}]",
+    "top_protective_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": -0.01551912381689569}, {\"feature\": \"plan_tier_Growth\", \"shap\": -0.0009896421972148122}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0006347774090090596}]"
+  },
+  {
+    "customer_id":"CUST-00169",
+    "is_churned_actual":0,
+    "churn_probability":0.0486,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0181,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.018102985858892865}, {\"feature\": \"total_logins\", \"shap\": 0.008379765423366799}, {\"feature\": \"total_sessions\", \"shap\": 0.00828972170132942}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2199660412991219}, {\"feature\": \"has_support_friction\", \"shap\": -0.05956605187654366}, {\"feature\": \"recency_days\", \"shap\": -0.05318326521670765}]"
+  },
+  {
+    "customer_id":"CUST-00170",
+    "is_churned_actual":0,
+    "churn_probability":0.02,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0143,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.014336062961012124}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.005933581690262162}, {\"feature\": \"acquisition_channel_Paid Ads\", \"shap\": 0.002105673649590098}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20960125720210424}, {\"feature\": \"has_support_friction\", \"shap\": -0.04810068532577879}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.047815991544190244}]"
+  },
+  {
+    "customer_id":"CUST-00171",
+    "is_churned_actual":0,
+    "churn_probability":0.0458,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0402,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.040196244595713186}, {\"feature\": \"total_tickets_count\", \"shap\": 0.017847054260654985}, {\"feature\": \"is_engagement_declining\", \"shap\": 0.016083655633620575}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2068896972047847}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.07065102447159335}, {\"feature\": \"has_support_friction\", \"shap\": -0.05977222763000268}]"
+  },
+  {
+    "customer_id":"CUST-00172",
+    "is_churned_actual":0,
+    "churn_probability":0.0123,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0097,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.009665911052545618}, {\"feature\": \"age\", \"shap\": 0.0006529114518531316}, {\"feature\": \"country_United States\", \"shap\": 0.00011512762437135518}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.184304290922072}, {\"feature\": \"has_support_friction\", \"shap\": -0.043029470016494015}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04248932654772112}]"
+  },
+  {
+    "customer_id":"CUST-00173",
+    "is_churned_actual":0,
+    "churn_probability":0.0346,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0103,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.010342521461061951}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.007410955062037801}, {\"feature\": \"contract_type_annual\", \"shap\": 0.001671910739939695}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22869922747289964}, {\"feature\": \"has_support_friction\", \"shap\": -0.06011383639214337}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.045961724808246285}]"
+  },
+  {
+    "customer_id":"CUST-00174",
+    "is_churned_actual":0,
+    "churn_probability":0.0725,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0427,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.04271405345624306}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.030529677217322818}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.027261772295192166}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.23037588582321963}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.09942033340183612}, {\"feature\": \"has_support_friction\", \"shap\": -0.08198897711256017}]"
+  },
+  {
+    "customer_id":"CUST-00175",
+    "is_churned_actual":0,
+    "churn_probability":0.0111,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0234,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.023433642002964897}, {\"feature\": \"plan_tier_Growth\", \"shap\": 0.0016441500170660782}, {\"feature\": \"plan_tier_Starter\", \"shap\": 0.0007963127188153846}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.18944160244847288}, {\"feature\": \"has_support_friction\", \"shap\": -0.04241885605630144}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.040308078632825185}]"
+  },
+  {
+    "customer_id":"CUST-00176",
+    "is_churned_actual":0,
+    "churn_probability":0.0227,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0046,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.0045968956281437715}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.002309262957802347}, {\"feature\": \"contract_type_annual\", \"shap\": 0.002297326863741621}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.211815056416}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.049531909752823455}, {\"feature\": \"has_support_friction\", \"shap\": -0.047429943122949104}]"
+  },
+  {
+    "customer_id":"CUST-00177",
+    "is_churned_actual":1,
+    "churn_probability":0.9831,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1995,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.19949221584607132}, {\"feature\": \"has_support_friction\", \"shap\": 0.06075288008687751}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04423762810532627}]",
+    "top_protective_factors":"[{\"feature\": \"contract_type_annual\", \"shap\": -0.00928659805860398}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.0035976723123586855}, {\"feature\": \"total_invoices_count\", \"shap\": -0.0033224807729809644}]"
+  },
+  {
+    "customer_id":"CUST-00178",
+    "is_churned_actual":0,
+    "churn_probability":0.0099,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0143,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014310219176499397}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0021833377707135703}, {\"feature\": \"contract_type_monthly\", \"shap\": 0.0009245175608877362}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20295326449817017}, {\"feature\": \"has_support_friction\", \"shap\": -0.050406462022075584}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04914627254925813}]"
+  },
+  {
+    "customer_id":"CUST-00179",
+    "is_churned_actual":0,
+    "churn_probability":0.0172,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0166,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.016602428870066802}, {\"feature\": \"country_United Kingdom\", \"shap\": 0.0011337266305543956}, {\"feature\": \"tenure_months\", \"shap\": 0.0009516452986671623}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.1970613156562089}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04878212118656983}, {\"feature\": \"has_support_friction\", \"shap\": -0.04876535928135449}]"
+  },
+  {
+    "customer_id":"CUST-00180",
+    "is_churned_actual":0,
+    "churn_probability":0.1009,
+    "risk_tier":"Low",
+    "primary_risk_factor":"has_support_friction",
+    "primary_risk_shap":0.0852,
+    "top_risk_factors":"[{\"feature\": \"has_support_friction\", \"shap\": 0.08522038492932865}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.021811580828071848}, {\"feature\": \"acquisition_channel_Paid Ads\", \"shap\": 0.00150518116646564}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2376985627785063}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.05259313713373725}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.049968373652956304}]"
+  },
+  {
+    "customer_id":"CUST-00181",
+    "is_churned_actual":0,
+    "churn_probability":0.0212,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0213,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.021300434698371753}, {\"feature\": \"total_active_days\", \"shap\": 0.004013675886548287}, {\"feature\": \"tenure_days\", \"shap\": 0.0029457034940040664}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20366403444649875}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.051047020387722186}, {\"feature\": \"recency_days\", \"shap\": -0.04974344504188829}]"
+  },
+  {
+    "customer_id":"CUST-00182",
+    "is_churned_actual":0,
+    "churn_probability":0.0178,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.0379,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.03789181294902953}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0021683809001460355}, {\"feature\": \"avg_session_minutes\", \"shap\": 0.000535177479897778}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.19936802889779912}, {\"feature\": \"has_support_friction\", \"shap\": -0.061670159891651796}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.05830855475514544}]"
+  },
+  {
+    "customer_id":"CUST-00183",
+    "is_churned_actual":0,
+    "churn_probability":0.0423,
+    "risk_tier":"Low",
+    "primary_risk_factor":"active_day_ratio",
+    "primary_risk_shap":0.0279,
+    "top_risk_factors":"[{\"feature\": \"active_day_ratio\", \"shap\": 0.027906680739891502}, {\"feature\": \"total_active_days\", \"shap\": 0.006324791179854873}, {\"feature\": \"tenure_months\", \"shap\": 0.0047633602348260695}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2017329807503708}, {\"feature\": \"has_support_friction\", \"shap\": -0.048390659641528035}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04550794375055077}]"
+  },
+  {
+    "customer_id":"CUST-00184",
+    "is_churned_actual":1,
+    "churn_probability":0.9926,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2034,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20340831818433228}, {\"feature\": \"has_support_friction\", \"shap\": 0.06372493042571009}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.054510181833463914}]",
+    "top_protective_factors":"[{\"feature\": \"recency_days\", \"shap\": -0.015794678926935073}, {\"feature\": \"session_frequency_per_month\", \"shap\": -0.010025285209110533}, {\"feature\": \"avg_session_minutes\", \"shap\": -0.00621989630620959}]"
+  },
+  {
+    "customer_id":"CUST-00185",
+    "is_churned_actual":1,
+    "churn_probability":0.9924,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2132,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.2132435530121674}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.06952567246090921}, {\"feature\": \"has_support_friction\", \"shap\": 0.06815517935875325}]",
+    "top_protective_factors":"[{\"feature\": \"total_active_days\", \"shap\": -0.005798476617597774}, {\"feature\": \"total_logins\", \"shap\": -0.00394838253321175}, {\"feature\": \"tenure_days\", \"shap\": -0.003895461732040074}]"
+  },
+  {
+    "customer_id":"CUST-00186",
+    "is_churned_actual":0,
+    "churn_probability":0.0244,
+    "risk_tier":"Low",
+    "primary_risk_factor":"total_tickets_count",
+    "primary_risk_shap":0.0174,
+    "top_risk_factors":"[{\"feature\": \"total_tickets_count\", \"shap\": 0.017367685173722638}, {\"feature\": \"contract_type_annual\", \"shap\": 0.0021390922338043908}, {\"feature\": \"contract_type_monthly\", \"shap\": 0.001323390650952249}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20230691298508013}, {\"feature\": \"has_support_friction\", \"shap\": -0.05149378327199128}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.04847932934287251}]"
+  },
+  {
+    "customer_id":"CUST-00187",
+    "is_churned_actual":0,
+    "churn_probability":0.0424,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0128,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01280225616598273}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.009144649556354937}, {\"feature\": \"historical_revenue\", \"shap\": 0.00506159913539217}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.22735102079239466}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.0584001966636516}, {\"feature\": \"has_support_friction\", \"shap\": -0.052463775464203964}]"
+  },
+  {
+    "customer_id":"CUST-00188",
+    "is_churned_actual":0,
+    "churn_probability":0.0093,
+    "risk_tier":"Low",
+    "primary_risk_factor":"recency_days",
+    "primary_risk_shap":0.0234,
+    "top_risk_factors":"[{\"feature\": \"recency_days\", \"shap\": 0.023358103201273565}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014767009265180367}, {\"feature\": \"plan_tier_Professional\", \"shap\": 0.0015401660215812831}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20316688324963852}, {\"feature\": \"has_support_friction\", \"shap\": -0.05054711123114804}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04656861646783361}]"
+  },
+  {
+    "customer_id":"CUST-00189",
+    "is_churned_actual":1,
+    "churn_probability":0.9994,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.1989,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.1988872369056171}, {\"feature\": \"has_support_friction\", \"shap\": 0.06379357335157972}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04803271760363416}]",
+    "top_protective_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": -0.0023700213842919727}, {\"feature\": \"avg_session_minutes\", \"shap\": -0.001551724336276204}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.0009505863422795526}]"
+  },
+  {
+    "customer_id":"CUST-00190",
+    "is_churned_actual":1,
+    "churn_probability":0.76,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.3157,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.31573183536912075}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.032100348115045876}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.025159342361721355}]",
+    "top_protective_factors":"[{\"feature\": \"has_support_friction\", \"shap\": -0.06419510451705841}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.02659546308506865}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.015541216522562778}]"
+  },
+  {
+    "customer_id":"CUST-00191",
+    "is_churned_actual":0,
+    "churn_probability":0.0257,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0129,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01286434201237722}, {\"feature\": \"tenure_months\", \"shap\": 0.005957772217606085}, {\"feature\": \"total_active_days\", \"shap\": 0.005503078105998437}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21184314831103954}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05577888865572085}, {\"feature\": \"has_support_friction\", \"shap\": -0.05015528443217364}]"
+  },
+  {
+    "customer_id":"CUST-00192",
+    "is_churned_actual":1,
+    "churn_probability":0.99,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.205,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20500171650287266}, {\"feature\": \"has_support_friction\", \"shap\": 0.06400483580392463}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.0523924256512372}]",
+    "top_protective_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": -0.005455009759483218}, {\"feature\": \"avg_session_minutes\", \"shap\": -0.004949579679915777}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.0026485712288321778}]"
+  },
+  {
+    "customer_id":"CUST-00193",
+    "is_churned_actual":0,
+    "churn_probability":0.0888,
+    "risk_tier":"Low",
+    "primary_risk_factor":"high_urgency_tickets_count",
+    "primary_risk_shap":0.023,
+    "top_risk_factors":"[{\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.023010235511075526}, {\"feature\": \"session_frequency_per_month\", \"shap\": 0.022883964778820553}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.022011444886367935}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.24854821708489327}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.07309335794761344}, {\"feature\": \"has_support_friction\", \"shap\": -0.06307764318861085}]"
+  },
+  {
+    "customer_id":"CUST-00194",
+    "is_churned_actual":0,
+    "churn_probability":0.0372,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.0127,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.012730887856417671}, {\"feature\": \"is_engagement_declining\", \"shap\": 0.01072403932435142}, {\"feature\": \"total_sessions\", \"shap\": 0.006184888469382855}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2136076454854886}, {\"feature\": \"recency_days\", \"shap\": -0.055940470136171566}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05576654719138272}]"
+  },
+  {
+    "customer_id":"CUST-00195",
+    "is_churned_actual":1,
+    "churn_probability":0.9953,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2078,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.20781535689327676}, {\"feature\": \"has_support_friction\", \"shap\": 0.063418375184727}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04953605466454194}]",
+    "top_protective_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": -0.001938185392108988}, {\"feature\": \"login_frequency_per_month\", \"shap\": -0.001623477650237607}, {\"feature\": \"is_engagement_declining\", \"shap\": -0.0010240797247736716}]"
+  },
+  {
+    "customer_id":"CUST-00196",
+    "is_churned_actual":0,
+    "churn_probability":0.111,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_resolution_hours",
+    "primary_risk_shap":0.059,
+    "top_risk_factors":"[{\"feature\": \"avg_resolution_hours\", \"shap\": 0.05896679509774194}, {\"feature\": \"urgent_ticket_ratio\", \"shap\": 0.03354962117051605}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": 0.027506718973001883}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.26264564910704347}, {\"feature\": \"has_support_friction\", \"shap\": -0.08554715324144663}, {\"feature\": \"avg_satisfaction_score\", \"shap\": -0.03130899526817255}]"
+  },
+  {
+    "customer_id":"CUST-00197",
+    "is_churned_actual":0,
+    "churn_probability":0.0183,
+    "risk_tier":"Low",
+    "primary_risk_factor":"avg_satisfaction_score",
+    "primary_risk_shap":0.014,
+    "top_risk_factors":"[{\"feature\": \"avg_satisfaction_score\", \"shap\": 0.014043746865065335}, {\"feature\": \"age\", \"shap\": 0.0036565199452004444}, {\"feature\": \"acquisition_channel_Paid Ads\", \"shap\": 0.0028357447089623587}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.21012511300691797}, {\"feature\": \"has_support_friction\", \"shap\": -0.049427939021947635}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04787125388823789}]"
+  },
+  {
+    "customer_id":"CUST-00198",
+    "is_churned_actual":0,
+    "churn_probability":0.047,
+    "risk_tier":"Low",
+    "primary_risk_factor":"is_engagement_declining",
+    "primary_risk_shap":0.0211,
+    "top_risk_factors":"[{\"feature\": \"is_engagement_declining\", \"shap\": 0.021145517659650833}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.015619527818528036}, {\"feature\": \"avg_session_minutes\", \"shap\": 0.0006652679004062139}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.20821203468740201}, {\"feature\": \"has_support_friction\", \"shap\": -0.05025345621244657}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.04800181642504448}]"
+  },
+  {
+    "customer_id":"CUST-00199",
+    "is_churned_actual":1,
+    "churn_probability":0.9096,
+    "risk_tier":"Critical",
+    "primary_risk_factor":"monthly_price",
+    "primary_risk_shap":0.2647,
+    "top_risk_factors":"[{\"feature\": \"monthly_price\", \"shap\": 0.26469586225116143}, {\"feature\": \"has_support_friction\", \"shap\": 0.0704684214858172}, {\"feature\": \"avg_resolution_hours\", \"shap\": 0.04903048465961447}]",
+    "top_protective_factors":"[{\"feature\": \"urgent_ticket_ratio\", \"shap\": -0.04238577071023609}, {\"feature\": \"high_urgency_tickets_count\", \"shap\": -0.040176148659585645}, {\"feature\": \"failed_transactions_count\", \"shap\": -0.0012178962628369874}]"
+  },
+  {
+    "customer_id":"CUST-00200",
+    "is_churned_actual":0,
+    "churn_probability":0.0839,
+    "risk_tier":"Low",
+    "primary_risk_factor":"session_frequency_per_month",
+    "primary_risk_shap":0.0315,
+    "top_risk_factors":"[{\"feature\": \"session_frequency_per_month\", \"shap\": 0.031515674831375746}, {\"feature\": \"login_frequency_per_month\", \"shap\": 0.028282638878936377}, {\"feature\": \"avg_satisfaction_score\", \"shap\": 0.01246360431921188}]",
+    "top_protective_factors":"[{\"feature\": \"monthly_price\", \"shap\": -0.2376961533258163}, {\"feature\": \"avg_resolution_hours\", \"shap\": -0.05700093367620885}, {\"feature\": \"has_support_friction\", \"shap\": -0.05039324795024878}]"
+  }
+]
