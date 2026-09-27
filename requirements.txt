@@ -1,1 +1,11 @@
+# Customer360 Root Requirements
 -r api/requirements.txt
+
+# Phase 1 Data Foundation & Analytics Engineering
+pandas>=2.2.0
+numpy>=1.26.0
+pyarrow>=15.0.0
+duckdb>=0.10.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9
+faker>=24.0.0

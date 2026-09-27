@@ -29,7 +29,7 @@ const STACK_LAYERS: TechStackItem[] = [
     icon: <Database size={20} color="#3b82f6" />,
     technologies: ['PostgreSQL 16', 'DuckDB', 'Parquet', 'Polars', 'Pandas'],
     role: 'Hybrid OLTP transactional ingest and OLAP vectorized analytics engine.',
-    phase0Status: 'scaffolded',
+    phase0Status: 'implemented',
   },
   {
     layer: 'Analytics Engineering',

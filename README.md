@@ -95,7 +95,58 @@ Phase 0 establishes the engineering baseline for the platform:
 
 ---
 
-## 5. Quickstart / Local Setup
+## 5. Phase 1 Status: Data Foundation & Analytical Datasets
+
+Phase 1 establishes the production-grade data foundation and realistic subscription telemetry:
+
+* [x] **9 Core Entities**: Created `plans`, `customers`, `subscriptions`, `transactions`, `payments`, `support_tickets`, `customer_engagement`, `product_usage`, `churn_events`.
+* [x] **Statistically Realistic Behavioral Distributions**:
+  * Tenure and pricing tiers influence activity and ticket volume.
+  * Declining engagement (sessions, duration, features) directly precedes churn.
+  * Support friction (high priority, poor satisfaction) correlates with churn.
+  * Contract commitments (monthly vs annual) drive distinct retention curves.
+  * Involuntary churn triggered by realistic payment delinquency.
+  * Zero target leakage across timestamps and events.
+* [x] **PostgreSQL 16 Schema & Index Architecture**:
+  * Schema DDL: `database/schema.sql` (PK, FK cascades, check constraints, default values).
+  * Performance Indexes: `database/indexes.sql` on foreign keys, temporal timestamps, and lookup columns.
+  * Bulk Ingestion: `database/load_data.sql` and `database/init_db.py`.
+* [x] **Columnar Parquet & DuckDB OLAP Engine**:
+  * Clean Snappy-compressed Parquet files stored in `data/processed/`.
+  * Embedded DuckDB query engine in `analytics/duckdb_client.py` executing vectorized joins.
+* [x] **Automated Data Quality Gatekeeper**:
+  * Automated validator `analytics/data_quality.py` checking duplicate IDs, null required fields, invalid dates, foreign key orphans, negative amounts, impossible states, and duplicate transactions.
+  * **Result**: **53/53 Checks Passed (100% Quality Score)** documented in `docs/data_quality_report.md`.
+* [x] **Complete Data Documentation**:
+  * Entity-Relationship diagram, column dictionary, and generation logic documented in `docs/data_dictionary.md`.
+
+
+---
+
+## 6. Dataset Reproduction & Verification Commands
+
+To reproduce the dataset from scratch, run validation, and execute DuckDB analytical queries:
+
+```bash
+# 1. Regenerate synthetic dataset with fixed seed (outputs to data/raw/ and data/processed/)
+python data/generate_dataset.py
+
+# 2. Run Data Quality Gatekeeper (53 validation rules)
+python analytics/data_quality.py
+
+# 3. Run embedded DuckDB analytical aggregations over Parquet
+python analytics/duckdb_client.py
+
+# 4. Ingest into PostgreSQL (requires running postgres service)
+python database/init_db.py
+
+# 5. Run automated test suite
+pytest tests/ -v
+```
+
+---
+
+## 7. Local Setup & Execution
 
 ### Step 1: Environment Setup
 

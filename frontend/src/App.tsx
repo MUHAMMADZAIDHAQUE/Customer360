@@ -5,6 +5,7 @@ import { StatusCard } from './components/StatusCard';
 import { LandingHero } from './components/LandingHero';
 import { ArchitectureView } from './components/ArchitectureView';
 import { DiagnosticsView } from './components/DiagnosticsView';
+import { DataFoundationView } from './components/DataFoundationView';
 import { UpcomingModuleView } from './components/UpcomingModuleView';
 import { HealthState } from './types';
 
@@ -101,7 +102,14 @@ export const App: React.FC = () => {
             </div>
           )}
 
-          {currentTab !== 'overview' && currentTab !== 'diagnostics' && (
+          {currentTab === 'data-foundation' && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+              <StatusCard healthState={healthState} onRefresh={checkHealth} />
+              <DataFoundationView />
+            </div>
+          )}
+
+          {currentTab !== 'overview' && currentTab !== 'diagnostics' && currentTab !== 'data-foundation' && (
             <UpcomingModuleView
               tabId={currentTab}
               onBackToOverview={() => setCurrentTab('overview')}

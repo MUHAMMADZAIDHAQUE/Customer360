@@ -11,6 +11,7 @@ import {
   BarChart4,
   CheckCircle2,
   Lock,
+  Database,
 } from 'lucide-react';
 import { NavSection } from '../types';
 
@@ -36,6 +37,14 @@ export const NAV_SECTIONS: NavSection[] = [
         label: 'API & Health Check',
         description: 'Live FastAPI connection diagnostics',
         phase: 'Phase 0',
+        status: 'active',
+        badge: 'LIVE',
+      },
+      {
+        id: 'data-foundation',
+        label: 'Data Foundation & Schema',
+        description: 'PostgreSQL & Parquet 9-entity relational model',
+        phase: 'Phase 1',
         status: 'active',
         badge: 'LIVE',
       },
@@ -112,6 +121,7 @@ export const NAV_SECTIONS: NavSection[] = [
 const ICONS: Record<string, React.ReactNode> = {
   overview: <LayoutDashboard size={18} />,
   diagnostics: <Activity size={18} />,
+  'data-foundation': <Database size={18} />,
   'customer-profiles': <Users size={18} />,
   rfm: <GitFork size={18} />,
   cohorts: <BarChart4 size={18} />,
@@ -198,10 +208,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentTab, onSelectTab }) => 
         <div style={styles.footerCard}>
           <div style={styles.footerHeader}>
             <span style={styles.statusDot} />
-            <span style={styles.phaseLabel}>Phase 0 Scaffolding</span>
+            <span style={styles.phaseLabel}>Phase 1 Data Foundation</span>
           </div>
           <p style={styles.footerDesc}>
-            Foundational architecture &amp; FastAPI health services active.
+            PostgreSQL DDL, DuckDB &amp; 9 Parquet analytical tables active.
           </p>
         </div>
       </div>
