@@ -26,6 +26,10 @@ class DuckDBClient:
         """Establish or return active DuckDB connection."""
         if self._con is None:
             self._con = duckdb.connect(database=self.db_path, read_only=self.read_only)
+            try:
+                self._con.execute("USE main_marts;")
+            except Exception:
+                pass
         return self._con
 
     def close(self) -> None:
@@ -48,18 +52,21 @@ class DuckDBClient:
             if os.path.exists(parquet_file):
                 # Create permanent tables or replacement views in DuckDB
                 con.execute(f"""
-                    CREATE OR REPLACE VIEW {table} AS 
+                    CREATE OR REPLACE VIEW main.{table} AS 
                     SELECT * FROM read_parquet('{parquet_file}');
                 """)
-                # Also create persistent physical table in duckdb file
-                con.execute(f"""
-                    CREATE TABLE IF NOT EXISTS duck_{table} AS 
-                    SELECT * FROM read_parquet('{parquet_file}');
-                """)
+        try:
+            con.execute("USE main_marts;")
+        except Exception:
+            pass
 
     def query(self, sql: str) -> pd.DataFrame:
         """Execute arbitrary SQL query and return results as Pandas DataFrame."""
         con = self.connect()
+        try:
+            con.execute("USE main_marts;")
+        except Exception:
+            pass
         return con.execute(sql).df()
 
     def query_dict(self, sql: str) -> List[Dict[str, Any]]:

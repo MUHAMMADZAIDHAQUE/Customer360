@@ -59,6 +59,7 @@ pnpm-debug.log*
 dbt/target/
 dbt/dbt_packages/
 dbt/logs/
+dbt/.user.yml
 
 # Data & Database (preserve structure with .gitkeep, ignore data dumps and db files)
 data/raw/*

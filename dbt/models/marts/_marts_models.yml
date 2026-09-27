@@ -1,0 +1,105 @@
+version: 2
+
+models:
+  - name: mart_customer_360
+    description: "Authoritative, unified 360-degree customer dimensional mart"
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: customer_status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['active', 'churned', 'paused']
+      - name: current_mrr
+        tests:
+          - not_null
+      - name: current_arr
+        tests:
+          - not_null
+      - name: is_at_risk
+        tests:
+          - not_null
+
+  - name: mart_customer_revenue
+    description: "Customer commercial spend and revenue ranking mart"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: total_realized_revenue
+        tests:
+          - not_null
+      - name: customer_revenue_tier
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Top 50', 'Top 200', 'General']
+
+  - name: mart_customer_churn
+    description: "Multidimensional churn analysis mart"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: is_churned
+        tests:
+          - not_null
+
+  - name: mart_customer_segments
+    description: "Recency, Frequency, Monetary (RFM) segmentation mart"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: r_score
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: f_score
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: m_score
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: rfm_segment
+        tests:
+          - not_null
+
+  - name: mart_cohort_retention
+    description: "Monthly customer cohort decay and retention matrix mart"
+    columns:
+      - name: cohort_month
+        tests:
+          - not_null
+      - name: month_number
+        tests:
+          - not_null
+      - name: retention_rate_pct
+        tests:
+          - not_null
+
+  - name: mart_monthly_kpis
+    description: "Executive monthly recurring revenue and subscription KPI trends"
+    columns:
+      - name: observation_month
+        tests:
+          - unique
+          - not_null
+      - name: active_mrr
+        tests:
+          - not_null
+      - name: active_arr
+        tests:
+          - not_null

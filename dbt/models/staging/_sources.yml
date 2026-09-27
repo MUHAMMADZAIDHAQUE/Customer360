@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: raw_parquet
+    description: "Analytical Parquet datasets generated in Phase 1"
+    meta:
+      external_location: "/Users/zaidhaque/Desktop/Customer360/data/processed/{name}.parquet"
+    tables:
+      - name: customers
+        description: "Customer accounts and demographic profiles"
+      - name: plans
+        description: "Catalog of subscription plan tiers and pricing"
+      - name: subscriptions
+        description: "Contractual customer subscription records"
+      - name: transactions
+        description: "Billing invoices and transaction ledger"
+      - name: payments
+        description: "Gateway payment execution attempts"
+      - name: support_tickets
+        description: "Customer support interactions and satisfaction ratings"
+      - name: customer_engagement
+        description: "Weekly rolled-up sessions and active platform days"
+      - name: product_usage
+        description: "Granular feature usage counts and duration metrics"
+      - name: churn_events
+        description: "Account cancellation departures and exit reasons"

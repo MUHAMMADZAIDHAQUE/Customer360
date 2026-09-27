@@ -1,0 +1,133 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Staged and sanitized customer profiles"
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - unique
+          - not_null
+      - name: customer_status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['active', 'churned', 'paused']
+      - name: signup_date
+        tests:
+          - not_null
+
+  - name: stg_plans
+    description: "Catalog of subscription pricing tiers"
+    columns:
+      - name: plan_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: tier
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Starter', 'Growth', 'Professional', 'Enterprise']
+
+  - name: stg_subscriptions
+    description: "Staged subscription contractual agreements"
+    columns:
+      - name: subscription_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: plan_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_plans')
+              field: plan_id
+      - name: contract_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['monthly', 'annual', 'multi_year']
+      - name: status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['active', 'cancelled', 'past_due', 'expired']
+
+  - name: stg_transactions
+    description: "Staged commercial billing transactions"
+    columns:
+      - name: transaction_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: payment_status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['succeeded', 'failed', 'refunded', 'pending']
+
+  - name: stg_payments
+    description: "Staged gateway payment settlements"
+    columns:
+      - name: payment_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: transaction_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_transactions')
+              field: transaction_id
+
+  - name: stg_support
+    description: "Staged support tickets and satisfaction scores"
+    columns:
+      - name: ticket_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+  - name: stg_engagement
+    description: "Staged weekly customer session telemetry"
+    columns:
+      - name: engagement_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id

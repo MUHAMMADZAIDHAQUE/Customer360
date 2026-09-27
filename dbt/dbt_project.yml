@@ -1,0 +1,33 @@
+name: 'customer360_analytics'
+version: '1.0.0'
+config-version: 2
+
+profile: 'customer360_profile'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  customer360_analytics:
+    # Staging: 1:1 view over raw Parquet/DuckDB tables with renaming and casting
+    staging:
+      +materialized: view
+      +schema: staging
+
+    # Intermediate: business logic, entity aggregations, and dimensional prep
+    intermediate:
+      +materialized: view
+      +schema: intermediate
+
+    # Marts: Star schema, wide analytics tables, and KPI marts
+    marts:
+      +materialized: table
+      +schema: marts
