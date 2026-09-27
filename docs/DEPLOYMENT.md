@@ -63,8 +63,9 @@ Customer360 includes a production-ready **Render Blueprint** (`render.yaml`) tha
    *This creates all 9 relational tables, applies B-Tree performance indexes, and ingests the synthetic Customer360 dataset.*
 5. **Access Your Live Platform**:
    * Frontend URL: `https://customer360-frontend.onrender.com`
-   * Backend API: `https://customer360-api.onrender.com`
-   * OpenAPI Documentation: `https://customer360-api.onrender.com/docs`
+   * Backend API: `https://customer360-api-u4k0.onrender.com`
+   * OpenAPI Documentation: `https://customer360-api-u4k0.onrender.com/docs`
+   * Health Check: `https://customer360-api-u4k0.onrender.com/health`
 
 ---
 

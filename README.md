@@ -16,12 +16,12 @@
 
 | Resource | URL | Description |
 | :--- | :--- | :--- |
-| **Live Frontend App** | [https://customer360.onrender.com](https://customer360.onrender.com) | Production React 18 SPA with real-time TreeSHAP ML scoring & AI Analyst |
-| **Public REST API** | [https://customer360-api.onrender.com](https://customer360-api.onrender.com) | FastAPI backend serving analytical marts & inference endpoints |
-| **Interactive API Docs** | [https://customer360-api.onrender.com/docs](https://customer360-api.onrender.com/docs) | Interactive OpenAPI Swagger UI documentation |
-| **Health Check Endpoint** | [https://customer360-api.onrender.com/health](https://customer360-api.onrender.com/health) | Live system health and PostgreSQL connection status probe |
+| **Live Frontend App** | [https://customer360-frontend.onrender.com](https://customer360-frontend.onrender.com) | Production React 18 SPA with real-time TreeSHAP ML scoring & AI Analyst |
+| **Public REST API** | [https://customer360-api-u4k0.onrender.com](https://customer360-api-u4k0.onrender.com) | FastAPI backend serving analytical marts & inference endpoints |
+| **Interactive API Docs** | [https://customer360-api-u4k0.onrender.com/docs](https://customer360-api-u4k0.onrender.com/docs) | Interactive OpenAPI Swagger UI documentation |
+| **Health Check Endpoint** | [https://customer360-api-u4k0.onrender.com/health](https://customer360-api-u4k0.onrender.com/health) | Live system health and PostgreSQL connection status probe |
 | **Deployment Runbook** | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Complete step-by-step cloud deployment & infrastructure guide |
-| **Verification Report** | [DEPLOYMENT_REPORT.md](DEPLOYMENT_REPORT.md) | Comprehensive 8-category production readiness audit report |
+| **Production Verification** | [docs/PRODUCTION_VERIFICATION_REPORT.md](docs/PRODUCTION_VERIFICATION_REPORT.md) | Live cloud verification report & test matrix |
 
 ---
 

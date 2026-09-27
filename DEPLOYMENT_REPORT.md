@@ -169,12 +169,10 @@ flowchart TD
 
 ## 6. Public Deployment Mapping
 
-When the repository is linked to Render, Vercel, or Netlify:
-
-* **Frontend Production URL**: `https://customer360.onrender.com` (or `https://customer360.vercel.app`)
-* **Backend API URL**: `https://customer360-api.onrender.com`
-* **API Documentation**: `https://customer360-api.onrender.com/docs`
-* **API Health Check**: `https://customer360-api.onrender.com/health`
+* **Frontend Production URL**: `https://customer360-frontend.onrender.com`
+* **Backend API URL**: `https://customer360-api-u4k0.onrender.com`
+* **API Documentation**: `https://customer360-api-u4k0.onrender.com/docs`
+* **API Health Check**: `https://customer360-api-u4k0.onrender.com/health`
 
 ---
 
