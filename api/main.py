@@ -46,7 +46,37 @@ tags_metadata = [
     {"name": "AI Analyst", "description": "Grounded natural-language customer intelligence copilot."}
 ]
 
+import threading
+from contextlib import asynccontextmanager
+
+
+def _background_db_init():
+    """Initializes PostgreSQL schemas, tables, and loads data in background thread."""
+    try:
+        from database.init_db import initialize_postgres
+        initialize_postgres()
+    except Exception as e:
+        logger.warning(f"Background PostgreSQL initialization notice: {e}")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Ensure duckdb analytical marts are ready
+    try:
+        from api.database import analytics_service
+        analytics_service._ensure_db_ready()
+    except Exception as e:
+        logger.warning(f"Analytical marts readiness notice: {e}")
+
+    # Trigger background PostgreSQL initialization without blocking web server startup
+    t = threading.Thread(target=_background_db_init, daemon=True)
+    t.start()
+
+    yield
+
+
 app = FastAPI(
+    lifespan=lifespan,
     title=settings.PROJECT_NAME,
     description="""
 # Customer360 REST API
