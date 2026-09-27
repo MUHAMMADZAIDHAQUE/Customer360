@@ -32,7 +32,7 @@ const rawEnvUrl = (((import.meta as any).env?.VITE_API_URL as string | undefined
 const ENV_API_URL = rawEnvUrl
   ? rawEnvUrl.startsWith('http://') || rawEnvUrl.startsWith('https://') || rawEnvUrl.startsWith('/')
     ? rawEnvUrl
-    : `https://${rawEnvUrl}`
+    : `https://${rawEnvUrl.includes('.') ? rawEnvUrl : `${rawEnvUrl}.onrender.com`}`
   : '';
 const API_BASE = ENV_API_URL || '/api';
 const DIRECT_API_BASE = ENV_API_URL || 'http://127.0.0.1:8000';

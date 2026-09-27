@@ -3,7 +3,7 @@ customer360_profile:
   outputs:
     dev:
       type: duckdb
-      path: "/Users/zaidhaque/Desktop/Customer360/data/processed/customer360.duckdb"
+      path: "data/processed/customer360.duckdb"
       threads: 1
       extensions:
         - parquet

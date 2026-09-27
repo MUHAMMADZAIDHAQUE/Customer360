@@ -56,7 +56,29 @@ class AnalyticalDataService:
         self.db_path = db_path or os.path.join(self.base_dir, "data", "processed", "customer360.duckdb")
         self.predictions_parquet_path = os.path.join(self.base_dir, "ml", "artifacts", "customer_churn_predictions.parquet")
 
+    def _ensure_db_ready(self):
+        if not os.path.exists(self.db_path):
+            os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
+            try:
+                from data.generate_dataset import generate_all_datasets, export_datasets
+                datasets = generate_all_datasets(num_customers=1500)
+                export_datasets(datasets)
+            except Exception:
+                pass
+            try:
+                import subprocess
+                subprocess.run(
+                    ["dbt", "run", "--project-dir", "dbt", "--profiles-dir", "dbt"],
+                    cwd=self.base_dir,
+                    capture_output=True,
+                    timeout=60
+                )
+            except Exception:
+                pass
+
     def get_connection(self):
+        if not os.path.exists(self.db_path):
+            self._ensure_db_ready()
         return duckdb.connect(self.db_path, read_only=True)
 
     def query_df(self, sql: str, params: Optional[List[Any]] = None) -> pd.DataFrame:

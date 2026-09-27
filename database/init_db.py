@@ -53,6 +53,14 @@ def initialize_postgres(db_url: str = None) -> bool:
     try:
         engine = create_engine(url, isolation_level="AUTOCOMMIT")
         with engine.connect() as conn:
+            try:
+                count = conn.execute(text("SELECT COUNT(*) FROM customer360.customers;")).scalar()
+                if count and count >= 1500:
+                    print(f"PostgreSQL customer360 schema already initialized with {count} customer records. Skipping re-ingestion.")
+                    return True
+            except Exception:
+                pass
+
             # Execute schema DDL
             with open(SCHEMA_SQL, "r") as f:
                 schema_ddl = f.read()
