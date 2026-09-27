@@ -120,10 +120,9 @@ class AIAnalystService:
                 SELECT 
                     churn_reason,
                     COUNT(*) as count,
-                    ROUND(SUM(p.monthly_price * 12), 0) as lost_arr
-                FROM churn_events ce
-                JOIN subscriptions s ON ce.subscription_id = s.subscription_id
-                JOIN plans p ON s.plan_id = p.plan_id
+                    ROUND(SUM(current_arr), 0) as lost_arr
+                FROM main_marts.mart_customer_360
+                WHERE is_churned AND churn_reason IS NOT NULL
                 GROUP BY churn_reason
                 ORDER BY count DESC
                 LIMIT 4;
@@ -314,12 +313,12 @@ class AIAnalystService:
 
             by_plan = con.execute("""
                 SELECT 
-                    p.plan_name,
-                    COUNT(CASE WHEN c.is_at_risk THEN 1 END) as at_risk_accounts,
-                    ROUND(SUM(c.revenue_at_risk), 0) as arr_at_risk
-                FROM plans p
-                LEFT JOIN main_marts.mart_customer_360 c ON p.plan_id = c.plan_id AND c.customer_status = 'active'
-                GROUP BY p.plan_name
+                    plan_name,
+                    COUNT(CASE WHEN is_at_risk THEN 1 END) as at_risk_accounts,
+                    ROUND(SUM(revenue_at_risk), 0) as arr_at_risk
+                FROM main_marts.mart_customer_360
+                WHERE customer_status = 'active'
+                GROUP BY plan_name
                 ORDER BY arr_at_risk DESC;
             """).df()
 
@@ -421,19 +420,18 @@ class AIAnalystService:
         try:
             df = con.execute("""
                 SELECT 
-                    p.plan_name,
-                    p.tier,
-                    ROUND(CAST(p.monthly_price AS DOUBLE), 2) as monthly_price,
-                    COUNT(c.customer_id) as total_customers,
-                    SUM(CASE WHEN c.customer_status = 'active' THEN 1 ELSE 0 END) as active_customers,
-                    SUM(CASE WHEN c.is_churned THEN 1 ELSE 0 END) as churned_customers,
-                    ROUND(AVG(CASE WHEN c.customer_status = 'active' THEN 1.0 ELSE 0.0 END) * 100, 1) as retention_rate_pct,
-                    ROUND(AVG(CASE WHEN c.is_churned THEN 1.0 ELSE 0.0 END) * 100, 1) as churn_rate_pct,
-                    ROUND(AVG(c.current_mrr), 2) as arpu,
-                    ROUND(AVG(c.tenure_months), 1) as avg_tenure
-                FROM plans p
-                LEFT JOIN main_marts.mart_customer_360 c ON p.plan_id = c.plan_id
-                GROUP BY p.plan_name, p.tier, p.monthly_price
+                    plan_name,
+                    plan_tier as tier,
+                    ROUND(AVG(current_mrr), 2) as monthly_price,
+                    COUNT(customer_id) as total_customers,
+                    SUM(CASE WHEN customer_status = 'active' THEN 1 ELSE 0 END) as active_customers,
+                    SUM(CASE WHEN is_churned THEN 1 ELSE 0 END) as churned_customers,
+                    ROUND(AVG(CASE WHEN customer_status = 'active' THEN 1.0 ELSE 0.0 END) * 100, 1) as retention_rate_pct,
+                    ROUND(AVG(CASE WHEN is_churned THEN 1.0 ELSE 0.0 END) * 100, 1) as churn_rate_pct,
+                    ROUND(AVG(current_mrr), 2) as arpu,
+                    ROUND(AVG(tenure_months), 1) as avg_tenure
+                FROM main_marts.mart_customer_360
+                GROUP BY plan_name, plan_tier
                 ORDER BY retention_rate_pct DESC;
             """).df()
         finally:
@@ -520,7 +518,7 @@ class AIAnalystService:
                     c.customer_id,
                     c.full_name,
                     c.email,
-                    p.plan_name,
+                    c.plan_name,
                     c.contract_type,
                     ROUND(CAST(c.current_arr AS DOUBLE), 0) as current_arr,
                     ROUND(CAST(c.revenue_at_risk AS DOUBLE), 0) as arr_at_risk,
@@ -530,7 +528,6 @@ class AIAnalystService:
                     COALESCE(s.rfm_segment, 'At Risk Accounts') as rfm_segment,
                     COALESCE(s.retention_playbook, 'Proactive CSM Health Review') as retention_playbook
                 FROM main_marts.mart_customer_360 c
-                JOIN plans p ON c.plan_id = p.plan_id
                 LEFT JOIN main_marts.mart_customer_segments s ON c.customer_id = s.customer_id
                 WHERE c.customer_status = 'active' AND c.is_at_risk = TRUE
                 ORDER BY c.current_arr DESC, c.revenue_at_risk DESC
