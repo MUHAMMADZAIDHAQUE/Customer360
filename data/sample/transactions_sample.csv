@@ -1,0 +1,21 @@
+transaction_id,customer_id,subscription_id,transaction_date,amount,transaction_type,payment_method,payment_status,created_at
+TXN-0000001,CUST-00001,SUB-000001,2026-03-19 02:15:00,790.0,subscription_charge,credit_card,succeeded,2026-03-19 02:15:00
+TXN-0000002,CUST-00002,SUB-000002,2025-11-01 02:15:00,290.0,subscription_charge,credit_card,succeeded,2025-11-01 02:15:00
+TXN-0000003,CUST-00003,SUB-000003,2026-02-17 02:15:00,290.0,subscription_charge,paypal,succeeded,2026-02-17 02:15:00
+TXN-0000004,CUST-00004,SUB-000004,2025-02-06 02:15:00,290.0,subscription_charge,credit_card,succeeded,2025-02-06 02:15:00
+TXN-0000005,CUST-00004,SUB-000004,2026-02-06 02:15:00,290.0,subscription_charge,credit_card,succeeded,2026-02-06 02:15:00
+TXN-0000006,CUST-00005,SUB-000005,2025-05-13 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-05-13 02:15:00
+TXN-0000007,CUST-00005,SUB-000005,2025-06-12 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-06-12 02:15:00
+TXN-0000008,CUST-00005,SUB-000005,2025-07-12 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-07-12 02:15:00
+TXN-0000009,CUST-00005,SUB-000005,2025-08-11 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-08-11 02:15:00
+TXN-0000010,CUST-00005,SUB-000005,2025-09-10 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-09-10 02:15:00
+TXN-0000011,CUST-00005,SUB-000005,2025-10-10 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-10-10 02:15:00
+TXN-0000012,CUST-00005,SUB-000005,2025-11-09 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-11-09 02:15:00
+TXN-0000013,CUST-00005,SUB-000005,2025-12-09 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-12-09 02:15:00
+TXN-0000014,CUST-00006,SUB-000006,2025-05-16 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-05-16 02:15:00
+TXN-0000015,CUST-00006,SUB-000006,2025-06-15 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-06-15 02:15:00
+TXN-0000016,CUST-00006,SUB-000006,2025-07-15 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-07-15 02:15:00
+TXN-0000017,CUST-00006,SUB-000006,2025-08-14 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-08-14 02:15:00
+TXN-0000018,CUST-00006,SUB-000006,2025-09-13 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-09-13 02:15:00
+TXN-0000019,CUST-00006,SUB-000006,2025-10-13 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-10-13 02:15:00
+TXN-0000020,CUST-00006,SUB-000006,2025-11-12 02:15:00,29.0,subscription_charge,credit_card,succeeded,2025-11-12 02:15:00

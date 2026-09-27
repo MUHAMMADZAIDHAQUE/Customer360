@@ -1,0 +1,21 @@
+customer_id,first_name,last_name,email,age,gender,country,region,city,signup_date,acquisition_channel,customer_status,created_at
+CUST-00001,John,Moore,john.moore@company2.com,33,Male,United States,New York,New York,2026-03-19,Referral,active,2026-03-19 09:00:00
+CUST-00002,Scott,Ramirez,scott.ramirez@company3.com,32,Male,United States,Washington,Seattle,2025-11-01,Paid Ads,churned,2025-11-01 09:00:00
+CUST-00003,Larry,Gonzalez,larry.gonzalez@company4.com,42,Male,Canada,British Columbia,Vancouver,2026-02-17,Organic Search,active,2026-02-17 09:00:00
+CUST-00004,Mary,Hernandez,mary.hernandez@company5.com,38,Female,United States,Texas,Austin,2025-02-06,Organic Search,active,2025-02-06 09:00:00
+CUST-00005,Susan,Garcia,susan.garcia@company6.com,25,Female,United States,Massachusetts,Boston,2025-05-13,Referral,churned,2025-05-13 09:00:00
+CUST-00006,Jacob,Wright,jacob.wright@company7.com,34,Male,Australia,New South Wales,Sydney,2025-05-16,Referral,churned,2025-05-16 09:00:00
+CUST-00007,Brenda,Gonzalez,brenda.gonzalez@company8.com,41,Female,United States,Washington,Seattle,2026-02-17,Partner,active,2026-02-17 09:00:00
+CUST-00008,Mark,Miller,mark.miller@company9.com,30,Male,United States,Massachusetts,Boston,2026-05-25,Organic Search,churned,2026-05-25 09:00:00
+CUST-00009,Margaret,Moore,margaret.moore@company10.com,35,Female,Canada,Ontario,Toronto,2025-08-22,Referral,active,2025-08-22 09:00:00
+CUST-00010,Stephen,Thomas,stephen.thomas@company11.com,36,Male,United States,Washington,Seattle,2025-10-19,Referral,churned,2025-10-19 09:00:00
+CUST-00011,Mark,Williams,mark.williams@company12.com,42,Male,United States,New York,New York,2026-05-25,Organic Search,active,2026-05-25 09:00:00
+CUST-00012,Margaret,Young,margaret.young@company13.com,31,Female,Australia,Victoria,Melbourne,2025-01-14,Organic Search,churned,2025-01-14 09:00:00
+CUST-00013,Paul,Scott,paul.scott@company14.com,37,Male,Canada,British Columbia,Vancouver,2026-01-25,Social Media,churned,2026-01-25 09:00:00
+CUST-00014,Melissa,Anderson,melissa.anderson@company15.com,41,Female,United States,Georgia,Atlanta,2025-04-27,Organic Search,churned,2025-04-27 09:00:00
+CUST-00015,Joseph,Martinez,joseph.martinez@company16.com,37,Male,Germany,Bavaria,Munich,2024-09-07,Referral,churned,2024-09-07 09:00:00
+CUST-00016,Deborah,Hill,deborah.hill@company17.com,48,Female,United Kingdom,Greater London,London,2026-02-13,Referral,active,2026-02-13 09:00:00
+CUST-00017,Stephen,Moore,stephen.moore@company18.com,45,Male,United States,Illinois,Chicago,2026-04-03,Paid Ads,active,2026-04-03 09:00:00
+CUST-00018,Mary,Taylor,mary.taylor@company19.com,45,Female,Canada,Quebec,Montreal,2025-11-15,Social Media,active,2025-11-15 09:00:00
+CUST-00019,Shirley,Hill,shirley.hill@company20.com,29,Female,United States,Texas,Austin,2026-03-07,Paid Ads,active,2026-03-07 09:00:00
+CUST-00020,Brandon,Lee,brandon.lee@company21.com,35,Male,United States,Massachusetts,Boston,2025-08-14,Social Media,active,2025-08-14 09:00:00

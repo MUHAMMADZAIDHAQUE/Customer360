@@ -1,0 +1,4 @@
+contract_id,contract_type,billing_frequency,commitment_months,flexibility_tier
+1,monthly,Monthly,1,Flexible
+2,annual,Annual,12,Committed
+3,multi_year,Upfront Multi-Year,24,Long-Term

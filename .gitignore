@@ -61,15 +61,8 @@ dbt/dbt_packages/
 dbt/logs/
 dbt/.user.yml
 
-# Data & Database (preserve structure with .gitkeep, ignore data dumps and db files)
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-*.duckdb
+# Data & Database (track curated repository parquet and marts, ignore external dumps)
 *.duckdb.wal
-*.parquet
-*.csv
 *.xlsx
 *.sqlite
 *.sqlite3

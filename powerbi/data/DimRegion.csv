@@ -1,0 +1,24 @@
+region_id,country,region,city,global_theater
+1,Australia,New South Wales,Sydney,Asia-Pacific
+2,Australia,Queensland,Brisbane,Asia-Pacific
+3,Australia,Victoria,Melbourne,Asia-Pacific
+4,Canada,British Columbia,Vancouver,North America
+5,Canada,Ontario,Toronto,North America
+6,Canada,Quebec,Montreal,North America
+7,France,Auvergne-Rhône-Alpes,Lyon,Europe
+8,France,Île-de-France,Paris,Europe
+9,Germany,Bavaria,Munich,Europe
+10,Germany,Berlin,Berlin,Europe
+11,Germany,Hesse,Frankfurt,Europe
+12,United Kingdom,Greater London,London,Europe
+13,United Kingdom,North West,Manchester,Europe
+14,United Kingdom,Scotland,Edinburgh,Europe
+15,United Kingdom,West Midlands,Birmingham,Europe
+16,United States,California,San Francisco,North America
+17,United States,Colorado,Denver,North America
+18,United States,Georgia,Atlanta,North America
+19,United States,Illinois,Chicago,North America
+20,United States,Massachusetts,Boston,North America
+21,United States,New York,New York,North America
+22,United States,Texas,Austin,North America
+23,United States,Washington,Seattle,North America

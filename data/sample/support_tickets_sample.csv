@@ -1,0 +1,21 @@
+ticket_id,customer_id,created_at,resolved_at,category,priority,resolution_time,satisfaction_score,status
+TCK-000001,CUST-00001,2026-06-04 20:15:00,2026-06-05 01:58:48,account_access,medium,5.73,4,closed
+TCK-000002,CUST-00002,2025-12-26 14:43:00,2025-12-27 08:49:00,technical_issue,low,18.1,2,closed
+TCK-000003,CUST-00002,2025-11-25 20:24:00,2025-11-26 23:12:36,technical_issue,high,26.81,2,closed
+TCK-000004,CUST-00002,2025-11-09 09:28:00,2025-11-09 10:05:12,billing,high,0.62,4,closed
+TCK-000005,CUST-00002,2025-11-23 11:21:00,2025-11-24 03:32:24,technical_issue,low,16.19,1,closed
+TCK-000006,CUST-00003,2026-04-13 20:01:00,2026-04-13 21:53:48,technical_issue,high,1.88,4,closed
+TCK-000007,CUST-00003,2026-06-06 20:46:00,2026-06-06 22:26:12,feature_request,medium,1.67,5,closed
+TCK-000008,CUST-00004,2025-06-20 11:40:00,2025-06-20 16:45:24,feature_request,urgent,5.09,5,closed
+TCK-000009,CUST-00004,2025-09-13 08:27:00,2025-09-13 21:55:48,billing,medium,13.48,3,closed
+TCK-000010,CUST-00005,2025-12-06 14:53:00,2025-12-07 02:03:48,feature_request,high,11.18,2,closed
+TCK-000011,CUST-00006,2025-12-01 08:00:00,2025-12-01 14:48:36,billing,high,6.81,1,closed
+TCK-000012,CUST-00007,2026-06-18 16:20:00,2026-06-18 17:45:12,billing,high,1.42,3,closed
+TCK-000013,CUST-00008,2026-06-16 15:12:00,2026-06-17 08:18:00,cancellation_request,low,17.1,2,closed
+TCK-000014,CUST-00008,2026-06-12 16:04:00,2026-06-13 22:19:00,billing,high,30.25,1,closed
+TCK-000015,CUST-00008,2026-06-22 08:55:00,2026-06-22 09:23:48,technical_issue,urgent,0.48,2,closed
+TCK-000016,CUST-00009,2026-03-25 14:29:00,2026-03-26 02:41:00,feature_request,medium,12.2,4,closed
+TCK-000017,CUST-00010,2025-12-28 08:19:00,2025-12-29 10:26:48,technical_issue,high,26.13,5,closed
+TCK-000018,CUST-00012,2025-10-24 16:36:00,2025-10-25 11:30:36,technical_issue,medium,18.91,5,closed
+TCK-000019,CUST-00012,2026-05-30 17:06:00,2026-05-30 21:06:36,technical_issue,medium,4.01,1,closed
+TCK-000020,CUST-00012,2025-07-18 09:23:00,2025-07-19 01:08:36,account_access,urgent,15.76,1,closed

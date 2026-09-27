@@ -1,0 +1,21 @@
+subscription_id,customer_id,plan_id,contract_type,start_date,end_date,monthly_price,status,auto_renew,cancellation_reason,created_at
+SUB-000001,CUST-00001,plan_growth,multi_year,2026-03-19,,79.0,active,True,,2026-03-19 09:05:00
+SUB-000002,CUST-00002,plan_starter,annual,2025-11-01,2025-12-27,29.0,cancelled,False,Customer initiated cancellation,2025-11-01 09:05:00
+SUB-000003,CUST-00003,plan_starter,annual,2026-02-17,,29.0,active,True,,2026-02-17 09:05:00
+SUB-000004,CUST-00004,plan_starter,annual,2025-02-06,,29.0,active,True,,2025-02-06 09:05:00
+SUB-000005,CUST-00005,plan_starter,monthly,2025-05-13,2025-12-25,29.0,cancelled,False,Customer initiated cancellation,2025-05-13 09:05:00
+SUB-000006,CUST-00006,plan_starter,monthly,2025-05-16,2026-04-30,29.0,cancelled,False,Customer initiated cancellation,2025-05-16 09:05:00
+SUB-000007,CUST-00007,plan_starter,annual,2026-02-17,,29.0,active,True,,2026-02-17 09:05:00
+SUB-000008,CUST-00008,plan_growth,monthly,2026-05-25,2026-06-29,79.0,cancelled,False,Customer initiated cancellation,2026-05-25 09:05:00
+SUB-000009,CUST-00009,plan_enterprise,multi_year,2025-08-22,,499.0,active,True,,2025-08-22 09:05:00
+SUB-000010,CUST-00010,plan_growth,annual,2025-10-19,2026-04-18,79.0,cancelled,False,Customer initiated cancellation,2025-10-19 09:05:00
+SUB-000011,CUST-00011,plan_enterprise,annual,2026-05-25,,499.0,active,True,,2026-05-25 09:05:00
+SUB-000012,CUST-00012,plan_growth,monthly,2025-01-14,2026-06-15,79.0,cancelled,False,Customer initiated cancellation,2025-01-14 09:05:00
+SUB-000013,CUST-00013,plan_growth,monthly,2026-01-25,2026-08-30,79.0,cancelled,False,Customer initiated cancellation,2026-01-25 09:05:00
+SUB-000014,CUST-00014,plan_starter,monthly,2025-04-27,2026-05-27,29.0,cancelled,False,Customer initiated cancellation,2025-04-27 09:05:00
+SUB-000015,CUST-00015,plan_starter,monthly,2024-09-07,2026-09-01,29.0,cancelled,False,Customer initiated cancellation,2024-09-07 09:05:00
+SUB-000016,CUST-00016,plan_growth,monthly,2026-02-13,,79.0,active,True,,2026-02-13 09:05:00
+SUB-000017,CUST-00017,plan_growth,monthly,2026-04-03,,79.0,active,True,,2026-04-03 09:05:00
+SUB-000018,CUST-00018,plan_growth,monthly,2025-11-15,,79.0,active,True,,2025-11-15 09:05:00
+SUB-000019,CUST-00019,plan_starter,annual,2026-03-07,,29.0,active,True,,2026-03-07 09:05:00
+SUB-000020,CUST-00020,plan_growth,monthly,2025-08-14,,79.0,active,True,,2025-08-14 09:05:00

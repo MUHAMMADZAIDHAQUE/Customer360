@@ -1,0 +1,527 @@
+churn_id,customer_id,date_key,plan_id,contract_id,churn_date,churn_reason,churn_type,feedback,mrr_lost,arr_lost,tenure_at_churn_months
+CHURN-00001,CUST-00002,20251227,plan_starter,2,2025-12-27,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,1
+CHURN-00002,CUST-00005,20251225,plan_starter,1,2025-12-25,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,7
+CHURN-00003,CUST-00006,20260430,plan_starter,1,2026-04-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,11
+CHURN-00004,CUST-00008,20260629,plan_growth,1,2026-06-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,1
+CHURN-00005,CUST-00010,20260418,plan_growth,2,2026-04-18,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,6
+CHURN-00006,CUST-00012,20260615,plan_growth,1,2026-06-15,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,17
+CHURN-00007,CUST-00013,20260830,plan_growth,1,2026-08-30,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,7
+CHURN-00008,CUST-00014,20260527,plan_starter,1,2026-05-27,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,13
+CHURN-00009,CUST-00015,20260901,plan_starter,1,2026-09-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,24
+CHURN-00010,CUST-00021,20250714,plan_pro,1,2025-07-14,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",179.0,2148.0,5
+CHURN-00011,CUST-00022,20251022,plan_growth,1,2025-10-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,3
+CHURN-00012,CUST-00024,20260615,plan_growth,1,2026-06-15,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,6
+CHURN-00013,CUST-00026,20250806,plan_pro,1,2025-08-06,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,11
+CHURN-00014,CUST-00027,20250917,plan_starter,1,2025-09-17,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,1
+CHURN-00015,CUST-00028,20251125,plan_starter,1,2025-11-25,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,2
+CHURN-00016,CUST-00029,20260117,plan_growth,1,2026-01-17,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,6
+CHURN-00017,CUST-00033,20260820,plan_pro,1,2026-08-20,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,179.0,2148.0,25
+CHURN-00018,CUST-00035,20250901,plan_starter,1,2025-09-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,3
+CHURN-00019,CUST-00044,20260609,plan_growth,1,2026-06-09,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,3
+CHURN-00020,CUST-00045,20251001,plan_pro,2,2025-10-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,13
+CHURN-00021,CUST-00048,20251006,plan_pro,1,2025-10-06,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,5
+CHURN-00022,CUST-00049,20260615,plan_pro,2,2026-06-15,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,4
+CHURN-00023,CUST-00050,20250817,plan_starter,1,2025-08-17,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,7
+CHURN-00024,CUST-00051,20260503,plan_starter,1,2026-05-03,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,11
+CHURN-00025,CUST-00052,20251115,plan_starter,1,2025-11-15,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,10
+CHURN-00026,CUST-00053,20260807,plan_starter,2,2026-08-07,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,10
+CHURN-00027,CUST-00055,20250424,plan_starter,1,2025-04-24,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,8
+CHURN-00028,CUST-00058,20250720,plan_starter,2,2025-07-20,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,9
+CHURN-00029,CUST-00061,20260201,plan_pro,1,2026-02-01,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,179.0,2148.0,17
+CHURN-00030,CUST-00070,20260313,plan_growth,2,2026-03-13,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,2
+CHURN-00031,CUST-00074,20260625,plan_growth,1,2026-06-25,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,5
+CHURN-00032,CUST-00076,20250917,plan_starter,1,2025-09-17,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,4
+CHURN-00033,CUST-00085,20260107,plan_starter,1,2026-01-07,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,8
+CHURN-00034,CUST-00086,20250808,plan_starter,1,2025-08-08,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,5
+CHURN-00035,CUST-00087,20260501,plan_starter,1,2026-05-01,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,5
+CHURN-00036,CUST-00089,20260706,plan_growth,1,2026-07-06,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,15
+CHURN-00037,CUST-00091,20260712,plan_starter,1,2026-07-12,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,8
+CHURN-00038,CUST-00092,20260815,plan_growth,1,2026-08-15,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,14
+CHURN-00039,CUST-00097,20260503,plan_growth,1,2026-05-03,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,3
+CHURN-00040,CUST-00106,20260831,plan_starter,1,2026-08-31,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,1
+CHURN-00041,CUST-00107,20260828,plan_starter,2,2026-08-28,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,18
+CHURN-00042,CUST-00113,20250911,plan_growth,2,2025-09-11,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,14
+CHURN-00043,CUST-00115,20260524,plan_starter,1,2026-05-24,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,9
+CHURN-00044,CUST-00117,20260101,plan_growth,1,2026-01-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,5
+CHURN-00045,CUST-00120,20250415,plan_starter,1,2025-04-15,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,1
+CHURN-00046,CUST-00128,20250519,plan_starter,1,2025-05-19,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,11
+CHURN-00047,CUST-00132,20251101,plan_starter,1,2025-11-01,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,5
+CHURN-00048,CUST-00134,20260316,plan_growth,1,2026-03-16,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,14
+CHURN-00049,CUST-00135,20260327,plan_starter,1,2026-03-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,6
+CHURN-00050,CUST-00137,20251217,plan_starter,3,2025-12-17,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,15
+CHURN-00051,CUST-00139,20260219,plan_growth,1,2026-02-19,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,13
+CHURN-00052,CUST-00141,20251103,plan_pro,1,2025-11-03,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,10
+CHURN-00053,CUST-00143,20250203,plan_pro,3,2025-02-03,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,3
+CHURN-00054,CUST-00144,20260409,plan_growth,2,2026-04-09,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,13
+CHURN-00055,CUST-00147,20250214,plan_starter,2,2025-02-14,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,8
+CHURN-00056,CUST-00150,20260131,plan_pro,1,2026-01-31,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,7
+CHURN-00057,CUST-00153,20251123,plan_starter,1,2025-11-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,6
+CHURN-00058,CUST-00154,20250130,plan_growth,2,2025-01-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,3
+CHURN-00059,CUST-00155,20260124,plan_growth,1,2026-01-24,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,1
+CHURN-00060,CUST-00156,20251225,plan_starter,1,2025-12-25,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,16
+CHURN-00061,CUST-00161,20250527,plan_starter,1,2025-05-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,3
+CHURN-00062,CUST-00168,20250117,plan_starter,1,2025-01-17,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,5
+CHURN-00063,CUST-00177,20251129,plan_starter,2,2025-11-29,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,5
+CHURN-00064,CUST-00184,20260602,plan_pro,1,2026-06-02,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,5
+CHURN-00065,CUST-00185,20260530,plan_starter,1,2026-05-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,13
+CHURN-00066,CUST-00189,20251207,plan_growth,1,2025-12-07,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,6
+CHURN-00067,CUST-00190,20260415,plan_pro,2,2026-04-15,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",179.0,2148.0,8
+CHURN-00068,CUST-00192,20251128,plan_pro,1,2025-11-28,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,5
+CHURN-00069,CUST-00195,20260119,plan_growth,1,2026-01-19,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,8
+CHURN-00070,CUST-00199,20260811,plan_starter,1,2026-08-11,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,11
+CHURN-00071,CUST-00202,20260808,plan_growth,2,2026-08-08,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,8
+CHURN-00072,CUST-00206,20260826,plan_pro,1,2026-08-26,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",179.0,2148.0,14
+CHURN-00073,CUST-00211,20251214,plan_growth,1,2025-12-14,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,7
+CHURN-00074,CUST-00213,20260726,plan_starter,1,2026-07-26,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,4
+CHURN-00075,CUST-00215,20250513,plan_starter,2,2025-05-13,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00076,CUST-00222,20251208,plan_starter,1,2025-12-08,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,5
+CHURN-00077,CUST-00228,20260120,plan_starter,1,2026-01-20,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,10
+CHURN-00078,CUST-00230,20260522,plan_starter,1,2026-05-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,5
+CHURN-00079,CUST-00232,20251214,plan_growth,1,2025-12-14,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,1
+CHURN-00080,CUST-00235,20260515,plan_pro,1,2026-05-15,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,14
+CHURN-00081,CUST-00236,20260226,plan_growth,1,2026-02-26,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,9
+CHURN-00082,CUST-00239,20250829,plan_starter,1,2025-08-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,6
+CHURN-00083,CUST-00240,20250816,plan_growth,1,2025-08-16,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,2
+CHURN-00084,CUST-00242,20260715,plan_growth,1,2026-07-15,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,5
+CHURN-00085,CUST-00243,20251028,plan_starter,2,2025-10-28,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,8
+CHURN-00086,CUST-00246,20251016,plan_growth,1,2025-10-16,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,8
+CHURN-00087,CUST-00248,20260318,plan_starter,1,2026-03-18,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,9
+CHURN-00088,CUST-00253,20260820,plan_starter,1,2026-08-20,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,6
+CHURN-00089,CUST-00255,20260102,plan_growth,1,2026-01-02,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,6
+CHURN-00090,CUST-00257,20250920,plan_starter,1,2025-09-20,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,12
+CHURN-00091,CUST-00258,20240830,plan_starter,1,2024-08-30,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,2
+CHURN-00092,CUST-00260,20260129,plan_pro,3,2026-01-29,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,3
+CHURN-00093,CUST-00262,20250605,plan_starter,1,2025-06-05,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,3
+CHURN-00094,CUST-00269,20260103,plan_growth,2,2026-01-03,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,4
+CHURN-00095,CUST-00272,20251116,plan_starter,1,2025-11-16,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,11
+CHURN-00096,CUST-00274,20241224,plan_pro,2,2024-12-24,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,1
+CHURN-00097,CUST-00275,20250613,plan_growth,2,2025-06-13,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,6
+CHURN-00098,CUST-00281,20260313,plan_starter,1,2026-03-13,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,3
+CHURN-00099,CUST-00283,20260115,plan_growth,1,2026-01-15,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,5
+CHURN-00100,CUST-00284,20260901,plan_starter,1,2026-09-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,4
+CHURN-00101,CUST-00287,20260901,plan_pro,1,2026-09-01,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,4
+CHURN-00102,CUST-00289,20250908,plan_starter,1,2025-09-08,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00103,CUST-00290,20251216,plan_growth,1,2025-12-16,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,3
+CHURN-00104,CUST-00295,20260503,plan_growth,1,2026-05-03,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,6
+CHURN-00105,CUST-00296,20250507,plan_growth,1,2025-05-07,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,2
+CHURN-00106,CUST-00298,20260417,plan_growth,2,2026-04-17,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,19
+CHURN-00107,CUST-00300,20260508,plan_enterprise,2,2026-05-08,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,499.0,5988.0,14
+CHURN-00108,CUST-00301,20260713,plan_starter,1,2026-07-13,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,5
+CHURN-00109,CUST-00304,20260901,plan_growth,1,2026-09-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,12
+CHURN-00110,CUST-00306,20250824,plan_pro,3,2025-08-24,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",179.0,2148.0,5
+CHURN-00111,CUST-00312,20260725,plan_starter,2,2026-07-25,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,2
+CHURN-00112,CUST-00314,20250916,plan_growth,1,2025-09-16,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,12
+CHURN-00113,CUST-00315,20260311,plan_starter,1,2026-03-11,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,11
+CHURN-00114,CUST-00319,20250323,plan_starter,1,2025-03-23,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,5
+CHURN-00115,CUST-00324,20260820,plan_starter,1,2026-08-20,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,21
+CHURN-00116,CUST-00327,20260324,plan_growth,1,2026-03-24,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,21
+CHURN-00117,CUST-00328,20250627,plan_pro,2,2025-06-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,10
+CHURN-00118,CUST-00330,20241108,plan_growth,2,2024-11-08,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,6
+CHURN-00119,CUST-00334,20251227,plan_starter,1,2025-12-27,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,7
+CHURN-00120,CUST-00336,20260713,plan_growth,1,2026-07-13,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,15
+CHURN-00121,CUST-00337,20260329,plan_starter,1,2026-03-29,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,2
+CHURN-00122,CUST-00343,20260602,plan_growth,1,2026-06-02,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,15
+CHURN-00123,CUST-00347,20260426,plan_pro,1,2026-04-26,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,4
+CHURN-00124,CUST-00348,20260525,plan_starter,1,2026-05-25,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,4
+CHURN-00125,CUST-00349,20260507,plan_pro,1,2026-05-07,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,6
+CHURN-00126,CUST-00350,20241007,plan_growth,1,2024-10-07,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,2
+CHURN-00127,CUST-00351,20260215,plan_growth,1,2026-02-15,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,3
+CHURN-00128,CUST-00355,20260406,plan_growth,1,2026-04-06,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,7
+CHURN-00129,CUST-00358,20250316,plan_growth,1,2025-03-16,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,3
+CHURN-00130,CUST-00359,20250615,plan_pro,1,2025-06-15,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,3
+CHURN-00131,CUST-00361,20251227,plan_starter,1,2025-12-27,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,6
+CHURN-00132,CUST-00365,20260527,plan_growth,1,2026-05-27,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,11
+CHURN-00133,CUST-00367,20250301,plan_starter,2,2025-03-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00134,CUST-00368,20250805,plan_starter,1,2025-08-05,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,11
+CHURN-00135,CUST-00369,20260620,plan_starter,1,2026-06-20,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,15
+CHURN-00136,CUST-00371,20251116,plan_starter,1,2025-11-16,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,4
+CHURN-00137,CUST-00374,20250415,plan_starter,1,2025-04-15,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,6
+CHURN-00138,CUST-00378,20260405,plan_starter,1,2026-04-05,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,10
+CHURN-00139,CUST-00383,20250629,plan_growth,1,2025-06-29,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,2
+CHURN-00140,CUST-00385,20240903,plan_pro,1,2024-09-03,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,2
+CHURN-00141,CUST-00386,20260113,plan_growth,1,2026-01-13,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,12
+CHURN-00142,CUST-00387,20250517,plan_starter,1,2025-05-17,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,1
+CHURN-00143,CUST-00388,20250812,plan_growth,2,2025-08-12,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,4
+CHURN-00144,CUST-00393,20260808,plan_starter,1,2026-08-08,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,6
+CHURN-00145,CUST-00394,20250423,plan_starter,1,2025-04-23,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,6
+CHURN-00146,CUST-00395,20260308,plan_starter,1,2026-03-08,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,7
+CHURN-00147,CUST-00397,20251221,plan_starter,2,2025-12-21,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00148,CUST-00400,20260708,plan_pro,1,2026-07-08,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,5
+CHURN-00149,CUST-00402,20250116,plan_starter,1,2025-01-16,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,9
+CHURN-00150,CUST-00406,20250729,plan_starter,1,2025-07-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00151,CUST-00407,20260206,plan_starter,1,2026-02-06,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,8
+CHURN-00152,CUST-00409,20241210,plan_growth,2,2024-12-10,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,2
+CHURN-00153,CUST-00415,20250527,plan_pro,2,2025-05-27,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,5
+CHURN-00154,CUST-00416,20260616,plan_growth,1,2026-06-16,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,3
+CHURN-00155,CUST-00420,20251011,plan_growth,1,2025-10-11,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,3
+CHURN-00156,CUST-00421,20240913,plan_starter,1,2024-09-13,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,6
+CHURN-00157,CUST-00425,20260505,plan_growth,1,2026-05-05,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,8
+CHURN-00158,CUST-00426,20250823,plan_starter,2,2025-08-23,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,8
+CHURN-00159,CUST-00431,20260830,plan_starter,1,2026-08-30,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,9
+CHURN-00160,CUST-00432,20260122,plan_pro,1,2026-01-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,6
+CHURN-00161,CUST-00434,20251112,plan_pro,1,2025-11-12,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,11
+CHURN-00162,CUST-00437,20260821,plan_growth,2,2026-08-21,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,7
+CHURN-00163,CUST-00441,20260120,plan_starter,1,2026-01-20,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,9
+CHURN-00164,CUST-00448,20260520,plan_starter,1,2026-05-20,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,2
+CHURN-00165,CUST-00456,20250306,plan_pro,1,2025-03-06,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,3
+CHURN-00166,CUST-00462,20260302,plan_pro,1,2026-03-02,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,179.0,2148.0,3
+CHURN-00167,CUST-00464,20250620,plan_growth,1,2025-06-20,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,12
+CHURN-00168,CUST-00466,20260213,plan_starter,1,2026-02-13,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,11
+CHURN-00169,CUST-00473,20250812,plan_pro,1,2025-08-12,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,2
+CHURN-00170,CUST-00478,20251206,plan_growth,2,2025-12-06,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,3
+CHURN-00171,CUST-00480,20260304,plan_starter,1,2026-03-04,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,6
+CHURN-00172,CUST-00481,20260113,plan_growth,1,2026-01-13,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,2
+CHURN-00173,CUST-00482,20240823,plan_growth,2,2024-08-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,4
+CHURN-00174,CUST-00483,20260805,plan_starter,1,2026-08-05,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,7
+CHURN-00175,CUST-00491,20250419,plan_pro,1,2025-04-19,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,4
+CHURN-00176,CUST-00494,20260130,plan_growth,1,2026-01-30,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,12
+CHURN-00177,CUST-00501,20251115,plan_starter,1,2025-11-15,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,6
+CHURN-00178,CUST-00502,20260328,plan_starter,1,2026-03-28,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,2
+CHURN-00179,CUST-00503,20251209,plan_starter,1,2025-12-09,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,6
+CHURN-00180,CUST-00504,20260213,plan_growth,1,2026-02-13,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,3
+CHURN-00181,CUST-00507,20260602,plan_starter,1,2026-06-02,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,6
+CHURN-00182,CUST-00509,20260502,plan_growth,1,2026-05-02,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,9
+CHURN-00183,CUST-00515,20260316,plan_pro,1,2026-03-16,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,8
+CHURN-00184,CUST-00517,20260723,plan_growth,2,2026-07-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,11
+CHURN-00185,CUST-00520,20251027,plan_starter,2,2025-10-27,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,6
+CHURN-00186,CUST-00526,20260107,plan_growth,2,2026-01-07,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,9
+CHURN-00187,CUST-00527,20260527,plan_starter,1,2026-05-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,7
+CHURN-00188,CUST-00532,20260702,plan_starter,2,2026-07-02,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,10
+CHURN-00189,CUST-00539,20241005,plan_starter,1,2024-10-05,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00190,CUST-00541,20260725,plan_growth,1,2026-07-25,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,7
+CHURN-00191,CUST-00542,20250422,plan_starter,1,2025-04-22,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,11
+CHURN-00192,CUST-00543,20260215,plan_enterprise,1,2026-02-15,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,499.0,5988.0,6
+CHURN-00193,CUST-00545,20250505,plan_growth,1,2025-05-05,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,6
+CHURN-00194,CUST-00548,20250705,plan_enterprise,1,2025-07-05,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,499.0,5988.0,8
+CHURN-00195,CUST-00551,20260608,plan_enterprise,1,2026-06-08,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",499.0,5988.0,11
+CHURN-00196,CUST-00554,20251225,plan_starter,1,2025-12-25,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,3
+CHURN-00197,CUST-00562,20260606,plan_starter,1,2026-06-06,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,8
+CHURN-00198,CUST-00566,20260708,plan_starter,1,2026-07-08,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,11
+CHURN-00199,CUST-00567,20251207,plan_growth,2,2025-12-07,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,2
+CHURN-00200,CUST-00568,20260411,plan_growth,1,2026-04-11,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,2
+CHURN-00201,CUST-00571,20260830,plan_growth,1,2026-08-30,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,22
+CHURN-00202,CUST-00573,20241005,plan_starter,1,2024-10-05,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00203,CUST-00574,20251214,plan_starter,1,2025-12-14,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00204,CUST-00576,20251213,plan_pro,3,2025-12-13,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,5
+CHURN-00205,CUST-00582,20251203,plan_growth,2,2025-12-03,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,5
+CHURN-00206,CUST-00585,20260828,plan_starter,1,2026-08-28,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,4
+CHURN-00207,CUST-00586,20260217,plan_growth,1,2026-02-17,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,9
+CHURN-00208,CUST-00587,20251014,plan_starter,2,2025-10-14,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,13
+CHURN-00209,CUST-00589,20241202,plan_growth,1,2024-12-02,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,8
+CHURN-00210,CUST-00590,20250424,plan_growth,1,2025-04-24,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,3
+CHURN-00211,CUST-00594,20260817,plan_growth,1,2026-08-17,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,12
+CHURN-00212,CUST-00595,20260827,plan_pro,1,2026-08-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,10
+CHURN-00213,CUST-00603,20250301,plan_growth,2,2025-03-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,2
+CHURN-00214,CUST-00605,20250410,plan_growth,1,2025-04-10,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,4
+CHURN-00215,CUST-00609,20260128,plan_starter,1,2026-01-28,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,14
+CHURN-00216,CUST-00613,20251021,plan_starter,1,2025-10-21,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,7
+CHURN-00217,CUST-00622,20260722,plan_starter,1,2026-07-22,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,8
+CHURN-00218,CUST-00623,20260512,plan_growth,1,2026-05-12,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,6
+CHURN-00219,CUST-00626,20260714,plan_pro,1,2026-07-14,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,2
+CHURN-00220,CUST-00628,20260717,plan_starter,1,2026-07-17,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,4
+CHURN-00221,CUST-00633,20260328,plan_growth,1,2026-03-28,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,12
+CHURN-00222,CUST-00636,20260306,plan_growth,2,2026-03-06,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,21
+CHURN-00223,CUST-00640,20250211,plan_growth,1,2025-02-11,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,3
+CHURN-00224,CUST-00641,20250627,plan_growth,1,2025-06-27,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,6
+CHURN-00225,CUST-00643,20260117,plan_enterprise,1,2026-01-17,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,499.0,5988.0,2
+CHURN-00226,CUST-00648,20250604,plan_pro,2,2025-06-04,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,13
+CHURN-00227,CUST-00649,20260716,plan_starter,1,2026-07-16,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,7
+CHURN-00228,CUST-00651,20260829,plan_pro,1,2026-08-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,5
+CHURN-00229,CUST-00652,20251224,plan_growth,2,2025-12-24,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,14
+CHURN-00230,CUST-00654,20251214,plan_starter,2,2025-12-14,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,11
+CHURN-00231,CUST-00660,20260901,plan_growth,1,2026-09-01,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,4
+CHURN-00232,CUST-00664,20260315,plan_starter,1,2026-03-15,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,6
+CHURN-00233,CUST-00675,20250917,plan_growth,1,2025-09-17,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,7
+CHURN-00234,CUST-00676,20260812,plan_starter,1,2026-08-12,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,8
+CHURN-00235,CUST-00681,20260219,plan_starter,1,2026-02-19,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,6
+CHURN-00236,CUST-00682,20250124,plan_starter,2,2025-01-24,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00237,CUST-00689,20260901,plan_growth,1,2026-09-01,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,13
+CHURN-00238,CUST-00690,20260803,plan_growth,2,2026-08-03,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,5
+CHURN-00239,CUST-00692,20241101,plan_enterprise,1,2024-11-01,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,499.0,5988.0,5
+CHURN-00240,CUST-00694,20260627,plan_pro,1,2026-06-27,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,25
+CHURN-00241,CUST-00695,20260324,plan_starter,1,2026-03-24,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,20
+CHURN-00242,CUST-00697,20250622,plan_growth,1,2025-06-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,8
+CHURN-00243,CUST-00698,20260507,plan_starter,1,2026-05-07,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,20
+CHURN-00244,CUST-00699,20260430,plan_starter,1,2026-04-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,4
+CHURN-00245,CUST-00701,20260623,plan_growth,1,2026-06-23,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,5
+CHURN-00246,CUST-00710,20251001,plan_pro,1,2025-10-01,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,2
+CHURN-00247,CUST-00712,20260610,plan_starter,1,2026-06-10,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,7
+CHURN-00248,CUST-00714,20250912,plan_pro,1,2025-09-12,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,179.0,2148.0,8
+CHURN-00249,CUST-00716,20260627,plan_starter,2,2026-06-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,1
+CHURN-00250,CUST-00718,20260824,plan_growth,2,2026-08-24,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,12
+CHURN-00251,CUST-00723,20241130,plan_starter,3,2024-11-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,7
+CHURN-00252,CUST-00724,20241014,plan_starter,1,2024-10-14,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,2
+CHURN-00253,CUST-00725,20250516,plan_starter,1,2025-05-16,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,12
+CHURN-00254,CUST-00728,20251222,plan_starter,2,2025-12-22,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,14
+CHURN-00255,CUST-00730,20260307,plan_growth,1,2026-03-07,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,14
+CHURN-00256,CUST-00737,20250228,plan_growth,2,2025-02-28,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,5
+CHURN-00257,CUST-00738,20260312,plan_growth,2,2026-03-12,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,8
+CHURN-00258,CUST-00739,20250417,plan_starter,1,2025-04-17,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,1
+CHURN-00259,CUST-00740,20241221,plan_starter,1,2024-12-21,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,3
+CHURN-00260,CUST-00742,20260331,plan_growth,1,2026-03-31,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,12
+CHURN-00261,CUST-00744,20260131,plan_starter,1,2026-01-31,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,4
+CHURN-00262,CUST-00747,20240710,plan_growth,2,2024-07-10,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,2
+CHURN-00263,CUST-00749,20260815,plan_starter,1,2026-08-15,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,15
+CHURN-00264,CUST-00750,20250908,plan_growth,1,2025-09-08,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,9
+CHURN-00265,CUST-00756,20251116,plan_growth,1,2025-11-16,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,12
+CHURN-00266,CUST-00761,20260623,plan_starter,1,2026-06-23,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,7
+CHURN-00267,CUST-00763,20260811,plan_growth,1,2026-08-11,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,12
+CHURN-00268,CUST-00765,20260712,plan_starter,1,2026-07-12,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,15
+CHURN-00269,CUST-00766,20251217,plan_starter,2,2025-12-17,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,18
+CHURN-00270,CUST-00769,20260901,plan_pro,2,2026-09-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,13
+CHURN-00271,CUST-00772,20260705,plan_pro,2,2026-07-05,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,19
+CHURN-00272,CUST-00775,20260901,plan_starter,2,2026-09-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,16
+CHURN-00273,CUST-00780,20251008,plan_starter,2,2025-10-08,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,5
+CHURN-00274,CUST-00782,20260614,plan_growth,1,2026-06-14,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,6
+CHURN-00275,CUST-00783,20260511,plan_growth,1,2026-05-11,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,2
+CHURN-00276,CUST-00789,20251117,plan_starter,1,2025-11-17,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,17
+CHURN-00277,CUST-00800,20260327,plan_pro,2,2026-03-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,3
+CHURN-00278,CUST-00801,20260110,plan_starter,1,2026-01-10,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,2
+CHURN-00279,CUST-00805,20260720,plan_pro,2,2026-07-20,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,1
+CHURN-00280,CUST-00806,20251203,plan_starter,1,2025-12-03,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,11
+CHURN-00281,CUST-00811,20260511,plan_growth,1,2026-05-11,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,3
+CHURN-00282,CUST-00816,20260121,plan_starter,2,2026-01-21,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,10
+CHURN-00283,CUST-00817,20250615,plan_growth,1,2025-06-15,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,2
+CHURN-00284,CUST-00821,20250425,plan_growth,2,2025-04-25,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,6
+CHURN-00285,CUST-00822,20251016,plan_starter,1,2025-10-16,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00286,CUST-00823,20260227,plan_growth,1,2026-02-27,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,6
+CHURN-00287,CUST-00824,20260628,plan_starter,1,2026-06-28,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,1
+CHURN-00288,CUST-00826,20251110,plan_pro,1,2025-11-10,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,14
+CHURN-00289,CUST-00829,20260302,plan_growth,1,2026-03-02,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,4
+CHURN-00290,CUST-00835,20260318,plan_starter,1,2026-03-18,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,3
+CHURN-00291,CUST-00836,20260517,plan_starter,1,2026-05-17,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,9
+CHURN-00292,CUST-00841,20250421,plan_growth,1,2025-04-21,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,2
+CHURN-00293,CUST-00849,20260529,plan_pro,1,2026-05-29,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,8
+CHURN-00294,CUST-00850,20260419,plan_growth,1,2026-04-19,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,21
+CHURN-00295,CUST-00852,20251108,plan_starter,1,2025-11-08,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,5
+CHURN-00296,CUST-00853,20250626,plan_starter,1,2025-06-26,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,11
+CHURN-00297,CUST-00854,20250409,plan_starter,1,2025-04-09,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,5
+CHURN-00298,CUST-00856,20260529,plan_starter,1,2026-05-29,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,19
+CHURN-00299,CUST-00859,20260807,plan_pro,1,2026-08-07,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",179.0,2148.0,6
+CHURN-00300,CUST-00862,20260510,plan_growth,2,2026-05-10,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,21
+CHURN-00301,CUST-00863,20250703,plan_pro,1,2025-07-03,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,13
+CHURN-00302,CUST-00865,20250704,plan_pro,1,2025-07-04,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",179.0,2148.0,6
+CHURN-00303,CUST-00867,20260329,plan_starter,1,2026-03-29,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,2
+CHURN-00304,CUST-00868,20260718,plan_enterprise,1,2026-07-18,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,499.0,5988.0,22
+CHURN-00305,CUST-00874,20250425,plan_enterprise,1,2025-04-25,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",499.0,5988.0,3
+CHURN-00306,CUST-00877,20260427,plan_growth,1,2026-04-27,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,7
+CHURN-00307,CUST-00880,20260901,plan_pro,1,2026-09-01,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,26
+CHURN-00308,CUST-00881,20241231,plan_pro,1,2024-12-31,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,1
+CHURN-00309,CUST-00882,20260801,plan_growth,1,2026-08-01,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,8
+CHURN-00310,CUST-00884,20260322,plan_growth,1,2026-03-22,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,25
+CHURN-00311,CUST-00887,20260308,plan_starter,1,2026-03-08,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,3
+CHURN-00312,CUST-00892,20260524,plan_starter,1,2026-05-24,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,12
+CHURN-00313,CUST-00893,20260314,plan_starter,1,2026-03-14,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,1
+CHURN-00314,CUST-00894,20250611,plan_growth,1,2025-06-11,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,2
+CHURN-00315,CUST-00895,20260721,plan_pro,1,2026-07-21,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,10
+CHURN-00316,CUST-00897,20250928,plan_growth,1,2025-09-28,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,4
+CHURN-00317,CUST-00899,20260504,plan_growth,1,2026-05-04,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,2
+CHURN-00318,CUST-00903,20260501,plan_pro,3,2026-05-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,13
+CHURN-00319,CUST-00914,20250724,plan_starter,1,2025-07-24,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,11
+CHURN-00320,CUST-00916,20250923,plan_starter,1,2025-09-23,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,1
+CHURN-00321,CUST-00918,20250313,plan_growth,1,2025-03-13,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,2
+CHURN-00322,CUST-00919,20250629,plan_growth,1,2025-06-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,4
+CHURN-00323,CUST-00921,20260327,plan_starter,2,2026-03-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,6
+CHURN-00324,CUST-00923,20260320,plan_pro,1,2026-03-20,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,10
+CHURN-00325,CUST-00929,20250920,plan_starter,1,2025-09-20,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,6
+CHURN-00326,CUST-00932,20241002,plan_growth,2,2024-10-02,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,2
+CHURN-00327,CUST-00933,20260830,plan_pro,1,2026-08-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,2
+CHURN-00328,CUST-00938,20260102,plan_growth,1,2026-01-02,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,2
+CHURN-00329,CUST-00939,20260504,plan_growth,1,2026-05-04,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,12
+CHURN-00330,CUST-00940,20250724,plan_starter,1,2025-07-24,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,4
+CHURN-00331,CUST-00945,20260521,plan_starter,2,2026-05-21,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,10
+CHURN-00332,CUST-00947,20251104,plan_growth,1,2025-11-04,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,6
+CHURN-00333,CUST-00949,20250825,plan_starter,1,2025-08-25,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,5
+CHURN-00334,CUST-00950,20260214,plan_starter,1,2026-02-14,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,4
+CHURN-00335,CUST-00953,20260901,plan_growth,1,2026-09-01,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,3
+CHURN-00336,CUST-00957,20260901,plan_starter,1,2026-09-01,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,8
+CHURN-00337,CUST-00960,20260521,plan_growth,1,2026-05-21,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,19
+CHURN-00338,CUST-00961,20250531,plan_growth,2,2025-05-31,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,7
+CHURN-00339,CUST-00964,20260819,plan_pro,2,2026-08-19,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,179.0,2148.0,6
+CHURN-00340,CUST-00967,20250516,plan_starter,1,2025-05-16,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,1
+CHURN-00341,CUST-00970,20260127,plan_growth,2,2026-01-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,19
+CHURN-00342,CUST-00973,20260718,plan_growth,1,2026-07-18,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,7
+CHURN-00343,CUST-00974,20250829,plan_starter,1,2025-08-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,5
+CHURN-00344,CUST-00975,20251220,plan_starter,1,2025-12-20,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,11
+CHURN-00345,CUST-00978,20250328,plan_starter,1,2025-03-28,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,3
+CHURN-00346,CUST-00979,20250121,plan_starter,1,2025-01-21,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,5
+CHURN-00347,CUST-00982,20251130,plan_starter,1,2025-11-30,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,11
+CHURN-00348,CUST-00984,20260504,plan_starter,2,2026-05-04,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,13
+CHURN-00349,CUST-00989,20260214,plan_starter,1,2026-02-14,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,7
+CHURN-00350,CUST-00992,20250324,plan_enterprise,1,2025-03-24,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,499.0,5988.0,1
+CHURN-00351,CUST-00993,20260806,plan_pro,1,2026-08-06,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,7
+CHURN-00352,CUST-00995,20260815,plan_growth,1,2026-08-15,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,5
+CHURN-00353,CUST-00996,20240827,plan_pro,1,2024-08-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,5
+CHURN-00354,CUST-00999,20260711,plan_pro,1,2026-07-11,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,13
+CHURN-00355,CUST-01003,20260110,plan_growth,1,2026-01-10,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,14
+CHURN-00356,CUST-01005,20251124,plan_starter,2,2025-11-24,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,10
+CHURN-00357,CUST-01009,20260503,plan_pro,1,2026-05-03,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,7
+CHURN-00358,CUST-01011,20260725,plan_pro,1,2026-07-25,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,20
+CHURN-00359,CUST-01014,20250914,plan_starter,1,2025-09-14,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,15
+CHURN-00360,CUST-01016,20250523,plan_growth,1,2025-05-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,2
+CHURN-00361,CUST-01021,20260427,plan_growth,1,2026-04-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,8
+CHURN-00362,CUST-01023,20250913,plan_growth,2,2025-09-13,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,3
+CHURN-00363,CUST-01025,20250812,plan_growth,1,2025-08-12,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,10
+CHURN-00364,CUST-01026,20250416,plan_growth,1,2025-04-16,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,1
+CHURN-00365,CUST-01028,20260719,plan_starter,1,2026-07-19,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,17
+CHURN-00366,CUST-01029,20260104,plan_starter,1,2026-01-04,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,7
+CHURN-00367,CUST-01030,20260603,plan_growth,1,2026-06-03,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,2
+CHURN-00368,CUST-01033,20251230,plan_growth,1,2025-12-30,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,6
+CHURN-00369,CUST-01034,20250327,plan_growth,2,2025-03-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,5
+CHURN-00370,CUST-01035,20260225,plan_starter,2,2026-02-25,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,9
+CHURN-00371,CUST-01038,20250517,plan_growth,1,2025-05-17,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,10
+CHURN-00372,CUST-01047,20260514,plan_growth,1,2026-05-14,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,4
+CHURN-00373,CUST-01050,20250628,plan_pro,1,2025-06-28,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,2
+CHURN-00374,CUST-01052,20250204,plan_starter,1,2025-02-04,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,5
+CHURN-00375,CUST-01053,20260901,plan_starter,1,2026-09-01,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,11
+CHURN-00376,CUST-01057,20260406,plan_pro,1,2026-04-06,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,3
+CHURN-00377,CUST-01058,20260727,plan_starter,1,2026-07-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,7
+CHURN-00378,CUST-01061,20260729,plan_pro,2,2026-07-29,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,3
+CHURN-00379,CUST-01067,20250327,plan_starter,1,2025-03-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,3
+CHURN-00380,CUST-01069,20251013,plan_starter,1,2025-10-13,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,3
+CHURN-00381,CUST-01071,20251007,plan_starter,1,2025-10-07,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,4
+CHURN-00382,CUST-01074,20260521,plan_pro,2,2026-05-21,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,11
+CHURN-00383,CUST-01075,20260601,plan_pro,1,2026-06-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,6
+CHURN-00384,CUST-01076,20250816,plan_growth,1,2025-08-16,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,7
+CHURN-00385,CUST-01077,20250609,plan_pro,1,2025-06-09,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,8
+CHURN-00386,CUST-01080,20260325,plan_starter,1,2026-03-25,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,7
+CHURN-00387,CUST-01082,20250214,plan_starter,2,2025-02-14,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,1
+CHURN-00388,CUST-01083,20251222,plan_growth,1,2025-12-22,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,7
+CHURN-00389,CUST-01094,20250205,plan_starter,1,2025-02-05,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,3
+CHURN-00390,CUST-01098,20251025,plan_pro,1,2025-10-25,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,4
+CHURN-00391,CUST-01107,20260114,plan_pro,1,2026-01-14,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,18
+CHURN-00392,CUST-01113,20260209,plan_starter,1,2026-02-09,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,3
+CHURN-00393,CUST-01115,20260901,plan_starter,1,2026-09-01,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00394,CUST-01121,20250903,plan_starter,1,2025-09-03,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,3
+CHURN-00395,CUST-01122,20260708,plan_pro,2,2026-07-08,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,5
+CHURN-00396,CUST-01124,20250909,plan_starter,1,2025-09-09,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,6
+CHURN-00397,CUST-01125,20250417,plan_starter,1,2025-04-17,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,2
+CHURN-00398,CUST-01130,20260521,plan_growth,1,2026-05-21,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,1
+CHURN-00399,CUST-01134,20251127,plan_growth,1,2025-11-27,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,2
+CHURN-00400,CUST-01139,20260625,plan_starter,1,2026-06-25,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,14
+CHURN-00401,CUST-01145,20250929,plan_starter,1,2025-09-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,1
+CHURN-00402,CUST-01146,20260709,plan_growth,1,2026-07-09,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,19
+CHURN-00403,CUST-01152,20260830,plan_starter,1,2026-08-30,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,8
+CHURN-00404,CUST-01156,20250809,plan_pro,1,2025-08-09,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,3
+CHURN-00405,CUST-01157,20260719,plan_growth,1,2026-07-19,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,11
+CHURN-00406,CUST-01158,20250826,plan_starter,1,2025-08-26,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,4
+CHURN-00407,CUST-01160,20260516,plan_pro,1,2026-05-16,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,16
+CHURN-00408,CUST-01161,20241206,plan_starter,1,2024-12-06,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,3
+CHURN-00409,CUST-01164,20260313,plan_starter,1,2026-03-13,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,4
+CHURN-00410,CUST-01167,20260420,plan_starter,1,2026-04-20,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00411,CUST-01169,20260113,plan_pro,2,2026-01-13,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",179.0,2148.0,14
+CHURN-00412,CUST-01172,20250712,plan_pro,1,2025-07-12,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,8
+CHURN-00413,CUST-01175,20260826,plan_starter,1,2026-08-26,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,3
+CHURN-00414,CUST-01176,20240711,plan_starter,1,2024-07-11,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,4
+CHURN-00415,CUST-01177,20250529,plan_starter,2,2025-05-29,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,7
+CHURN-00416,CUST-01179,20260423,plan_growth,1,2026-04-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,18
+CHURN-00417,CUST-01181,20250924,plan_pro,2,2025-09-24,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,1
+CHURN-00418,CUST-01186,20250131,plan_growth,1,2025-01-31,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,5
+CHURN-00419,CUST-01191,20250222,plan_starter,2,2025-02-22,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,1
+CHURN-00420,CUST-01193,20250629,plan_pro,3,2025-06-29,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,10
+CHURN-00421,CUST-01194,20250201,plan_starter,1,2025-02-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,2
+CHURN-00422,CUST-01196,20251124,plan_starter,1,2025-11-24,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,6
+CHURN-00423,CUST-01198,20260322,plan_growth,1,2026-03-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,3
+CHURN-00424,CUST-01203,20260811,plan_starter,1,2026-08-11,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,12
+CHURN-00425,CUST-01204,20250517,plan_starter,2,2025-05-17,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,5
+CHURN-00426,CUST-01207,20251007,plan_growth,1,2025-10-07,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,5
+CHURN-00427,CUST-01208,20240712,plan_starter,1,2024-07-12,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,6
+CHURN-00428,CUST-01217,20260731,plan_growth,1,2026-07-31,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,18
+CHURN-00429,CUST-01224,20251207,plan_starter,1,2025-12-07,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00430,CUST-01234,20251217,plan_growth,1,2025-12-17,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,3
+CHURN-00431,CUST-01235,20250403,plan_starter,1,2025-04-03,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,13
+CHURN-00432,CUST-01236,20250810,plan_starter,1,2025-08-10,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00433,CUST-01237,20250721,plan_growth,2,2025-07-21,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,14
+CHURN-00434,CUST-01238,20260312,plan_starter,1,2026-03-12,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,13
+CHURN-00435,CUST-01240,20251219,plan_starter,1,2025-12-19,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,3
+CHURN-00436,CUST-01242,20251106,plan_starter,1,2025-11-06,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,6
+CHURN-00437,CUST-01245,20260606,plan_growth,1,2026-06-06,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,4
+CHURN-00438,CUST-01246,20251108,plan_pro,1,2025-11-08,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,7
+CHURN-00439,CUST-01251,20240529,plan_growth,1,2024-05-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,1
+CHURN-00440,CUST-01255,20241127,plan_starter,1,2024-11-27,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,3
+CHURN-00441,CUST-01257,20260627,plan_starter,2,2026-06-27,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,24
+CHURN-00442,CUST-01263,20260813,plan_starter,1,2026-08-13,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00443,CUST-01264,20260522,plan_starter,2,2026-05-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,8
+CHURN-00444,CUST-01266,20260714,plan_starter,1,2026-07-14,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,15
+CHURN-00445,CUST-01268,20240911,plan_starter,1,2024-09-11,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,4
+CHURN-00446,CUST-01271,20260322,plan_growth,2,2026-03-22,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",79.0,948.0,3
+CHURN-00447,CUST-01276,20250929,plan_growth,2,2025-09-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,4
+CHURN-00448,CUST-01277,20260517,plan_growth,1,2026-05-17,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,10
+CHURN-00449,CUST-01286,20251125,plan_growth,2,2025-11-25,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,6
+CHURN-00450,CUST-01293,20250812,plan_growth,1,2025-08-12,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,2
+CHURN-00451,CUST-01297,20250705,plan_growth,1,2025-07-05,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,3
+CHURN-00452,CUST-01298,20260724,plan_growth,1,2026-07-24,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,20
+CHURN-00453,CUST-01300,20260122,plan_pro,1,2026-01-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,7
+CHURN-00454,CUST-01303,20251025,plan_pro,1,2025-10-25,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,1
+CHURN-00455,CUST-01304,20260901,plan_starter,1,2026-09-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,6
+CHURN-00456,CUST-01308,20260607,plan_growth,1,2026-06-07,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,6
+CHURN-00457,CUST-01310,20241130,plan_starter,1,2024-11-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,5
+CHURN-00458,CUST-01311,20251207,plan_enterprise,1,2025-12-07,poor_support,voluntary,Unresolved support tickets and slow resolution times.,499.0,5988.0,17
+CHURN-00459,CUST-01318,20251015,plan_pro,2,2025-10-15,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,6
+CHURN-00460,CUST-01321,20260302,plan_starter,1,2026-03-02,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,20
+CHURN-00461,CUST-01325,20251025,plan_starter,1,2025-10-25,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,10
+CHURN-00462,CUST-01326,20240606,plan_starter,1,2024-06-06,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,2
+CHURN-00463,CUST-01327,20260901,plan_pro,2,2026-09-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,3
+CHURN-00464,CUST-01328,20251002,plan_pro,1,2025-10-02,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,10
+CHURN-00465,CUST-01332,20251216,plan_starter,1,2025-12-16,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,11
+CHURN-00466,CUST-01333,20260813,plan_starter,2,2026-08-13,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,19
+CHURN-00467,CUST-01334,20250709,plan_starter,3,2025-07-09,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,5
+CHURN-00468,CUST-01343,20260810,plan_growth,1,2026-08-10,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,11
+CHURN-00469,CUST-01346,20260108,plan_growth,1,2026-01-08,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,2
+CHURN-00470,CUST-01348,20250902,plan_growth,1,2025-09-02,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,10
+CHURN-00471,CUST-01349,20260318,plan_pro,1,2026-03-18,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,5
+CHURN-00472,CUST-01353,20260828,plan_growth,2,2026-08-28,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,21
+CHURN-00473,CUST-01359,20260212,plan_growth,1,2026-02-12,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,4
+CHURN-00474,CUST-01361,20250902,plan_starter,1,2025-09-02,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,4
+CHURN-00475,CUST-01365,20250508,plan_growth,3,2025-05-08,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,5
+CHURN-00476,CUST-01366,20260827,plan_pro,1,2026-08-27,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,16
+CHURN-00477,CUST-01367,20260113,plan_growth,3,2026-01-13,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,5
+CHURN-00478,CUST-01368,20251215,plan_growth,1,2025-12-15,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,9
+CHURN-00479,CUST-01369,20260328,plan_growth,2,2026-03-28,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,4
+CHURN-00480,CUST-01370,20260508,plan_pro,1,2026-05-08,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,22
+CHURN-00481,CUST-01376,20241024,plan_starter,1,2024-10-24,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,2
+CHURN-00482,CUST-01379,20260901,plan_growth,1,2026-09-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,3
+CHURN-00483,CUST-01385,20250716,plan_growth,1,2025-07-16,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,8
+CHURN-00484,CUST-01388,20250530,plan_growth,1,2025-05-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,5
+CHURN-00485,CUST-01389,20240728,plan_pro,2,2024-07-28,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,2
+CHURN-00486,CUST-01391,20251117,plan_starter,1,2025-11-17,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,15
+CHURN-00487,CUST-01392,20260702,plan_starter,1,2026-07-02,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,4
+CHURN-00488,CUST-01401,20251112,plan_growth,1,2025-11-12,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,10
+CHURN-00489,CUST-01402,20260423,plan_pro,1,2026-04-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,6
+CHURN-00490,CUST-01411,20250731,plan_growth,1,2025-07-31,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,7
+CHURN-00491,CUST-01414,20260428,plan_pro,2,2026-04-28,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,11
+CHURN-00492,CUST-01418,20250831,plan_growth,1,2025-08-31,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,1
+CHURN-00493,CUST-01420,20250608,plan_starter,2,2025-06-08,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",29.0,348.0,3
+CHURN-00494,CUST-01422,20260113,plan_starter,2,2026-01-13,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,8
+CHURN-00495,CUST-01425,20250619,plan_starter,1,2025-06-19,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,2
+CHURN-00496,CUST-01426,20260208,plan_pro,1,2026-02-08,poor_support,voluntary,Unresolved support tickets and slow resolution times.,179.0,2148.0,4
+CHURN-00497,CUST-01428,20251231,plan_growth,1,2025-12-31,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,14
+CHURN-00498,CUST-01430,20260805,plan_growth,1,2026-08-05,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,3
+CHURN-00499,CUST-01435,20250821,plan_pro,1,2025-08-21,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,3
+CHURN-00500,CUST-01438,20260521,plan_starter,1,2026-05-21,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,4
+CHURN-00501,CUST-01442,20260616,plan_pro,1,2026-06-16,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,179.0,2148.0,1
+CHURN-00502,CUST-01443,20251112,plan_starter,1,2025-11-12,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,11
+CHURN-00503,CUST-01444,20250724,plan_starter,1,2025-07-24,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,1
+CHURN-00504,CUST-01445,20260529,plan_growth,1,2026-05-29,poor_support,voluntary,Unresolved support tickets and slow resolution times.,79.0,948.0,10
+CHURN-00505,CUST-01449,20251223,plan_pro,1,2025-12-23,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,2
+CHURN-00506,CUST-01453,20251212,plan_starter,1,2025-12-12,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,5
+CHURN-00507,CUST-01454,20260823,plan_pro,2,2026-08-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,2
+CHURN-00508,CUST-01455,20250709,plan_pro,1,2025-07-09,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,179.0,2148.0,8
+CHURN-00509,CUST-01456,20250224,plan_growth,2,2025-02-24,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,9
+CHURN-00510,CUST-01460,20260203,plan_pro,2,2026-02-03,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,179.0,2148.0,6
+CHURN-00511,CUST-01464,20241027,plan_starter,1,2024-10-27,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,2
+CHURN-00512,CUST-01469,20250928,plan_growth,1,2025-09-28,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,1
+CHURN-00513,CUST-01470,20250422,plan_growth,2,2025-04-22,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,79.0,948.0,5
+CHURN-00514,CUST-01471,20260901,plan_growth,1,2026-09-01,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,79.0,948.0,7
+CHURN-00515,CUST-01475,20260824,plan_enterprise,1,2026-08-24,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,499.0,5988.0,8
+CHURN-00516,CUST-01477,20260528,plan_growth,1,2026-05-28,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,1
+CHURN-00517,CUST-01479,20260429,plan_starter,1,2026-04-29,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,2
+CHURN-00518,CUST-01480,20260520,plan_starter,1,2026-05-20,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,29.0,348.0,4
+CHURN-00519,CUST-01484,20260816,plan_starter,1,2026-08-16,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,29.0,348.0,13
+CHURN-00520,CUST-01486,20251112,plan_starter,2,2025-11-12,poor_support,voluntary,Unresolved support tickets and slow resolution times.,29.0,348.0,15
+CHURN-00521,CUST-01488,20260321,plan_starter,1,2026-03-21,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,29.0,348.0,6
+CHURN-00522,CUST-01491,20250605,plan_growth,1,2025-06-05,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,5
+CHURN-00523,CUST-01493,20260211,plan_growth,2,2026-02-11,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,79.0,948.0,2
+CHURN-00524,CUST-01495,20251023,plan_starter,1,2025-10-23,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,29.0,348.0,1
+CHURN-00525,CUST-01497,20250928,plan_growth,1,2025-09-28,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,4
+CHURN-00526,CUST-01498,20250428,plan_growth,1,2025-04-28,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,79.0,948.0,1

@@ -1,0 +1,5 @@
+plan_id,plan_name,plan_tier,monthly_price,annual_price,max_seats
+plan_starter,Starter,Starter,29.0,290.0,2
+plan_growth,Growth,Growth,79.0,790.0,10
+plan_pro,Professional,Professional,179.0,1790.0,25
+plan_enterprise,Enterprise,Enterprise,499.0,4990.0,100

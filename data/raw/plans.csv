@@ -1,0 +1,5 @@
+plan_id,plan_name,tier,monthly_price,annual_price,max_seats,features_included,created_at
+plan_starter,Starter,Starter,29.0,290.0,2,"Core Analytics, 5 Dashboards, Standard Support",2024-01-01 00:00:00
+plan_growth,Growth,Growth,79.0,790.0,10,"Advanced Metrics, 25 Dashboards, Priority Support, API Access",2024-01-01 00:00:00
+plan_pro,Professional,Professional,179.0,1790.0,25,"Predictive Churn Engine, Unlimited Dashboards, 24/7 Support, Webhooks",2024-01-01 00:00:00
+plan_enterprise,Enterprise,Enterprise,499.0,4990.0,100,"Dedicated AI Analyst, Custom Integrations, SLA, Dedicated Account Exec",2024-01-01 00:00:00

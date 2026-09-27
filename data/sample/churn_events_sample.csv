@@ -1,0 +1,21 @@
+churn_id,customer_id,subscription_id,churn_date,churn_reason,churn_type,feedback,created_at
+CHURN-00001,CUST-00002,SUB-000002,2025-12-27,poor_support,voluntary,Unresolved support tickets and slow resolution times.,2025-12-27 18:00:00
+CHURN-00002,CUST-00005,SUB-000005,2025-12-25,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",2025-12-25 18:00:00
+CHURN-00003,CUST-00006,SUB-000006,2026-04-30,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,2026-04-30 18:00:00
+CHURN-00004,CUST-00008,SUB-000008,2026-06-29,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,2026-06-29 18:00:00
+CHURN-00005,CUST-00010,SUB-000010,2026-04-18,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,2026-04-18 18:00:00
+CHURN-00006,CUST-00012,SUB-000012,2026-06-15,poor_support,voluntary,Unresolved support tickets and slow resolution times.,2026-06-15 18:00:00
+CHURN-00007,CUST-00013,SUB-000013,2026-08-30,poor_support,voluntary,Unresolved support tickets and slow resolution times.,2026-08-30 18:00:00
+CHURN-00008,CUST-00014,SUB-000014,2026-05-27,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,2026-05-27 18:00:00
+CHURN-00009,CUST-00015,SUB-000015,2026-09-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,2026-09-01 18:00:00
+CHURN-00010,CUST-00021,SUB-000021,2025-07-14,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",2025-07-14 18:00:00
+CHURN-00011,CUST-00022,SUB-000022,2025-10-22,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,2025-10-22 18:00:00
+CHURN-00012,CUST-00024,SUB-000024,2026-06-15,competitor_switch,voluntary,Switched to alternative offering bundled pricing with CRM.,2026-06-15 18:00:00
+CHURN-00013,CUST-00026,SUB-000026,2025-08-06,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,2025-08-06 18:00:00
+CHURN-00014,CUST-00027,SUB-000027,2025-09-17,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",2025-09-17 18:00:00
+CHURN-00015,CUST-00028,SUB-000028,2025-11-25,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,2025-11-25 18:00:00
+CHURN-00016,CUST-00029,SUB-000029,2026-01-17,poor_support,voluntary,Unresolved support tickets and slow resolution times.,2026-01-17 18:00:00
+CHURN-00017,CUST-00033,SUB-000033,2026-08-20,payment_delinquency,involuntary,Card declined multiple billing attempts without updated payment details.,2026-08-20 18:00:00
+CHURN-00018,CUST-00035,SUB-000035,2025-09-01,lack_of_features,voluntary,Missing specific multi-tenant compliance reporting required by our team.,2025-09-01 18:00:00
+CHURN-00019,CUST-00044,SUB-000044,2026-06-09,infrequent_use,voluntary,"Project ended, team no longer requires active daily platform access.",2026-06-09 18:00:00
+CHURN-00020,CUST-00045,SUB-000045,2025-10-01,price_sensitivity,voluntary,Plan became too expensive relative to our budget this fiscal quarter.,2025-10-01 18:00:00
