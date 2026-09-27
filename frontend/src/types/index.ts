@@ -308,3 +308,55 @@ export interface DataQualityReport {
   summary: string;
   checks: QualityRuleResult[];
 }
+
+// ============================================================================
+// AI ANALYST
+// ============================================================================
+export interface SupportingMetric {
+  name: string;
+  value: string;
+  raw_value?: number;
+  benchmark?: string;
+}
+
+export interface ChartDataPoint {
+  label: string;
+  value: number;
+  secondary_value?: number;
+  category?: string;
+}
+
+export interface ChartData {
+  chart_type: 'bar' | 'column' | 'donut' | 'line' | 'scatter' | string;
+  title: string;
+  x_label?: string;
+  y_label?: string;
+  data: ChartDataPoint[];
+}
+
+export interface TableData {
+  title: string;
+  columns: string[];
+  rows: (string | number)[][];
+}
+
+export interface AnalystQueryResponse {
+  query: string;
+  intent: string;
+  answer: string;
+  supporting_metrics: SupportingMetric[];
+  relevant_segment_or_filter: string;
+  data_timestamp: string;
+  chart?: ChartData;
+  table?: TableData;
+  limitations?: string;
+  sources: string[];
+  is_model_interpretation: boolean;
+  suggested_followups: string[];
+}
+
+export interface SuggestedQuestion {
+  category: string;
+  question: string;
+  description: string;
+}

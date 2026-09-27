@@ -21,7 +21,8 @@ from api.routers import (
     cohorts,
     revenue,
     predictions,
-    quality
+    quality,
+    analyst
 )
 
 settings = get_settings()
@@ -35,7 +36,8 @@ tags_metadata = [
     {"name": "Cohort Analysis", "description": "Signup-month triangular customer retention matrices."},
     {"name": "Revenue Analytics", "description": "Recurring revenue distributions and at-risk ARR exposure audits."},
     {"name": "ML Predictions", "description": "Real-time machine learning inference and SHAP explainability."},
-    {"name": "Data Quality", "description": "Automated data hygiene scorecard and integrity validations."}
+    {"name": "Data Quality", "description": "Automated data hygiene scorecard and integrity validations."},
+    {"name": "AI Analyst", "description": "Grounded natural-language customer intelligence copilot."}
 ]
 
 app = FastAPI(
@@ -126,6 +128,7 @@ app.include_router(cohorts.router)
 app.include_router(revenue.router)
 app.include_router(predictions.router)
 app.include_router(quality.router)
+app.include_router(analyst.router)
 
 
 @app.get("/", summary="Root Info", tags=["System"])

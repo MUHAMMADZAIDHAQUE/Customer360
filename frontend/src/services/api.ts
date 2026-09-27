@@ -23,6 +23,8 @@ import {
   BatchPredictionResponse,
   PredictionResponse,
   DataQualityReport,
+  AnalystQueryResponse,
+  SuggestedQuestion,
 } from '../types';
 
 const API_BASE = '/api';
@@ -182,6 +184,24 @@ class ApiService {
   // ==========================================================================
   async getDataQuality(): Promise<DataQualityReport> {
     return this.request('/data-quality');
+  }
+
+  // ==========================================================================
+  // AI Analyst
+  // ==========================================================================
+  async askAnalyst(query: string, session_id?: string): Promise<AnalystQueryResponse> {
+    return this.request('/analyst/query', {
+      method: 'POST',
+      body: JSON.stringify({ query, session_id }),
+    });
+  }
+
+  async getAnalystSuggestions(): Promise<SuggestedQuestion[]> {
+    return this.request('/analyst/suggested-questions');
+  }
+
+  async getAnalystStatus(): Promise<any> {
+    return this.request('/analyst/status');
   }
 }
 
