@@ -1,0 +1,1953 @@
+{
+  "deep_dive": {
+    "demographics": {
+      "age_metrics": {
+        "min_age": 21,
+        "max_age": 75,
+        "mean_age": 36.3,
+        "median_age": 35.0,
+        "std_age": 10.1
+      },
+      "country_metrics": [
+        {
+          "country": "United States",
+          "customer_count": 753,
+          "churned": 271.0,
+          "churn_rate_pct": 35.99,
+          "total_arr": 683016.0
+        },
+        {
+          "country": "United Kingdom",
+          "customer_count": 260,
+          "churned": 90.0,
+          "churn_rate_pct": 34.62,
+          "total_arr": 233880.0
+        },
+        {
+          "country": "Canada",
+          "customer_count": 148,
+          "churned": 58.0,
+          "churn_rate_pct": 39.19,
+          "total_arr": 141120.0
+        },
+        {
+          "country": "Germany",
+          "customer_count": 146,
+          "churned": 46.0,
+          "churn_rate_pct": 31.51,
+          "total_arr": 129000.0
+        },
+        {
+          "country": "Australia",
+          "customer_count": 120,
+          "churned": 42.0,
+          "churn_rate_pct": 35.0,
+          "total_arr": 89904.0
+        },
+        {
+          "country": "France",
+          "customer_count": 73,
+          "churned": 19.0,
+          "churn_rate_pct": 26.03,
+          "total_arr": 82152.0
+        }
+      ],
+      "raw_demographics": [
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "Illinois",
+          "count": 61,
+          "avg_age": 35.9,
+          "churned_count": 23.0,
+          "churn_rate_pct": 37.7,
+          "active_mrr": 4282.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "Colorado",
+          "count": 54,
+          "avg_age": 34.9,
+          "churned_count": 17.0,
+          "churn_rate_pct": 31.48,
+          "active_mrr": 4783.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "New York",
+          "count": 52,
+          "avg_age": 36.6,
+          "churned_count": 20.0,
+          "churn_rate_pct": 38.46,
+          "active_mrr": 3668.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "Washington",
+          "count": 51,
+          "avg_age": 35.3,
+          "churned_count": 19.0,
+          "churn_rate_pct": 37.25,
+          "active_mrr": 3248.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "Massachusetts",
+          "count": 51,
+          "avg_age": 36.9,
+          "churned_count": 18.0,
+          "churn_rate_pct": 35.29,
+          "active_mrr": 5477.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "Texas",
+          "count": 50,
+          "avg_age": 36.2,
+          "churned_count": 16.0,
+          "churn_rate_pct": 32.0,
+          "active_mrr": 3646.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "Georgia",
+          "count": 49,
+          "avg_age": 38.8,
+          "churned_count": 17.0,
+          "churn_rate_pct": 34.69,
+          "active_mrr": 3818.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "New York",
+          "count": 47,
+          "avg_age": 34.5,
+          "churned_count": 15.0,
+          "churn_rate_pct": 31.91,
+          "active_mrr": 4828.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "Colorado",
+          "count": 46,
+          "avg_age": 36.8,
+          "churned_count": 20.0,
+          "churn_rate_pct": 43.48,
+          "active_mrr": 3564.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "Georgia",
+          "count": 45,
+          "avg_age": 36.7,
+          "churned_count": 19.0,
+          "churn_rate_pct": 42.22,
+          "active_mrr": 2894.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "Washington",
+          "count": 45,
+          "avg_age": 35.8,
+          "churned_count": 19.0,
+          "churn_rate_pct": 42.22,
+          "active_mrr": 2424.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "Massachusetts",
+          "count": 43,
+          "avg_age": 34.7,
+          "churned_count": 14.0,
+          "churn_rate_pct": 32.56,
+          "active_mrr": 3131.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "Texas",
+          "count": 42,
+          "avg_age": 38.2,
+          "churned_count": 12.0,
+          "churn_rate_pct": 28.57,
+          "active_mrr": 3380.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "California",
+          "count": 42,
+          "avg_age": 37.5,
+          "churned_count": 15.0,
+          "churn_rate_pct": 35.71,
+          "active_mrr": 3023.0
+        },
+        {
+          "gender": "Male",
+          "country": "United States",
+          "region": "California",
+          "count": 41,
+          "avg_age": 37.0,
+          "churned_count": 15.0,
+          "churn_rate_pct": 36.59,
+          "active_mrr": 2844.0
+        },
+        {
+          "gender": "Male",
+          "country": "United Kingdom",
+          "region": "Greater London",
+          "count": 40,
+          "avg_age": 34.3,
+          "churned_count": 14.0,
+          "churn_rate_pct": 35.0,
+          "active_mrr": 2424.0
+        },
+        {
+          "gender": "Female",
+          "country": "United Kingdom",
+          "region": "Greater London",
+          "count": 39,
+          "avg_age": 35.4,
+          "churned_count": 12.0,
+          "churn_rate_pct": 30.77,
+          "active_mrr": 3173.0
+        },
+        {
+          "gender": "Female",
+          "country": "United Kingdom",
+          "region": "West Midlands",
+          "count": 39,
+          "avg_age": 40.6,
+          "churned_count": 12.0,
+          "churn_rate_pct": 30.77,
+          "active_mrr": 5103.0
+        },
+        {
+          "gender": "Male",
+          "country": "Germany",
+          "region": "Hesse",
+          "count": 37,
+          "avg_age": 38.0,
+          "churned_count": 10.0,
+          "churn_rate_pct": 27.03,
+          "active_mrr": 2733.0
+        },
+        {
+          "gender": "Female",
+          "country": "United States",
+          "region": "Illinois",
+          "count": 34,
+          "avg_age": 32.2,
+          "churned_count": 12.0,
+          "churn_rate_pct": 35.29,
+          "active_mrr": 1908.0
+        },
+        {
+          "gender": "Female",
+          "country": "Canada",
+          "region": "British Columbia",
+          "count": 33,
+          "avg_age": 35.4,
+          "churned_count": 11.0,
+          "churn_rate_pct": 33.33,
+          "active_mrr": 2528.0
+        },
+        {
+          "gender": "Male",
+          "country": "Germany",
+          "region": "Bavaria",
+          "count": 32,
+          "avg_age": 34.4,
+          "churned_count": 13.0,
+          "churn_rate_pct": 40.63,
+          "active_mrr": 1601.0
+        },
+        {
+          "gender": "Female",
+          "country": "United Kingdom",
+          "region": "North West",
+          "count": 32,
+          "avg_age": 35.5,
+          "churned_count": 8.0,
+          "churn_rate_pct": 25.0,
+          "active_mrr": 2266.0
+        },
+        {
+          "gender": "Female",
+          "country": "United Kingdom",
+          "region": "Scotland",
+          "count": 31,
+          "avg_age": 36.4,
+          "churned_count": 16.0,
+          "churn_rate_pct": 51.61,
+          "active_mrr": 1605.0
+        },
+        {
+          "gender": "Male",
+          "country": "United Kingdom",
+          "region": "Scotland",
+          "count": 30,
+          "avg_age": 32.6,
+          "churned_count": 10.0,
+          "churn_rate_pct": 33.33,
+          "active_mrr": 1970.0
+        },
+        {
+          "gender": "Male",
+          "country": "Canada",
+          "region": "British Columbia",
+          "count": 30,
+          "avg_age": 39.0,
+          "churned_count": 12.0,
+          "churn_rate_pct": 40.0,
+          "active_mrr": 1942.0
+        },
+        {
+          "gender": "Female",
+          "country": "Australia",
+          "region": "New South Wales",
+          "count": 26,
+          "avg_age": 36.5,
+          "churned_count": 8.0,
+          "churn_rate_pct": 30.77,
+          "active_mrr": 1272.0
+        },
+        {
+          "gender": "Male",
+          "country": "United Kingdom",
+          "region": "North West",
+          "count": 26,
+          "avg_age": 40.6,
+          "churned_count": 8.0,
+          "churn_rate_pct": 30.77,
+          "active_mrr": 1822.0
+        },
+        {
+          "gender": "Female",
+          "country": "Canada",
+          "region": "Ontario",
+          "count": 24,
+          "avg_age": 35.8,
+          "churned_count": 11.0,
+          "churn_rate_pct": 45.83,
+          "active_mrr": 3007.0
+        },
+        {
+          "gender": "Male",
+          "country": "United Kingdom",
+          "region": "West Midlands",
+          "count": 23,
+          "avg_age": 35.7,
+          "churned_count": 10.0,
+          "churn_rate_pct": 43.48,
+          "active_mrr": 1127.0
+        },
+        {
+          "gender": "Female",
+          "country": "Canada",
+          "region": "Quebec",
+          "count": 23,
+          "avg_age": 36.8,
+          "churned_count": 8.0,
+          "churn_rate_pct": 34.78,
+          "active_mrr": 1605.0
+        },
+        {
+          "gender": "Female",
+          "country": "Australia",
+          "region": "Victoria",
+          "count": 22,
+          "avg_age": 33.6,
+          "churned_count": 8.0,
+          "churn_rate_pct": 36.36,
+          "active_mrr": 1376.0
+        },
+        {
+          "gender": "Male",
+          "country": "Germany",
+          "region": "Berlin",
+          "count": 21,
+          "avg_age": 37.2,
+          "churned_count": 9.0,
+          "churn_rate_pct": 42.86,
+          "active_mrr": 1688.0
+        },
+        {
+          "gender": "Male",
+          "country": "France",
+          "region": "Auvergne-Rh\u00f4ne-Alpes",
+          "count": 20,
+          "avg_age": 34.8,
+          "churned_count": 7.0,
+          "churn_rate_pct": 35.0,
+          "active_mrr": 1547.0
+        },
+        {
+          "gender": "Male",
+          "country": "Canada",
+          "region": "Ontario",
+          "count": 20,
+          "avg_age": 36.2,
+          "churned_count": 11.0,
+          "churn_rate_pct": 55.0,
+          "active_mrr": 1131.0
+        },
+        {
+          "gender": "Male",
+          "country": "Australia",
+          "region": "Victoria",
+          "count": 20,
+          "avg_age": 39.6,
+          "churned_count": 11.0,
+          "churn_rate_pct": 55.0,
+          "active_mrr": 811.0
+        },
+        {
+          "gender": "Female",
+          "country": "France",
+          "region": "\u00cele-de-France",
+          "count": 19,
+          "avg_age": 42.4,
+          "churned_count": 6.0,
+          "churn_rate_pct": 31.58,
+          "active_mrr": 2067.0
+        },
+        {
+          "gender": "Male",
+          "country": "Australia",
+          "region": "Queensland",
+          "count": 19,
+          "avg_age": 39.3,
+          "churned_count": 6.0,
+          "churn_rate_pct": 31.58,
+          "active_mrr": 1447.0
+        },
+        {
+          "gender": "Female",
+          "country": "Germany",
+          "region": "Bavaria",
+          "count": 19,
+          "avg_age": 34.5,
+          "churned_count": 6.0,
+          "churn_rate_pct": 31.58,
+          "active_mrr": 1077.0
+        },
+        {
+          "gender": "Female",
+          "country": "Germany",
+          "region": "Berlin",
+          "count": 19,
+          "avg_age": 31.1,
+          "churned_count": 5.0,
+          "churn_rate_pct": 26.32,
+          "active_mrr": 1256.0
+        },
+        {
+          "gender": "Male",
+          "country": "Canada",
+          "region": "Quebec",
+          "count": 18,
+          "avg_age": 38.6,
+          "churned_count": 5.0,
+          "churn_rate_pct": 27.78,
+          "active_mrr": 1547.0
+        },
+        {
+          "gender": "Female",
+          "country": "Germany",
+          "region": "Hesse",
+          "count": 18,
+          "avg_age": 39.1,
+          "churned_count": 3.0,
+          "churn_rate_pct": 16.67,
+          "active_mrr": 2395.0
+        },
+        {
+          "gender": "Female",
+          "country": "Australia",
+          "region": "Queensland",
+          "count": 18,
+          "avg_age": 34.2,
+          "churned_count": 3.0,
+          "churn_rate_pct": 16.67,
+          "active_mrr": 1505.0
+        },
+        {
+          "gender": "Female",
+          "country": "France",
+          "region": "Auvergne-Rh\u00f4ne-Alpes",
+          "count": 17,
+          "avg_age": 33.8,
+          "churned_count": 3.0,
+          "churn_rate_pct": 17.65,
+          "active_mrr": 1726.0
+        },
+        {
+          "gender": "Male",
+          "country": "France",
+          "region": "\u00cele-de-France",
+          "count": 17,
+          "avg_age": 36.9,
+          "churned_count": 3.0,
+          "churn_rate_pct": 17.65,
+          "active_mrr": 1506.0
+        },
+        {
+          "gender": "Male",
+          "country": "Australia",
+          "region": "New South Wales",
+          "count": 15,
+          "avg_age": 40.5,
+          "churned_count": 6.0,
+          "churn_rate_pct": 40.0,
+          "active_mrr": 1081.0
+        }
+      ]
+    },
+    "revenue": {
+      "executive_kpis": {
+        "total_customers": 1500,
+        "active_customers": 974.0,
+        "total_mrr": 113256.0,
+        "total_arr": 1359072.0,
+        "arpu": 116.28,
+        "total_realized_revenue": 1944200.0,
+        "avg_realized_clv": 1296.13,
+        "median_realized_clv": 711.0
+      },
+      "plan_revenue_breakdown": [
+        {
+          "plan_name": "Enterprise",
+          "plan_tier": "Enterprise",
+          "total_subscribers": 89,
+          "active_subscribers": 78.0,
+          "plan_mrr": 38922.0,
+          "plan_arr": 467064.0,
+          "arr_share_pct": 34.37
+        },
+        {
+          "plan_name": "Professional",
+          "plan_tier": "Professional",
+          "total_subscribers": 299,
+          "active_subscribers": 203.0,
+          "plan_mrr": 36337.0,
+          "plan_arr": 436044.0,
+          "arr_share_pct": 32.08
+        },
+        {
+          "plan_name": "Growth",
+          "plan_tier": "Growth",
+          "total_subscribers": 545,
+          "active_subscribers": 358.0,
+          "plan_mrr": 28282.0,
+          "plan_arr": 339384.0,
+          "arr_share_pct": 24.97
+        },
+        {
+          "plan_name": "Starter",
+          "plan_tier": "Starter",
+          "total_subscribers": 567,
+          "active_subscribers": 335.0,
+          "plan_mrr": 9715.0,
+          "plan_arr": 116580.0,
+          "arr_share_pct": 8.58
+        }
+      ]
+    },
+    "churn_retention": {
+      "overall": {
+        "total_customers": 1500,
+        "churned_customers": 526.0,
+        "churn_rate_pct": 35.07,
+        "retention_rate_pct": 64.93
+      },
+      "reasons": [
+        {
+          "churn_reason": "competitor_switch",
+          "count": 131,
+          "pct_of_churns": 24.9
+        },
+        {
+          "churn_reason": "price_sensitivity",
+          "count": 125,
+          "pct_of_churns": 23.76
+        },
+        {
+          "churn_reason": "lack_of_features",
+          "count": 110,
+          "pct_of_churns": 20.91
+        },
+        {
+          "churn_reason": "poor_support",
+          "count": 74,
+          "pct_of_churns": 14.07
+        },
+        {
+          "churn_reason": "infrequent_use",
+          "count": 53,
+          "pct_of_churns": 10.08
+        },
+        {
+          "churn_reason": "payment_delinquency",
+          "count": 33,
+          "pct_of_churns": 6.27
+        }
+      ],
+      "tenure_dynamics": [
+        {
+          "tenure_bracket": "01-03 months",
+          "total_customers": 194,
+          "churned_count": 122.0,
+          "churn_rate_pct": 62.89,
+          "avg_mrr": 34.94
+        },
+        {
+          "tenure_bracket": "04-06 months",
+          "total_customers": 331,
+          "churned_count": 149.0,
+          "churn_rate_pct": 45.02,
+          "avg_mrr": 57.97
+        },
+        {
+          "tenure_bracket": "07-12 months",
+          "total_customers": 481,
+          "churned_count": 160.0,
+          "churn_rate_pct": 33.26,
+          "avg_mrr": 76.9
+        },
+        {
+          "tenure_bracket": "13-24 months",
+          "total_customers": 450,
+          "churned_count": 89.0,
+          "churn_rate_pct": 19.78,
+          "avg_mrr": 100.71
+        },
+        {
+          "tenure_bracket": "25+ months",
+          "total_customers": 44,
+          "churned_count": 6.0,
+          "churn_rate_pct": 13.64,
+          "avg_mrr": 113.23
+        }
+      ]
+    },
+    "engagement_support": {
+      "engagement": [
+        {
+          "customer_status": "churned",
+          "customer_count": 526,
+          "avg_sessions": 302.0,
+          "median_sessions": 232.5,
+          "avg_engagement_minutes": 6032.6,
+          "avg_active_days": 102.9,
+          "declining_engagement_count": 78.0,
+          "declining_pct": 14.83
+        },
+        {
+          "customer_status": "active",
+          "customer_count": 974,
+          "avg_sessions": 541.9,
+          "median_sessions": 472.5,
+          "avg_engagement_minutes": 10884.2,
+          "avg_active_days": 168.1,
+          "declining_engagement_count": 91.0,
+          "declining_pct": 9.34
+        }
+      ],
+      "support": [
+        {
+          "customer_status": "churned",
+          "customer_count": 526,
+          "avg_tickets": 2.58,
+          "avg_urgent_tickets": 1.52,
+          "avg_csat": 2.17,
+          "friction_count": 411.0,
+          "friction_pct": 78.14
+        },
+        {
+          "customer_status": "active",
+          "customer_count": 974,
+          "avg_tickets": 1.03,
+          "avg_urgent_tickets": 0.21,
+          "avg_csat": 3.8,
+          "friction_count": 83.0,
+          "friction_pct": 8.52
+        }
+      ]
+    },
+    "product_usage": {
+      "feature_summary": [
+        {
+          "feature_name": "dashboard_view",
+          "users_count": 1495,
+          "total_events": 668831.0,
+          "avg_events_per_session": 16.48,
+          "avg_duration_minutes": 14.4
+        },
+        {
+          "feature_name": "api_request",
+          "users_count": 1499,
+          "total_events": 668471.0,
+          "avg_events_per_session": 16.46,
+          "avg_duration_minutes": 14.3
+        },
+        {
+          "feature_name": "automated_workflow",
+          "users_count": 1497,
+          "total_events": 666363.0,
+          "avg_events_per_session": 16.47,
+          "avg_duration_minutes": 14.4
+        },
+        {
+          "feature_name": "team_collaboration",
+          "users_count": 1497,
+          "total_events": 666028.0,
+          "avg_events_per_session": 16.48,
+          "avg_duration_minutes": 14.4
+        },
+        {
+          "feature_name": "ai_query",
+          "users_count": 1498,
+          "total_events": 664468.0,
+          "avg_events_per_session": 16.46,
+          "avg_duration_minutes": 14.4
+        },
+        {
+          "feature_name": "report_export",
+          "users_count": 1497,
+          "total_events": 664067.0,
+          "avg_events_per_session": 16.47,
+          "avg_duration_minutes": 14.4
+        }
+      ],
+      "product_usage_benchmarks": [
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "active",
+          "feature_name": "ai_query",
+          "customer_count": 78,
+          "avg_usage_count": 29.0,
+          "avg_duration_minutes": 25.4,
+          "total_feature_events": 79312.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "churned",
+          "feature_name": "ai_query",
+          "customer_count": 11,
+          "avg_usage_count": 27.7,
+          "avg_duration_minutes": 23.0,
+          "total_feature_events": 6842.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "active",
+          "feature_name": "api_request",
+          "customer_count": 78,
+          "avg_usage_count": 28.7,
+          "avg_duration_minutes": 24.6,
+          "total_feature_events": 77908.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "churned",
+          "feature_name": "api_request",
+          "customer_count": 11,
+          "avg_usage_count": 28.5,
+          "avg_duration_minutes": 25.0,
+          "total_feature_events": 7764.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "active",
+          "feature_name": "automated_workflow",
+          "customer_count": 78,
+          "avg_usage_count": 28.8,
+          "avg_duration_minutes": 25.2,
+          "total_feature_events": 77817.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "churned",
+          "feature_name": "automated_workflow",
+          "customer_count": 11,
+          "avg_usage_count": 28.7,
+          "avg_duration_minutes": 24.4,
+          "total_feature_events": 6935.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "active",
+          "feature_name": "dashboard_view",
+          "customer_count": 78,
+          "avg_usage_count": 28.8,
+          "avg_duration_minutes": 25.2,
+          "total_feature_events": 78000.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "churned",
+          "feature_name": "dashboard_view",
+          "customer_count": 11,
+          "avg_usage_count": 28.6,
+          "avg_duration_minutes": 25.6,
+          "total_feature_events": 7235.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "active",
+          "feature_name": "report_export",
+          "customer_count": 78,
+          "avg_usage_count": 28.8,
+          "avg_duration_minutes": 25.0,
+          "total_feature_events": 76528.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "churned",
+          "feature_name": "report_export",
+          "customer_count": 11,
+          "avg_usage_count": 28.4,
+          "avg_duration_minutes": 24.5,
+          "total_feature_events": 7120.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "active",
+          "feature_name": "team_collaboration",
+          "customer_count": 78,
+          "avg_usage_count": 28.8,
+          "avg_duration_minutes": 25.2,
+          "total_feature_events": 76841.0
+        },
+        {
+          "plan_tier": "Enterprise",
+          "customer_status": "churned",
+          "feature_name": "team_collaboration",
+          "customer_count": 11,
+          "avg_usage_count": 27.9,
+          "avg_duration_minutes": 24.1,
+          "total_feature_events": 7280.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "active",
+          "feature_name": "ai_query",
+          "customer_count": 358,
+          "avg_usage_count": 15.6,
+          "avg_duration_minutes": 13.6,
+          "total_feature_events": 173845.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "churned",
+          "feature_name": "ai_query",
+          "customer_count": 187,
+          "avg_usage_count": 15.2,
+          "avg_duration_minutes": 13.3,
+          "total_feature_events": 52636.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "active",
+          "feature_name": "api_request",
+          "customer_count": 358,
+          "avg_usage_count": 15.6,
+          "avg_duration_minutes": 13.7,
+          "total_feature_events": 175107.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "churned",
+          "feature_name": "api_request",
+          "customer_count": 186,
+          "avg_usage_count": 15.1,
+          "avg_duration_minutes": 13.2,
+          "total_feature_events": 52777.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "active",
+          "feature_name": "automated_workflow",
+          "customer_count": 358,
+          "avg_usage_count": 15.6,
+          "avg_duration_minutes": 13.6,
+          "total_feature_events": 174509.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "churned",
+          "feature_name": "automated_workflow",
+          "customer_count": 186,
+          "avg_usage_count": 15.1,
+          "avg_duration_minutes": 13.3,
+          "total_feature_events": 52113.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "active",
+          "feature_name": "dashboard_view",
+          "customer_count": 358,
+          "avg_usage_count": 15.6,
+          "avg_duration_minutes": 13.7,
+          "total_feature_events": 175017.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "churned",
+          "feature_name": "dashboard_view",
+          "customer_count": 184,
+          "avg_usage_count": 15.1,
+          "avg_duration_minutes": 13.1,
+          "total_feature_events": 52434.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "active",
+          "feature_name": "report_export",
+          "customer_count": 358,
+          "avg_usage_count": 15.6,
+          "avg_duration_minutes": 13.6,
+          "total_feature_events": 172639.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "churned",
+          "feature_name": "report_export",
+          "customer_count": 185,
+          "avg_usage_count": 15.2,
+          "avg_duration_minutes": 13.2,
+          "total_feature_events": 53580.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "active",
+          "feature_name": "team_collaboration",
+          "customer_count": 358,
+          "avg_usage_count": 15.6,
+          "avg_duration_minutes": 13.6,
+          "total_feature_events": 174771.0
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_status": "churned",
+          "feature_name": "team_collaboration",
+          "customer_count": 187,
+          "avg_usage_count": 15.1,
+          "avg_duration_minutes": 13.2,
+          "total_feature_events": 52771.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "active",
+          "feature_name": "ai_query",
+          "customer_count": 203,
+          "avg_usage_count": 21.6,
+          "avg_duration_minutes": 18.9,
+          "total_feature_events": 143772.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "churned",
+          "feature_name": "ai_query",
+          "customer_count": 95,
+          "avg_usage_count": 21.0,
+          "avg_duration_minutes": 18.5,
+          "total_feature_events": 38898.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "active",
+          "feature_name": "api_request",
+          "customer_count": 203,
+          "avg_usage_count": 21.5,
+          "avg_duration_minutes": 18.6,
+          "total_feature_events": 143879.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "churned",
+          "feature_name": "api_request",
+          "customer_count": 96,
+          "avg_usage_count": 21.2,
+          "avg_duration_minutes": 18.6,
+          "total_feature_events": 41767.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "active",
+          "feature_name": "automated_workflow",
+          "customer_count": 203,
+          "avg_usage_count": 21.5,
+          "avg_duration_minutes": 18.8,
+          "total_feature_events": 143978.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "churned",
+          "feature_name": "automated_workflow",
+          "customer_count": 96,
+          "avg_usage_count": 21.3,
+          "avg_duration_minutes": 18.5,
+          "total_feature_events": 41659.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "active",
+          "feature_name": "dashboard_view",
+          "customer_count": 203,
+          "avg_usage_count": 21.6,
+          "avg_duration_minutes": 18.9,
+          "total_feature_events": 146622.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "churned",
+          "feature_name": "dashboard_view",
+          "customer_count": 94,
+          "avg_usage_count": 21.0,
+          "avg_duration_minutes": 18.3,
+          "total_feature_events": 40046.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "active",
+          "feature_name": "report_export",
+          "customer_count": 203,
+          "avg_usage_count": 21.6,
+          "avg_duration_minutes": 18.9,
+          "total_feature_events": 143516.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "churned",
+          "feature_name": "report_export",
+          "customer_count": 96,
+          "avg_usage_count": 21.2,
+          "avg_duration_minutes": 18.5,
+          "total_feature_events": 40554.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "active",
+          "feature_name": "team_collaboration",
+          "customer_count": 203,
+          "avg_usage_count": 21.6,
+          "avg_duration_minutes": 19.0,
+          "total_feature_events": 144757.0
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_status": "churned",
+          "feature_name": "team_collaboration",
+          "customer_count": 95,
+          "avg_usage_count": 21.0,
+          "avg_duration_minutes": 18.6,
+          "total_feature_events": 40813.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "active",
+          "feature_name": "ai_query",
+          "customer_count": 335,
+          "avg_usage_count": 11.9,
+          "avg_duration_minutes": 10.5,
+          "total_feature_events": 118620.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "churned",
+          "feature_name": "ai_query",
+          "customer_count": 231,
+          "avg_usage_count": 11.7,
+          "avg_duration_minutes": 10.3,
+          "total_feature_events": 50543.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "active",
+          "feature_name": "api_request",
+          "customer_count": 335,
+          "avg_usage_count": 12.0,
+          "avg_duration_minutes": 10.4,
+          "total_feature_events": 119774.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "churned",
+          "feature_name": "api_request",
+          "customer_count": 232,
+          "avg_usage_count": 11.6,
+          "avg_duration_minutes": 10.2,
+          "total_feature_events": 49495.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "active",
+          "feature_name": "automated_workflow",
+          "customer_count": 335,
+          "avg_usage_count": 12.0,
+          "avg_duration_minutes": 10.5,
+          "total_feature_events": 118915.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "churned",
+          "feature_name": "automated_workflow",
+          "customer_count": 230,
+          "avg_usage_count": 11.7,
+          "avg_duration_minutes": 10.3,
+          "total_feature_events": 50437.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "active",
+          "feature_name": "dashboard_view",
+          "customer_count": 335,
+          "avg_usage_count": 12.0,
+          "avg_duration_minutes": 10.5,
+          "total_feature_events": 118602.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "churned",
+          "feature_name": "dashboard_view",
+          "customer_count": 232,
+          "avg_usage_count": 11.7,
+          "avg_duration_minutes": 10.2,
+          "total_feature_events": 50875.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "active",
+          "feature_name": "report_export",
+          "customer_count": 335,
+          "avg_usage_count": 12.0,
+          "avg_duration_minutes": 10.6,
+          "total_feature_events": 119438.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "churned",
+          "feature_name": "report_export",
+          "customer_count": 231,
+          "avg_usage_count": 11.7,
+          "avg_duration_minutes": 10.3,
+          "total_feature_events": 50692.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "active",
+          "feature_name": "team_collaboration",
+          "customer_count": 335,
+          "avg_usage_count": 12.0,
+          "avg_duration_minutes": 10.5,
+          "total_feature_events": 118606.0
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_status": "churned",
+          "feature_name": "team_collaboration",
+          "customer_count": 230,
+          "avg_usage_count": 11.7,
+          "avg_duration_minutes": 10.3,
+          "total_feature_events": 50189.0
+        }
+      ]
+    },
+    "acquisition_contracts": {
+      "acquisition_channels": [
+        {
+          "acquisition_channel": "Organic Search",
+          "total_signups": 468,
+          "active_customers": 323.0,
+          "churned_customers": 145.0,
+          "churn_rate_pct": 30.98,
+          "active_mrr": 38367.0,
+          "arpu": 118.78,
+          "avg_realized_clv": 1367.13
+        },
+        {
+          "acquisition_channel": "Paid Ads",
+          "total_signups": 365,
+          "active_customers": 192.0,
+          "churned_customers": 173.0,
+          "churn_rate_pct": 47.4,
+          "active_mrr": 14198.0,
+          "arpu": 73.95,
+          "avg_realized_clv": 717.63
+        },
+        {
+          "acquisition_channel": "Referral",
+          "total_signups": 219,
+          "active_customers": 166.0,
+          "churned_customers": 53.0,
+          "churn_rate_pct": 24.2,
+          "active_mrr": 17934.0,
+          "arpu": 108.04,
+          "avg_realized_clv": 1328.12
+        },
+        {
+          "acquisition_channel": "Social Media",
+          "total_signups": 181,
+          "active_customers": 90.0,
+          "churned_customers": 91.0,
+          "churn_rate_pct": 50.28,
+          "active_mrr": 7340.0,
+          "arpu": 81.56,
+          "avg_realized_clv": 730.57
+        },
+        {
+          "acquisition_channel": "Partner",
+          "total_signups": 152,
+          "active_customers": 117.0,
+          "churned_customers": 35.0,
+          "churn_rate_pct": 23.03,
+          "active_mrr": 19853.0,
+          "arpu": 169.68,
+          "avg_realized_clv": 2321.84
+        },
+        {
+          "acquisition_channel": "Direct",
+          "total_signups": 115,
+          "active_customers": 86.0,
+          "churned_customers": 29.0,
+          "churn_rate_pct": 25.22,
+          "active_mrr": 15564.0,
+          "arpu": 180.98,
+          "avg_realized_clv": 2316.83
+        }
+      ],
+      "contract_types": [
+        {
+          "contract_type": "monthly",
+          "total_customers": 933,
+          "churned_customers": 410.0,
+          "churn_rate_pct": 43.94,
+          "total_arr": 670044.0,
+          "avg_clv": 999.07
+        },
+        {
+          "contract_type": "annual",
+          "total_customers": 507,
+          "churned_customers": 105.0,
+          "churn_rate_pct": 20.71,
+          "total_arr": 608136.0,
+          "avg_clv": 1757.99
+        },
+        {
+          "contract_type": "multi_year",
+          "total_customers": 60,
+          "churned_customers": 11.0,
+          "churn_rate_pct": 18.33,
+          "total_arr": 80892.0,
+          "avg_clv": 2012.83
+        }
+      ],
+      "plans": [
+        {
+          "plan_tier": "Enterprise",
+          "total_customers": 89,
+          "churned_customers": 11.0,
+          "churn_rate_pct": 12.36,
+          "avg_mrr": 437.33,
+          "total_arr": 467064.0
+        },
+        {
+          "plan_tier": "Professional",
+          "total_customers": 299,
+          "churned_customers": 96.0,
+          "churn_rate_pct": 32.11,
+          "avg_mrr": 121.53,
+          "total_arr": 436044.0
+        },
+        {
+          "plan_tier": "Growth",
+          "total_customers": 545,
+          "churned_customers": 187.0,
+          "churn_rate_pct": 34.31,
+          "avg_mrr": 51.89,
+          "total_arr": 339384.0
+        },
+        {
+          "plan_tier": "Starter",
+          "total_customers": 567,
+          "churned_customers": 232.0,
+          "churn_rate_pct": 40.92,
+          "avg_mrr": 17.13,
+          "total_arr": 116580.0
+        }
+      ]
+    },
+    "bivariate": {
+      "churn_vs_price": [
+        {
+          "price_quartile": 1,
+          "min_mrr": 0.0,
+          "max_mrr": 0.0,
+          "total_customers": 375,
+          "churned": 375.0,
+          "churn_rate_pct": 100.0
+        },
+        {
+          "price_quartile": 2,
+          "min_mrr": 0.0,
+          "max_mrr": 29.0,
+          "total_customers": 375,
+          "churned": 151.0,
+          "churn_rate_pct": 40.27
+        },
+        {
+          "price_quartile": 3,
+          "min_mrr": 29.0,
+          "max_mrr": 79.0,
+          "total_customers": 375,
+          "churned": 0.0,
+          "churn_rate_pct": 0.0
+        },
+        {
+          "price_quartile": 4,
+          "min_mrr": 79.0,
+          "max_mrr": 499.0,
+          "total_customers": 375,
+          "churned": 0.0,
+          "churn_rate_pct": 0.0
+        }
+      ],
+      "churn_vs_payment": [
+        {
+          "has_payment_delinquency": true,
+          "total_customers": 13,
+          "churned": 13.0,
+          "churn_rate_pct": 100.0,
+          "arr_exposure": 0.0
+        },
+        {
+          "has_payment_delinquency": false,
+          "total_customers": 1487,
+          "churned": 513.0,
+          "churn_rate_pct": 34.5,
+          "arr_exposure": 1359072.0
+        }
+      ],
+      "churn_vs_engagement": [
+        {
+          "is_engagement_declining": false,
+          "total_customers": 1331,
+          "churned": 448.0,
+          "churn_rate_pct": 33.66
+        },
+        {
+          "is_engagement_declining": true,
+          "total_customers": 169,
+          "churned": 78.0,
+          "churn_rate_pct": 46.15
+        }
+      ],
+      "churn_vs_support": [
+        {
+          "has_support_friction": false,
+          "total_customers": 1006,
+          "churned": 115.0,
+          "churn_rate_pct": 11.43
+        },
+        {
+          "has_support_friction": true,
+          "total_customers": 494,
+          "churned": 411.0,
+          "churn_rate_pct": 83.2
+        }
+      ]
+    },
+    "viz": {
+      "churn_matrix_png": "/Users/zaidhaque/Desktop/Customer360/reports/figures/churn_drivers_matrix.png",
+      "sunburst_html": "/Users/zaidhaque/Desktop/Customer360/reports/figures/revenue_sunburst.html"
+    }
+  },
+  "cohort": {
+    "milestones": {
+      "Month 1": {
+        "cohorts_matured": 31,
+        "mean_retention_pct": 100.0,
+        "weighted_retention_pct": 100.0,
+        "min_retention_pct": 100.0,
+        "max_retention_pct": 100.0
+      },
+      "Month 2": {
+        "cohorts_matured": 31,
+        "mean_retention_pct": 97.83,
+        "weighted_retention_pct": 97.8,
+        "min_retention_pct": 85.71,
+        "max_retention_pct": 100.0
+      },
+      "Month 3": {
+        "cohorts_matured": 30,
+        "mean_retention_pct": 93.42,
+        "weighted_retention_pct": 93.82,
+        "min_retention_pct": 71.43,
+        "max_retention_pct": 100.0
+      },
+      "Month 6": {
+        "cohorts_matured": 27,
+        "mean_retention_pct": 82.39,
+        "weighted_retention_pct": 83.08,
+        "min_retention_pct": 57.14,
+        "max_retention_pct": 100.0
+      },
+      "Month 12": {
+        "cohorts_matured": 21,
+        "mean_retention_pct": 61.21,
+        "weighted_retention_pct": 65.1,
+        "min_retention_pct": 0.0,
+        "max_retention_pct": 100.0
+      }
+    },
+    "png_path": "/Users/zaidhaque/Desktop/Customer360/reports/figures/cohort_retention_heatmap.png",
+    "html_path": "/Users/zaidhaque/Desktop/Customer360/reports/figures/cohort_retention_heatmap.html",
+    "cohort_count": 31,
+    "polars_cohort_summary": [
+      {
+        "cohort_month": "2024-01",
+        "cohort_size": 1,
+        "current_retained": 0,
+        "current_retention_pct": 0.0
+      },
+      {
+        "cohort_month": "2024-02",
+        "cohort_size": 3,
+        "current_retained": 2,
+        "current_retention_pct": 66.67
+      },
+      {
+        "cohort_month": "2024-03",
+        "cohort_size": 6,
+        "current_retained": 2,
+        "current_retention_pct": 33.33
+      },
+      {
+        "cohort_month": "2024-04",
+        "cohort_size": 7,
+        "current_retained": 1,
+        "current_retention_pct": 14.29
+      },
+      {
+        "cohort_month": "2024-05",
+        "cohort_size": 14,
+        "current_retained": 3,
+        "current_retention_pct": 21.43
+      },
+      {
+        "cohort_month": "2024-06",
+        "cohort_size": 23,
+        "current_retained": 9,
+        "current_retention_pct": 39.13
+      },
+      {
+        "cohort_month": "2024-07",
+        "cohort_size": 19,
+        "current_retained": 7,
+        "current_retention_pct": 36.84
+      },
+      {
+        "cohort_month": "2024-08",
+        "cohort_size": 32,
+        "current_retained": 13,
+        "current_retention_pct": 40.62
+      },
+      {
+        "cohort_month": "2024-09",
+        "cohort_size": 30,
+        "current_retained": 13,
+        "current_retention_pct": 43.33
+      },
+      {
+        "cohort_month": "2024-10",
+        "cohort_size": 39,
+        "current_retained": 18,
+        "current_retention_pct": 46.15
+      },
+      {
+        "cohort_month": "2024-11",
+        "cohort_size": 44,
+        "current_retained": 23,
+        "current_retention_pct": 52.27
+      },
+      {
+        "cohort_month": "2024-12",
+        "cohort_size": 40,
+        "current_retained": 16,
+        "current_retention_pct": 40.0
+      },
+      {
+        "cohort_month": "2025-01",
+        "cohort_size": 57,
+        "current_retained": 29,
+        "current_retention_pct": 50.88
+      },
+      {
+        "cohort_month": "2025-02",
+        "cohort_size": 42,
+        "current_retained": 28,
+        "current_retention_pct": 66.67
+      },
+      {
+        "cohort_month": "2025-03",
+        "cohort_size": 56,
+        "current_retained": 26,
+        "current_retention_pct": 46.43
+      },
+      {
+        "cohort_month": "2025-04",
+        "cohort_size": 57,
+        "current_retained": 31,
+        "current_retention_pct": 54.39
+      },
+      {
+        "cohort_month": "2025-05",
+        "cohort_size": 78,
+        "current_retained": 43,
+        "current_retention_pct": 55.13
+      },
+      {
+        "cohort_month": "2025-06",
+        "cohort_size": 63,
+        "current_retained": 34,
+        "current_retention_pct": 53.97
+      },
+      {
+        "cohort_month": "2025-07",
+        "cohort_size": 67,
+        "current_retained": 45,
+        "current_retention_pct": 67.16
+      },
+      {
+        "cohort_month": "2025-08",
+        "cohort_size": 81,
+        "current_retained": 52,
+        "current_retention_pct": 64.2
+      },
+      {
+        "cohort_month": "2025-09",
+        "cohort_size": 72,
+        "current_retained": 46,
+        "current_retention_pct": 63.89
+      },
+      {
+        "cohort_month": "2025-10",
+        "cohort_size": 77,
+        "current_retained": 60,
+        "current_retention_pct": 77.92
+      },
+      {
+        "cohort_month": "2025-11",
+        "cohort_size": 91,
+        "current_retained": 70,
+        "current_retention_pct": 76.92
+      },
+      {
+        "cohort_month": "2025-12",
+        "cohort_size": 70,
+        "current_retained": 43,
+        "current_retention_pct": 61.43
+      },
+      {
+        "cohort_month": "2026-01",
+        "cohort_size": 65,
+        "current_retained": 48,
+        "current_retention_pct": 73.85
+      },
+      {
+        "cohort_month": "2026-02",
+        "cohort_size": 68,
+        "current_retained": 51,
+        "current_retention_pct": 75.0
+      },
+      {
+        "cohort_month": "2026-03",
+        "cohort_size": 86,
+        "current_retained": 73,
+        "current_retention_pct": 84.88
+      },
+      {
+        "cohort_month": "2026-04",
+        "cohort_size": 74,
+        "current_retained": 69,
+        "current_retention_pct": 93.24
+      },
+      {
+        "cohort_month": "2026-05",
+        "cohort_size": 57,
+        "current_retained": 46,
+        "current_retention_pct": 80.7
+      },
+      {
+        "cohort_month": "2026-06",
+        "cohort_size": 37,
+        "current_retained": 31,
+        "current_retention_pct": 83.78
+      },
+      {
+        "cohort_month": "2026-07",
+        "cohort_size": 44,
+        "current_retained": 42,
+        "current_retention_pct": 95.45
+      }
+    ]
+  },
+  "rfm": {
+    "summary": [
+      {
+        "authoritative_rfm_segment": "Loyal Customers",
+        "customer_count": 356,
+        "active_count": 307,
+        "churned_count": 49,
+        "churn_rate_pct": 13.76,
+        "total_active_arr": 559476.0,
+        "total_realized_revenue": 623877.0,
+        "avg_clv": 1752.46,
+        "avg_recency_days": 316.8,
+        "avg_frequency_sessions": 521.5
+      },
+      {
+        "authoritative_rfm_segment": "At Risk",
+        "customer_count": 388,
+        "active_count": 265,
+        "churned_count": 123,
+        "churn_rate_pct": 31.7,
+        "total_active_arr": 414060.0,
+        "total_realized_revenue": 929747.0,
+        "avg_clv": 2396.26,
+        "avg_recency_days": 615.5,
+        "avg_frequency_sessions": 870.4
+      },
+      {
+        "authoritative_rfm_segment": "Promising / New",
+        "customer_count": 396,
+        "active_count": 296,
+        "churned_count": 100,
+        "churn_rate_pct": 25.25,
+        "total_active_arr": 230328.0,
+        "total_realized_revenue": 178014.0,
+        "avg_clv": 449.53,
+        "avg_recency_days": 156.7,
+        "avg_frequency_sessions": 167.1
+      },
+      {
+        "authoritative_rfm_segment": "Champions",
+        "customer_count": 39,
+        "active_count": 38,
+        "churned_count": 1,
+        "churn_rate_pct": 2.56,
+        "total_active_arr": 131544.0,
+        "total_realized_revenue": 104375.0,
+        "avg_clv": 2676.28,
+        "avg_recency_days": 255.5,
+        "avg_frequency_sessions": 578.8
+      },
+      {
+        "authoritative_rfm_segment": "Hibernating / Dormant",
+        "customer_count": 320,
+        "active_count": 68,
+        "churned_count": 252,
+        "churn_rate_pct": 78.75,
+        "total_active_arr": 23664.0,
+        "total_realized_revenue": 106397.0,
+        "avg_clv": 332.49,
+        "avg_recency_days": 496.1,
+        "avg_frequency_sessions": 232.7
+      },
+      {
+        "authoritative_rfm_segment": "Can't Lose Them",
+        "customer_count": 1,
+        "active_count": 0,
+        "churned_count": 1,
+        "churn_rate_pct": 100.0,
+        "total_active_arr": 0.0,
+        "total_realized_revenue": 1790.0,
+        "avg_clv": 1790.0,
+        "avg_recency_days": 830.0,
+        "avg_frequency_sessions": 98.0
+      }
+    ],
+    "viz": {
+      "png_path": "/Users/zaidhaque/Desktop/Customer360/reports/figures/rfm_segments_distribution.png",
+      "html_path": "/Users/zaidhaque/Desktop/Customer360/reports/figures/rfm_3d_scatter.html"
+    },
+    "total_customers": 1500
+  },
+  "clv": {
+    "summary": {
+      "overall": {
+        "total_customers": 1500,
+        "total_observed_clv": 1944200.0,
+        "mean_observed_clv": 1296.13,
+        "median_observed_clv": 711.0,
+        "total_projected_remaining_clv": 2251246.75,
+        "total_projected_lifetime_value": 4195446.75,
+        "mean_projected_clv": 2796.96,
+        "median_projected_clv": 1185.0
+      },
+      "plan_summary": [
+        {
+          "plan_tier": "Enterprise",
+          "customer_count": 89,
+          "active_customers": 78,
+          "mean_observed_clv": 6890.69,
+          "median_observed_clv": 5489.0,
+          "mean_remaining_clv": 9341.28,
+          "mean_projected_clv": 16231.97,
+          "median_projected_clv": 17165.6,
+          "total_tier_clv_value": 1444644.92
+        },
+        {
+          "plan_tier": "Professional",
+          "customer_count": 299,
+          "active_customers": 203,
+          "mean_observed_clv": 2213.25,
+          "median_observed_clv": 1790.0,
+          "mean_remaining_clv": 2409.21,
+          "mean_projected_clv": 4622.47,
+          "median_projected_clv": 4833.0,
+          "total_tier_clv_value": 1382117.79
+        },
+        {
+          "plan_tier": "Growth",
+          "customer_count": 545,
+          "active_customers": 358,
+          "mean_observed_clv": 905.53,
+          "median_observed_clv": 790.0,
+          "mean_remaining_clv": 991.37,
+          "mean_projected_clv": 1896.9,
+          "median_projected_clv": 1990.5,
+          "total_tier_clv_value": 1033810.33
+        },
+        {
+          "plan_tier": "Starter",
+          "customer_count": 567,
+          "active_customers": 335,
+          "mean_observed_clv": 309.79,
+          "median_observed_clv": 290.0,
+          "mean_remaining_clv": 280.81,
+          "mean_projected_clv": 590.61,
+          "median_projected_clv": 642.64,
+          "total_tier_clv_value": 334873.71
+        }
+      ],
+      "contract_summary": [
+        {
+          "contract_type": "multi_year",
+          "customer_count": 60,
+          "mean_observed_clv": 2012.83,
+          "mean_projected_clv": 5069.86,
+          "total_contract_clv_value": 304191.44
+        },
+        {
+          "contract_type": "annual",
+          "customer_count": 507,
+          "mean_observed_clv": 1757.99,
+          "mean_projected_clv": 3135.88,
+          "total_contract_clv_value": 1589891.54
+        },
+        {
+          "contract_type": "monthly",
+          "customer_count": 933,
+          "mean_observed_clv": 999.07,
+          "mean_projected_clv": 2466.63,
+          "total_contract_clv_value": 2301363.77
+        }
+      ]
+    },
+    "viz": {
+      "png_path": "/Users/zaidhaque/Desktop/Customer360/reports/figures/clv_distribution.png",
+      "html_path": "/Users/zaidhaque/Desktop/Customer360/reports/figures/clv_by_plan.html"
+    }
+  },
+  "statistical_tests": [
+    {
+      "test_name": "Chi-Square Test of Independence (Contract Type vs Churn)",
+      "hypothesis": {
+        "H0": "Customer churn is independent of contract type (Monthly, Annual, Multi-year).",
+        "H1": "Customer churn is significantly dependent on contract type."
+      },
+      "test": "Pearson's Chi-Square Test of Independence (chi2_contingency)",
+      "assumptions": [
+        "Mutually exclusive categorical observations.",
+        "Expected frequencies in each cell are >= 5 (verified: min expected cell count is 21.0).",
+        "Independent sampling across customer accounts."
+      ],
+      "result": {
+        "chi2_statistic": 85.5647,
+        "p_value": 2.6293841840048584e-19,
+        "degrees_of_freedom": 2,
+        "cramers_v_effect_size": 0.2388,
+        "is_statistically_significant": true,
+        "interpretation": "Strongly reject H0 (p < 0.0001). Monthly contracts experience 43.94% churn versus 20.71% for Annual and 18.33% for Multi-year (Cramer's V = 0.239)."
+      },
+      "limitations": [
+        "Observational study: correlation does not establish causation.",
+        "Self-selection bias: customers committing to multi-year contracts typically possess higher baseline product-fit, larger budgets, and greater organizational commitment prior to signing."
+      ]
+    },
+    {
+      "test_name": "Chi-Square Test of Independence (Plan Tier vs Churn)",
+      "hypothesis": {
+        "H0": "Customer churn is independent of subscription plan tier (Starter, Growth, Professional, Enterprise).",
+        "H1": "Customer churn rates differ significantly across plan tiers."
+      },
+      "test": "Pearson's Chi-Square Test of Independence (chi2_contingency)",
+      "assumptions": [
+        "Categorical classification into discrete tiers.",
+        "Expected frequency >= 5 per cell (verified: min expected count is 31.2).",
+        "Independence of customer entities."
+      ],
+      "result": {
+        "chi2_statistic": 29.9633,
+        "p_value": 1.4048411274389624e-06,
+        "degrees_of_freedom": 3,
+        "cramers_v_effect_size": 0.1413,
+        "is_statistically_significant": true,
+        "interpretation": "Reject H0 (p < 0.001). Enterprise plan churn is only 12.36% compared to Starter plan churn of 40.92%."
+      },
+      "limitations": [
+        "Confounding organizational variables: Enterprise customers receive dedicated customer success managers, higher SLA guarantees, and enterprise onboarding, which directly alter retention dynamics independent of software tier."
+      ]
+    },
+    {
+      "test_name": "Mann-Whitney U Test (Engagement Total Sessions vs Churn)",
+      "hypothesis": {
+        "H0": "The distribution of total session engagement is identical between active and churned customers.",
+        "H1": "The distribution of total session engagement differs significantly between active and churned customers."
+      },
+      "test": "Two-Sided Mann-Whitney U Test (Wilcoxon Rank-Sum)",
+      "assumptions": [
+        "Continuous/discrete ordinal engagement metrics.",
+        "Non-parametric distribution (total sessions are right-skewed and non-normal).",
+        "Independent observations across groups."
+      ],
+      "result": {
+        "u_statistic": 367913.0,
+        "p_value": 2.7434030351056604e-44,
+        "active_median_sessions": 472.5,
+        "churned_median_sessions": 232.5,
+        "active_mean_sessions": 541.9,
+        "churned_mean_sessions": 302.03,
+        "rank_biserial_effect_size": -0.4363,
+        "is_statistically_significant": true,
+        "interpretation": "Statistically significant difference (p < 0.0001). Active customers average 541.9 total sessions versus 302.0 sessions for churned accounts."
+      },
+      "limitations": [
+        "Reverse causality / lagging indicator: Decreasing login volume is often a symptom of pre-churn disengagement rather than the root cause of cancellation.",
+        "Survivor exposure bias: Customers who stay longer naturally accumulate more sessions over time."
+      ]
+    },
+    {
+      "test_name": "Welch's Two-Sample t-Test & Mann-Whitney U (CSAT vs Churn)",
+      "hypothesis": {
+        "H0": "Mean customer satisfaction score (CSAT) is identical between active and churned customers who filed support tickets.",
+        "H1": "Mean CSAT score is significantly lower among churned customers compared to active customers."
+      },
+      "test": "Welch's Two-Sample t-Test (Unequal Variances) & Non-Parametric Mann-Whitney U",
+      "assumptions": [
+        "Continuous CSAT ratings (scale 1.0 to 5.0).",
+        "Does not assume equal variances between groups (Welch's formulation).",
+        "Samples conditioned on filing at least one ticket."
+      ],
+      "result": {
+        "welch_t_statistic": 30.4761,
+        "welch_p_value": 1.9279913624614527e-147,
+        "mann_whitney_u": 263301.0,
+        "mann_whitney_p_value": 1.7873012175991289e-112,
+        "active_mean_csat": 3.8,
+        "churned_mean_csat": 2.17,
+        "cohens_d_effect_size": 1.831,
+        "is_statistically_significant": true,
+        "interpretation": "Highly significant (p < 0.0001, Cohen's d = 1.83). Active ticket submitters had an average CSAT of 3.80 vs 2.17 for churned users."
+      },
+      "limitations": [
+        "Non-reporting bias: 'Silent churners' (dissatisfied users who simply abandon the application without opening a ticket) are omitted from CSAT metrics.",
+        "Post-decision rationalization: Users who have already resolved to cancel may retroactively rate recent tickets more harshly."
+      ]
+    },
+    {
+      "test_name": "Fisher's Exact & Chi-Square Test (Payment Delinquency vs Churn)",
+      "hypothesis": {
+        "H0": "Customer churn is independent of payment failure events.",
+        "H1": "Customers experiencing failed payment invoices experience significantly higher churn rates."
+      },
+      "test": "Fisher's Exact Test & 2x2 Chi-Square with Yates Correction",
+      "assumptions": [
+        "Binary classification (Delinquency present vs absent).",
+        "Independent customer trials."
+      ],
+      "result": {
+        "chi2_statistic": 21.4912,
+        "chi2_p_value": 3.554474842023577e-06,
+        "fisher_exact_odds_ratio": Infinity,
+        "fisher_exact_p_value": 1.0999102335375896e-06,
+        "is_statistically_significant": true,
+        "interpretation": "Reject H0 (p < 0.0001). Customers experiencing payment failure have an estimated Odds Ratio of inf of churning compared to customers with zero failed invoices."
+      },
+      "limitations": [
+        "Conflation of voluntary vs involuntary churn: Failed payments may represent expired cards (involuntary) or deliberate customer bank-card cancellations intended to discontinue service without interacting with cancellation flows."
+      ]
+    },
+    {
+      "test_name": "Chi-Square Test of Independence (Acquisition Channel vs Churn)",
+      "hypothesis": {
+        "H0": "Customer churn is independent of marketing acquisition channel.",
+        "H1": "Customer churn differs significantly across acquisition channels."
+      },
+      "test": "Pearson's Chi-Square Test of Independence",
+      "assumptions": [
+        "Categorical channels (Organic Search, Paid Search, Social Media, Referral, Sales Outreach).",
+        "Expected cell counts >= 5."
+      ],
+      "result": {
+        "chi2_statistic": 72.121,
+        "p_value": 3.7065152767927915e-14,
+        "degrees_of_freedom": 5,
+        "cramers_v_effect_size": 0.2193,
+        "is_statistically_significant": true,
+        "interpretation": "Channel Chi-Square p-value = 0.0000. Referral channels typically display higher retention, whereas paid channels exhibit higher churn."
+      },
+      "limitations": [
+        "Attribution ambiguity: Last-touch attribution models obscure multi-touch customer journeys.",
+        "Channel-to-tier confounding: High-intent enterprise buyers typically enter via outbound sales, whereas SMB starters enter via self-serve search or social."
+      ]
+    },
+    {
+      "test_name": "Chi-Square Test of Independence (Geography vs Churn)",
+      "hypothesis": {
+        "H0": "Customer churn rate is independent of geographic region.",
+        "H1": "Customer churn rate differs systematically across geographic regions."
+      },
+      "test": "Pearson's Chi-Square Test of Independence",
+      "assumptions": [
+        "Discrete geographic regions.",
+        "Expected counts >= 5 per region."
+      ],
+      "result": {
+        "chi2_statistic": 19.9481,
+        "p_value": 0.586288679417188,
+        "degrees_of_freedom": 22,
+        "cramers_v_effect_size": 0.1153,
+        "is_statistically_significant": false,
+        "interpretation": "Geographic variance evaluation: Region p-value = 0.5863."
+      },
+      "limitations": [
+        "Regional macroeconomic factors, local currency pricing friction, and regional timezone support hours are unmeasured confounders."
+      ]
+    }
+  ]
+}
