@@ -4,7 +4,7 @@ sources:
   - name: raw_parquet
     description: "Analytical Parquet datasets generated in Phase 1"
     meta:
-      external_location: "/Users/zaidhaque/Desktop/Customer360/data/processed/{name}.parquet"
+      external_location: "data/processed/{name}.parquet"
     tables:
       - name: customers
         description: "Customer accounts and demographic profiles"
