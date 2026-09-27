@@ -190,7 +190,31 @@ When the repository is linked to Render, Vercel, or Netlify:
 
 ---
 
-## 8. Final Deployment Verdict
+## 8. Manual Actions Required (1-Click Cloud Launch)
 
-**OVERALL STATUS: PASS (READY FOR PRODUCTION DEPLOYMENT)**  
-All required code changes, infrastructure blueprints, dynamic environment resolution, container specifications, and test suites are verified, passing, and committed to the repository.
+Because Render uses OAuth/SSO authentication tied to your personal GitHub account, Antigravity cannot access your private Render credentials directly. The repository is pre-configured with a 1-click Infrastructure-as-Code Blueprint (`render.yaml`).
+
+### Exact Step-by-Step Launch Instructions:
+1. **Open Render**: Navigate to [https://dashboard.render.com](https://dashboard.render.com) and log in.
+2. **Create New Blueprint**:
+   - In the top navigation, click the **"New +"** button.
+   - Select **"Blueprint"** (or navigate to `https://dashboard.render.com/blueprints/new`).
+3. **Connect GitHub Repository**:
+   - Select your GitHub repository: **`MUHAMMADZAIDHAQUE/Customer360`** (Branch: `main`).
+   - Click **"Connect"**.
+4. **Review Provisioned Services**:
+   - Render will parse `render.yaml` and display the 3 resources:
+     - 🗄️ **`customer360-db`** (Managed PostgreSQL Database)
+     - 🚀 **`customer360-api`** (FastAPI Web Service)
+     - 🌐 **`customer360-frontend`** (React Static Site)
+5. **Click "Apply"**:
+   - Render will provision the database, build the FastAPI container, compile the React frontend, and assign unique public HTTPS URLs.
+6. **(Optional) Add OpenAI Secret**:
+   - If you wish to enable conversational LLM rephrasing for the AI Analyst, add `OPENAI_API_KEY` under the `customer360-api` Environment tab.
+
+---
+
+## 9. Final Deployment Verdict
+
+**OVERALL STATUS: SUCCESS (REPOSITORY FULLY CONFIGURED & VERIFIED FOR 1-CLICK RENDER LAUNCH)**  
+All required code changes, infrastructure blueprints, dynamic environment resolution, container specifications, and test suites are verified, passing, and pushed to `origin/main`.
