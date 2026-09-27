@@ -1,0 +1,93 @@
+# Operating System
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Node & Frontend
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Data & Database (preserve structure with .gitkeep, ignore data dumps and db files)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.csv
+*.xlsx
+*.sqlite
+*.sqlite3
+*.db
+
+# Machine Learning Artifacts
+ml/models/*
+!ml/models/.gitkeep
+ml/runs/
+wandb/
+
+# Logs & Temporary Files
+logs/
+*.log
+tmp/
+.temp/
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace

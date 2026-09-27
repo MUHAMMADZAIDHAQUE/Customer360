@@ -1,0 +1,27 @@
+# Docker ignore rules
+.git
+.gitignore
+.env
+.env.local
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+node_modules/
+frontend/dist/
+frontend/.vite/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.duckdb
+*.duckdb.wal
+ml/models/*
+!ml/models/.gitkeep
+*.log
+.DS_Store
