@@ -295,8 +295,31 @@ export interface QualityRuleResult {
   category: string;
   table: string;
   status: 'PASSED' | 'FAILED' | 'WARNING';
+  severity?: string;
   details: string;
   failed_count: number;
+  threshold?: string;
+}
+
+export interface QualityAlertItem {
+  alert_id: string;
+  check_name: string;
+  dimension: string;
+  severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | string;
+  table: string;
+  failed_count: number;
+  details: string;
+  runbook_action: string;
+  timestamp: string;
+  status: 'ACTIVE' | 'RESOLVED' | 'ACKNOWLEDGED' | string;
+}
+
+export interface FreshnessMetrics {
+  latest_transaction?: string;
+  latest_engagement?: string;
+  latest_ticket?: string;
+  max_lag_days: number;
+  sla_status: string;
 }
 
 export interface DataQualityReport {
@@ -304,9 +327,14 @@ export interface DataQualityReport {
   total_rules: number;
   passed_rules: number;
   failed_rules: number;
+  warning_rules?: number;
   score_pct: number;
+  dimension_scores?: Record<string, number>;
+  freshness_metrics?: FreshnessMetrics;
+  last_validated_at?: string;
   summary: string;
   checks: QualityRuleResult[];
+  active_alerts?: QualityAlertItem[];
 }
 
 // ============================================================================

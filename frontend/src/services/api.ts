@@ -23,6 +23,7 @@ import {
   BatchPredictionResponse,
   PredictionResponse,
   DataQualityReport,
+  QualityAlertItem,
   AnalystQueryResponse,
   SuggestedQuestion,
 } from '../types';
@@ -184,6 +185,28 @@ class ApiService {
   // ==========================================================================
   async getDataQuality(): Promise<DataQualityReport> {
     return this.request('/data-quality');
+  }
+
+  async runDataQualityAudit(): Promise<DataQualityReport> {
+    return this.request('/data-quality/run', {
+      method: 'POST',
+    });
+  }
+
+  async getQualityAlerts(): Promise<QualityAlertItem[]> {
+    return this.request('/data-quality/alerts');
+  }
+
+  async simulateQualityAlert(): Promise<QualityAlertItem> {
+    return this.request('/data-quality/simulate-alert', {
+      method: 'POST',
+    });
+  }
+
+  async clearQualityAlerts(): Promise<{ message: string }> {
+    return this.request('/data-quality/clear-alerts', {
+      method: 'POST',
+    });
   }
 
   // ==========================================================================
