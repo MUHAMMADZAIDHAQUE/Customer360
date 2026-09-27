@@ -656,9 +656,9 @@ class DataQualityValidator:
         passed_checks = sum(1 for r in self.results if r["status"] == "PASSED")
         failed_checks = total_checks - passed_checks
 
-        print(f"\n=======================================================")
+        print("\n=======================================================")
         print(f"Customer360 Data Quality Suite: {passed_checks}/{total_checks} Checks Passed ({overall_score}%)")
-        print(f"=======================================================")
+        print("=======================================================")
         for cat, sc in self.dimension_scores.items():
             print(f"  • {cat:28}: {sc:>5.1f}%")
 
@@ -705,7 +705,7 @@ class DataQualityValidator:
         for name, count in table_counts.items():
             md += f"| `{name}` | **{count:,}** | Apache Parquet / CSV |\n"
 
-        md += f"""
+        md += """
 ---
 
 ## 3. Validation Test Suite Breakdown

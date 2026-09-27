@@ -1,0 +1,26 @@
+version: '3.8'
+
+# ==============================================================================
+# Customer360 - Local Development Environment with Hot-Reloading
+# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up
+# ==============================================================================
+
+services:
+  api:
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    environment:
+      - ENVIRONMENT=development
+      - DEBUG=True
+      - API_RELOAD=True
+    volumes:
+      - ./api:/app/api
+      - ./analytics:/app/analytics
+      - ./ml:/app/ml
+      - ./data:/app/data
+      - ./database:/app/database
+      - ./dbt:/app/dbt
+
+  frontend:
+    ports:
+      - "3000:80"
+      - "5173:5173"

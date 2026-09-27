@@ -1,8 +1,20 @@
-# Docker ignore rules
+# ==============================================================================
+# Customer360 - Docker Build Context Ignore Rules
+# ==============================================================================
+
+# Git & IDE
 .git
 .gitignore
+.DS_Store
+.vscode
+.idea
+
+# Environment & Secrets (Never bake secrets into Docker images)
 .env
 .env.local
+.env.*.local
+
+# Virtual Environment & Python Caches
 venv/
 .venv/
 __pycache__/
@@ -12,16 +24,15 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+*.log
+
+# Node.js & Frontend build caches (Frontend Dockerfile uses multi-stage npm ci)
 node_modules/
+frontend/node_modules/
 frontend/dist/
 frontend/.vite/
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-*.duckdb
-*.duckdb.wal
-ml/models/*
-!ml/models/.gitkeep
-*.log
-.DS_Store
+
+# dbt Logs & Local Targets
+dbt/logs/
+dbt/target/
+dbt/dbt_packages/
