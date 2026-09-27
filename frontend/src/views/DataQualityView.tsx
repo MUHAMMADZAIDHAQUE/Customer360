@@ -4,6 +4,8 @@ import {
   RefreshCw,
   Search,
   CheckCircle2,
+  XCircle,
+  AlertTriangle,
   Clock,
   Database,
   Link,
@@ -287,7 +289,7 @@ export const DataQualityView: React.FC = () => {
       </div>
 
       {/* KPI Summary Bar */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <KPICard
           title="Passed Checks"
           value={report ? report.passed_rules : '---'}
@@ -295,7 +297,8 @@ export const DataQualityView: React.FC = () => {
           badge="100% Passing"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>🟢</span>}
+          iconVariant="emerald"
+          icon={<CheckCircle2 className="w-4 h-4" />}
         />
         <KPICard
           title="Failed Checks"
@@ -304,7 +307,8 @@ export const DataQualityView: React.FC = () => {
           badge={report?.failed_rules === 0 ? 'Zero Breaches' : 'Action Required'}
           badgeVariant={report?.failed_rules === 0 ? 'success' : 'danger'}
           isLoading={isLoading}
-          icon={<span>❌</span>}
+          iconVariant={report?.failed_rules === 0 ? 'emerald' : 'rose'}
+          icon={<XCircle className="w-4 h-4" />}
         />
         <KPICard
           title="Warnings & Anomalies"
@@ -313,7 +317,8 @@ export const DataQualityView: React.FC = () => {
           badge="Clean"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>⚠️</span>}
+          iconVariant="amber"
+          icon={<AlertTriangle className="w-4 h-4" />}
         />
         <KPICard
           title="Validation Latency"
@@ -322,7 +327,8 @@ export const DataQualityView: React.FC = () => {
           badge="Ultra-Fast"
           badgeVariant="info"
           isLoading={isLoading}
-          icon={<span>⚡</span>}
+          iconVariant="blue"
+          icon={<Zap className="w-4 h-4" />}
         />
       </div>
 

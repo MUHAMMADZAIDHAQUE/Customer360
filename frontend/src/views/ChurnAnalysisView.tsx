@@ -11,6 +11,12 @@ import {
   Tooltip,
   Cell,
 } from 'recharts';
+import {
+  TrendingDown,
+  FileText,
+  Clock,
+  Headphones,
+} from 'lucide-react';
 import { api } from '../services/api';
 import { ChurnByContract, ChurnByPlan, ChurnByTenure, ChurnSummary } from '../types';
 import { KPICard } from '../components/common/KPICard';
@@ -236,7 +242,7 @@ export const ChurnAnalysisView: React.FC = () => {
       </div>
 
       {/* KPI Cards dynamically reflecting filter context */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <KPICard
           title="Segment Churn Rate"
           value={`${dynamicChurnRate}%`}
@@ -244,7 +250,8 @@ export const ChurnAnalysisView: React.FC = () => {
           badge={dynamicChurnRate > 35 ? 'Elevated' : 'Controlled'}
           badgeVariant={dynamicChurnRate > 35 ? 'danger' : 'success'}
           isLoading={isLoading}
-          icon={<span>📉</span>}
+          iconVariant="rose"
+          icon={<TrendingDown className="w-4 h-4" />}
         />
         <KPICard
           title="Monthly Contract Penalty"
@@ -253,7 +260,8 @@ export const ChurnAnalysisView: React.FC = () => {
           badge="High Impact"
           badgeVariant="warning"
           isLoading={isLoading}
-          icon={<span>📜</span>}
+          iconVariant="amber"
+          icon={<FileText className="w-4 h-4" />}
         />
         <KPICard
           title="Critical Hazard Window"
@@ -262,7 +270,8 @@ export const ChurnAnalysisView: React.FC = () => {
           badge="Onboarding"
           badgeVariant="info"
           isLoading={isLoading}
-          icon={<span>⏱️</span>}
+          iconVariant="blue"
+          icon={<Clock className="w-4 h-4" />}
         />
         <KPICard
           title="Support Friction Hazard"
@@ -271,7 +280,8 @@ export const ChurnAnalysisView: React.FC = () => {
           badge="Operational"
           badgeVariant="danger"
           isLoading={isLoading}
-          icon={<span>🎧</span>}
+          iconVariant="rose"
+          icon={<Headphones className="w-4 h-4" />}
         />
       </div>
 

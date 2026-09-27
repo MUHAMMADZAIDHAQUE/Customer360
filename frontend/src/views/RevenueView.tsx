@@ -12,6 +12,14 @@ import {
   Tooltip,
   Legend,
 } from 'recharts';
+import {
+  DollarSign,
+  TrendingUp,
+  UserCheck,
+  Coins,
+  AlertTriangle,
+  RefreshCw,
+} from 'lucide-react';
 import { api } from '../services/api';
 import { RevenueSummary, RevenueAtRiskResponse } from '../types';
 import { KPICard } from '../components/common/KPICard';
@@ -70,26 +78,26 @@ export const RevenueView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
             Revenue Analytics &amp; Capital Protection
           </h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             Recurring subscription run rates, plan contributions, and at-risk contract exposure.
           </p>
         </div>
         <button
           onClick={loadRevenueData}
           disabled={isLoading}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-[#0e1526] hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-[#1e2d4d] shadow-sm transition-all"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-[#0e1526] hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-[#1e2d4d] shadow-sm transition-all"
         >
-          <span>🔄</span> Refresh Financials
+          <RefreshCw className={`w-3.5 h-3.5 ${isLoading ? 'animate-spin' : ''}`} /> Refresh Financials
         </button>
       </div>
 
       {/* 5 Prominent KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4">
         <KPICard
           title="Monthly MRR"
           value={revenue ? formatCurrency(revenue.total_mrr) : '---'}
@@ -97,7 +105,8 @@ export const RevenueView: React.FC = () => {
           badge="Live"
           badgeVariant="info"
           isLoading={isLoading}
-          icon={<span>💵</span>}
+          iconVariant="blue"
+          icon={<DollarSign className="w-4 h-4" />}
         />
         <KPICard
           title="Annual ARR"
@@ -106,7 +115,8 @@ export const RevenueView: React.FC = () => {
           badge="Annualized"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>📊</span>}
+          iconVariant="emerald"
+          icon={<TrendingUp className="w-4 h-4" />}
         />
         <KPICard
           title="ARPU (Average / Account)"
@@ -115,7 +125,8 @@ export const RevenueView: React.FC = () => {
           badge="Monthly"
           badgeVariant="info"
           isLoading={isLoading}
-          icon={<span>👤</span>}
+          iconVariant="purple"
+          icon={<UserCheck className="w-4 h-4" />}
         />
         <KPICard
           title="Total Realized CLV"
@@ -124,7 +135,8 @@ export const RevenueView: React.FC = () => {
           badge="Collected"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>🏦</span>}
+          iconVariant="emerald"
+          icon={<Coins className="w-4 h-4" />}
         />
         <KPICard
           title="Revenue at Risk"
@@ -133,7 +145,8 @@ export const RevenueView: React.FC = () => {
           badge="Exposure"
           badgeVariant="danger"
           isLoading={isLoading}
-          icon={<span>⚠️</span>}
+          iconVariant="rose"
+          icon={<AlertTriangle className="w-4 h-4" />}
         />
       </div>
 

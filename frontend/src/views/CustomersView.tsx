@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Search } from 'lucide-react';
 import { api } from '../services/api';
 import { CustomerSummary, PaginatedResponse, CustomerFilterParams } from '../types';
 import { RiskBadge, StatusBadge, PlanBadge } from '../components/common/Badge';
@@ -78,12 +79,12 @@ export const CustomersView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
             Customer Directory (360° Profiles)
           </h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             Unified view across behavioral usage, recurring revenue, and predictive churn risk.
           </p>
         </div>
@@ -97,7 +98,7 @@ export const CustomersView: React.FC = () => {
         <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-3">
           <div className="relative flex-1">
             <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-              🔍
+              <Search className="w-4 h-4 text-slate-400" />
             </span>
             <input
               type="text"

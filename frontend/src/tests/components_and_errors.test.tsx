@@ -1,4 +1,3 @@
-import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { ErrorState } from '../components/common/ErrorState';
@@ -33,7 +32,7 @@ describe('KPICard Component Tests', () => {
         title="Monthly Recurring Revenue"
         value="$74,250"
         change="+8.4%"
-        changeType="positive"
+        isPositiveChange={true}
         badge="ARR Run-rate"
         badgeVariant="success"
       />

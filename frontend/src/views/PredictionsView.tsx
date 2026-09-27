@@ -1,4 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import {
+  BrainCircuit,
+  BarChart3,
+  AlertTriangle,
+  DollarSign,
+  Award,
+  RefreshCw,
+} from 'lucide-react';
 import { api } from '../services/api';
 import { BatchPredictionResponse, PredictionResponse } from '../types';
 import { KPICard } from '../components/common/KPICard';
@@ -64,12 +72,13 @@ export const PredictionsView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-            <span>🧠</span> Machine Learning Churn Predictions
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+            <BrainCircuit className="w-6 h-6 text-purple-500" />
+            Machine Learning Churn Predictions
           </h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             Production XGBoost model inference scoring account attrition probabilities with local TreeSHAP attribution.
           </p>
         </div>
@@ -80,21 +89,22 @@ export const PredictionsView: React.FC = () => {
           <button
             onClick={loadPredictions}
             disabled={isLoading}
-            className="px-3 py-1 text-xs font-semibold rounded-lg bg-white dark:bg-[#0e1526] hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-[#1e2d4d] shadow-sm transition-all"
+            className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-lg bg-white dark:bg-[#0e1526] hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-[#1e2d4d] shadow-sm transition-all"
           >
-            🔄 Refresh Scores
+            <RefreshCw className={`w-3.5 h-3.5 ${isLoading ? 'animate-spin' : ''}`} /> Refresh Scores
           </button>
         </div>
       </div>
 
       {/* 4 Summary KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <KPICard
           title="Total Scored Accounts"
           value={data ? data.total_scored.toLocaleString() : '---'}
           subtitle="Evaluated across 20 engineered features"
           isLoading={isLoading}
-          icon={<span>📊</span>}
+          iconVariant="blue"
+          icon={<BarChart3 className="w-4 h-4" />}
         />
         <KPICard
           title="High & Critical Risk"
@@ -103,7 +113,8 @@ export const PredictionsView: React.FC = () => {
           badge="Urgent"
           badgeVariant="danger"
           isLoading={isLoading}
-          icon={<span>⚠️</span>}
+          iconVariant="rose"
+          icon={<AlertTriangle className="w-4 h-4" />}
         />
         <KPICard
           title="Total ARR at Risk"
@@ -112,7 +123,8 @@ export const PredictionsView: React.FC = () => {
           badge="Exposure"
           badgeVariant="warning"
           isLoading={isLoading}
-          icon={<span>💸</span>}
+          iconVariant="amber"
+          icon={<DollarSign className="w-4 h-4" />}
         />
         <KPICard
           title="Model Discrimination"
@@ -121,7 +133,8 @@ export const PredictionsView: React.FC = () => {
           badge="Champion"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>🏆</span>}
+          iconVariant="purple"
+          icon={<Award className="w-4 h-4" />}
         />
       </div>
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { Target, Zap, TrendingUp, Award } from 'lucide-react';
 import { api } from '../services/api';
 import { CohortMatrixRow } from '../types';
 import { KPICard } from '../components/common/KPICard';
@@ -65,12 +66,12 @@ export const CohortsView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
             Cohort Retention Matrix &amp; Heatmap
           </h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             Signup-month triangular customer retention rates through 12 months of tenure.
           </p>
         </div>
@@ -80,7 +81,7 @@ export const CohortsView: React.FC = () => {
       </div>
 
       {/* Benchmark KPI Cards */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <KPICard
           title="Month 1 Retention"
           value={`${benchmarks.m1.toFixed(1)}%`}
@@ -88,7 +89,8 @@ export const CohortsView: React.FC = () => {
           badge="Benchmark"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>🎯</span>}
+          iconVariant="blue"
+          icon={<Target className="w-4 h-4" />}
         />
         <KPICard
           title="Month 3 Retention"
@@ -97,7 +99,8 @@ export const CohortsView: React.FC = () => {
           badge="Critical"
           badgeVariant="info"
           isLoading={isLoading}
-          icon={<span>⚡</span>}
+          iconVariant="purple"
+          icon={<Zap className="w-4 h-4" />}
         />
         <KPICard
           title="Month 6 Retention"
@@ -106,7 +109,8 @@ export const CohortsView: React.FC = () => {
           badge="Mid-term"
           badgeVariant="warning"
           isLoading={isLoading}
-          icon={<span>📈</span>}
+          iconVariant="amber"
+          icon={<TrendingUp className="w-4 h-4" />}
         />
         <KPICard
           title="Month 12 Retention"
@@ -115,7 +119,8 @@ export const CohortsView: React.FC = () => {
           badge="Long-term"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>🏆</span>}
+          iconVariant="emerald"
+          icon={<Award className="w-4 h-4" />}
         />
       </div>
 

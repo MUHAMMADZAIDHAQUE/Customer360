@@ -1,10 +1,9 @@
-import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Sidebar } from '../components/Sidebar';
 import { Header } from '../components/Header';
 import { ThemeProvider } from '../context/ThemeContext';
-import { HealthState, NavigationTab } from '../types';
+import { HealthState } from '../types';
 
 describe('Sidebar Navigation Tests', () => {
   it('renders all 10 core navigation tabs', () => {

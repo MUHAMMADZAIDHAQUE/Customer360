@@ -59,17 +59,17 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
         )}
 
-        <div>
-          <div className="flex items-center gap-2">
+        <div className="min-w-0">
+          <div className="flex items-center gap-1.5 sm:gap-2">
             <span className="text-[11px] font-semibold tracking-wider uppercase text-blue-600 dark:text-blue-400">
               Customer360
             </span>
-            <span className="text-slate-300 dark:text-slate-700">•</span>
-            <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+            <span className="hidden sm:inline text-slate-300 dark:text-slate-700">•</span>
+            <span className="hidden sm:inline text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate">
               Understand customers. Predict churn. Protect revenue.
             </span>
           </div>
-          <h1 className="text-base font-bold text-slate-900 dark:text-white leading-tight">
+          <h1 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-tight truncate">
             {getPageTitle(currentTab)}
           </h1>
         </div>

@@ -14,6 +14,15 @@ import {
   Tooltip,
   Legend,
 } from 'recharts';
+import {
+  Users,
+  UserCheck,
+  TrendingDown,
+  ShieldCheck,
+  DollarSign,
+  AlertTriangle,
+  RefreshCw,
+} from 'lucide-react';
 import { api } from '../services/api';
 import {
   ExecutiveMetrics,
@@ -94,12 +103,12 @@ export const DashboardView: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-slate-200 dark:border-[#1e2d4d]">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
             Executive Intelligence Dashboard
           </h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             Understand customers. Predict churn. Protect revenue. Live analytical metrics.
           </p>
         </div>
@@ -109,19 +118,20 @@ export const DashboardView: React.FC = () => {
             disabled={isLoading}
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-[#0e1526] hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-[#1e2d4d] shadow-sm transition-all"
           >
-            <span>🔄</span> Refresh
+            <RefreshCw className={`w-3.5 h-3.5 ${isLoading ? 'animate-spin' : ''}`} /> Refresh
           </button>
         </div>
       </div>
 
       {/* 6 Authoritative KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 sm:gap-4">
         <KPICard
           title="Total Customers"
           value={metrics ? metrics.total_customers.toLocaleString() : '---'}
           subtitle="Portfolio accounts"
           isLoading={isLoading}
-          icon={<span>👥</span>}
+          iconVariant="blue"
+          icon={<Users className="w-4 h-4" />}
         />
         <KPICard
           title="Active Customers"
@@ -130,7 +140,8 @@ export const DashboardView: React.FC = () => {
           badge={metrics ? `${metrics.retention_rate_pct.toFixed(0)}%` : undefined}
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>🟢</span>}
+          iconVariant="emerald"
+          icon={<UserCheck className="w-4 h-4" />}
         />
         <KPICard
           title="Churn Rate"
@@ -139,7 +150,8 @@ export const DashboardView: React.FC = () => {
           badge="Annualized"
           badgeVariant="danger"
           isLoading={isLoading}
-          icon={<span>📉</span>}
+          iconVariant="rose"
+          icon={<TrendingDown className="w-4 h-4" />}
         />
         <KPICard
           title="Retention Rate"
@@ -148,7 +160,8 @@ export const DashboardView: React.FC = () => {
           badge="Healthy"
           badgeVariant="success"
           isLoading={isLoading}
-          icon={<span>🛡️</span>}
+          iconVariant="emerald"
+          icon={<ShieldCheck className="w-4 h-4" />}
         />
         <KPICard
           title="Monthly MRR"
@@ -157,7 +170,8 @@ export const DashboardView: React.FC = () => {
           badge={`ARPU ${metrics ? formatCurrency(metrics.arpu) : ''}`}
           badgeVariant="info"
           isLoading={isLoading}
-          icon={<span>💰</span>}
+          iconVariant="blue"
+          icon={<DollarSign className="w-4 h-4" />}
         />
         <KPICard
           title="Revenue at Risk"
@@ -166,7 +180,8 @@ export const DashboardView: React.FC = () => {
           badge="Critical"
           badgeVariant="warning"
           isLoading={isLoading}
-          icon={<span>⚠️</span>}
+          iconVariant="amber"
+          icon={<AlertTriangle className="w-4 h-4" />}
         />
       </div>
 

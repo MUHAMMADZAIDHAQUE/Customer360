@@ -1,4 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import {
+  Activity,
+  Headphones,
+  AlertTriangle,
+  BrainCircuit,
+  Star,
+  ShieldAlert,
+} from 'lucide-react';
 import { api } from '../services/api';
 import { CustomerDetail, PredictionResponse } from '../types';
 import { Modal } from '../components/common/Modal';
@@ -63,7 +71,7 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
       {isLoading && (
         <div className="space-y-4 py-8 animate-pulse">
           <div className="h-6 bg-slate-200 dark:bg-slate-800 rounded w-1/3"></div>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="h-24 bg-slate-100 dark:bg-slate-800/50 rounded-xl"></div>
             <div className="h-24 bg-slate-100 dark:bg-slate-800/50 rounded-xl"></div>
             <div className="h-24 bg-slate-100 dark:bg-slate-800/50 rounded-xl"></div>
@@ -89,13 +97,13 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
                 {customer.contract_type} contract
               </span>
               {customer.is_engagement_declining && (
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
-                  ⚠️ Engagement Drop &gt;50%
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                  <AlertTriangle className="w-3 h-3" /> Engagement Drop &gt;50%
                 </span>
               )}
               {customer.has_support_friction && (
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30">
-                  ⚠️ Support Friction
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30">
+                  <AlertTriangle className="w-3 h-3" /> Support Friction
                 </span>
               )}
             </div>
@@ -120,7 +128,7 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#121b2f] border border-slate-200 dark:border-[#1e2d4d]">
               <div className="text-[11px] text-slate-500 dark:text-slate-400 uppercase font-semibold">Monthly MRR</div>
-              <div className="text-lg font-bold font-mono text-slate-900 dark:text-white mt-1">
+              <div className="text-base sm:text-lg font-bold font-mono text-slate-900 dark:text-white mt-1">
                 {formatCurrency(customer.current_mrr)}
               </div>
               <div className="text-[11px] text-slate-400 mt-0.5">Plan: {customer.plan_name}</div>
@@ -128,7 +136,7 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
 
             <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#121b2f] border border-slate-200 dark:border-[#1e2d4d]">
               <div className="text-[11px] text-slate-500 dark:text-slate-400 uppercase font-semibold">Annual ARR</div>
-              <div className="text-lg font-bold font-mono text-slate-900 dark:text-white mt-1">
+              <div className="text-base sm:text-lg font-bold font-mono text-slate-900 dark:text-white mt-1">
                 {formatCurrency(customer.current_arr)}
               </div>
               <div className="text-[11px] text-slate-400 mt-0.5">Run-rate</div>
@@ -136,7 +144,7 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
 
             <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#121b2f] border border-slate-200 dark:border-[#1e2d4d]">
               <div className="text-[11px] text-slate-500 dark:text-slate-400 uppercase font-semibold">Lifetime Realized</div>
-              <div className="text-lg font-bold font-mono text-emerald-600 dark:text-emerald-400 mt-1">
+              <div className="text-base sm:text-lg font-bold font-mono text-emerald-600 dark:text-emerald-400 mt-1">
                 {formatCurrency(customer.lifetime_billed_revenue)}
               </div>
               <div className="text-[11px] text-slate-400 mt-0.5">{customer.total_invoices_count} invoices</div>
@@ -144,7 +152,7 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
 
             <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#121b2f] border border-slate-200 dark:border-[#1e2d4d]">
               <div className="text-[11px] text-slate-500 dark:text-slate-400 uppercase font-semibold">Account Tenure</div>
-              <div className="text-lg font-bold font-mono text-slate-900 dark:text-white mt-1">
+              <div className="text-base sm:text-lg font-bold font-mono text-slate-900 dark:text-white mt-1">
                 {customer.tenure_months} mo
               </div>
               <div className="text-[11px] text-slate-400 mt-0.5">Joined {customer.signup_date || 'N/A'}</div>
@@ -156,7 +164,8 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
             {/* Engagement */}
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-[#121b2f] border border-slate-200 dark:border-[#1e2d4d] space-y-3">
               <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-                <span>📊</span> Product Usage &amp; Engagement
+                <Activity className="w-3.5 h-3.5 text-blue-500" />
+                Product Usage &amp; Engagement
               </h3>
               <div className="grid grid-cols-2 gap-3 text-xs">
                 <div>
@@ -189,7 +198,8 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
             {/* Support & Billing Health */}
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-[#121b2f] border border-slate-200 dark:border-[#1e2d4d] space-y-3">
               <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-                <span>🎧</span> Support &amp; Payment Integrity
+                <Headphones className="w-3.5 h-3.5 text-rose-500" />
+                Support &amp; Payment Integrity
               </h3>
               <div className="grid grid-cols-2 gap-3 text-xs">
                 <div>
@@ -206,8 +216,9 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
                 </div>
                 <div>
                   <span className="text-slate-500 dark:text-slate-400">CSAT Satisfaction:</span>
-                  <p className="font-mono font-semibold text-slate-900 dark:text-white mt-0.5">
-                    ⭐ {customer.avg_satisfaction_score.toFixed(1)} / 5.0
+                  <p className="font-mono font-semibold text-slate-900 dark:text-white mt-0.5 flex items-center gap-1">
+                    <Star className="w-3 h-3 text-amber-500 fill-amber-500" />
+                    {customer.avg_satisfaction_score.toFixed(1)} / 5.0
                   </p>
                 </div>
                 <div>
@@ -228,7 +239,7 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
           {customer.is_churned && (
             <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/20 text-xs space-y-2">
               <div className="font-bold text-rose-700 dark:text-rose-300 flex items-center gap-1.5 text-sm">
-                <span>🔴</span> Churn Event Audit
+                <ShieldAlert className="w-4 h-4 text-rose-500" /> Churn Event Audit
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div>
@@ -257,7 +268,7 @@ export const CustomerProfileModal: React.FC<CustomerProfileModalProps> = ({
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-[#121b2f] border border-slate-200 dark:border-[#1e2d4d] space-y-3">
               <div className="flex items-center justify-between">
                 <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-                  <span>🧠</span> Machine Learning SHAP Feature Attribution
+                  <BrainCircuit className="w-4 h-4 text-purple-500" /> Machine Learning SHAP Feature Attribution
                 </h3>
                 <span className="text-[10px] font-mono text-slate-400">
                   Model: {prediction.model_version}
