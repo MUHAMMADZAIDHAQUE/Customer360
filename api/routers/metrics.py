@@ -21,8 +21,8 @@ async def get_executive_metrics():
     sql = """
     SELECT 
         COUNT(*) as total_customers,
-        SUM(CASE WHEN customer_status = 'active' THEN 1 ELSE 0 END) as active_customers,
-        SUM(CASE WHEN is_churned THEN 1 ELSE 0 END) as churned_customers,
+        CAST(SUM(CASE WHEN customer_status = 'active' THEN 1 ELSE 0 END) AS BIGINT) as active_customers,
+        CAST(SUM(CASE WHEN is_churned THEN 1 ELSE 0 END) AS BIGINT) as churned_customers,
         ROUND(SUM(CASE WHEN is_churned THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) as churn_rate_pct,
         ROUND(100.0 - (SUM(CASE WHEN is_churned THEN 1 ELSE 0 END) * 100.0 / COUNT(*)), 2) as retention_rate_pct,
         ROUND(CAST(SUM(current_mrr) AS DOUBLE), 2) as active_mrr,
@@ -30,7 +30,7 @@ async def get_executive_metrics():
         ROUND(CAST(SUM(current_mrr) AS DOUBLE) / NULLIF(SUM(CASE WHEN customer_status = 'active' THEN 1 ELSE 0 END), 0), 2) as arpu,
         ROUND(CAST(SUM(lifetime_billed_revenue) AS DOUBLE), 2) as total_realized_revenue,
         ROUND(CAST(SUM(CASE WHEN is_at_risk THEN current_arr ELSE 0 END) AS DOUBLE), 2) as total_revenue_at_risk,
-        SUM(CASE WHEN is_at_risk THEN 1 ELSE 0 END) as at_risk_accounts_count
+        CAST(SUM(CASE WHEN is_at_risk THEN 1 ELSE 0 END) AS BIGINT) as at_risk_accounts_count
     FROM main_marts.mart_customer_360;
     """
     row = analytics_service.query_one(sql)

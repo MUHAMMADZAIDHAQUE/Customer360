@@ -140,11 +140,13 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 
 @app.exception_handler(Exception)
 async def generic_exception_handler(request: Request, exc: Exception):
+    logger.exception(f"Unhandled exception on {request.url.path}: {exc}")
     return JSONResponse(
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
         content={
             "error": "INTERNAL_SERVER_ERROR",
-            "message": "An unexpected error occurred while processing the request.",
+            "message": str(exc) or "An unexpected error occurred while processing the request.",
+            "type": exc.__class__.__name__,
             "status_code": 500,
             "path": str(request.url.path)
         }
