@@ -4,6 +4,7 @@ Customer360 FastAPI Application Entrypoint
 Production-ready REST API for AI-Powered Customer Intelligence & Retention.
 """
 
+import time
 from typing import Dict
 from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -12,6 +13,7 @@ from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from api.config import get_settings
+from api.logging_config import setup_logging
 from api.routers import (
     health,
     customers,
@@ -26,6 +28,10 @@ from api.routers import (
 )
 
 settings = get_settings()
+logger = setup_logging(
+    log_level=settings.LOG_LEVEL,
+    json_logs=(settings.ENVIRONMENT == "production")
+)
 
 tags_metadata = [
     {"name": "System", "description": "Core application health and runtime diagnostics."},
@@ -68,6 +74,20 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
+
+
+# Request Logging & Tracing Middleware
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    """Logs incoming HTTP requests and latency for observability."""
+    start_time = time.time()
+    response = await call_next(request)
+    duration_ms = round((time.time() - start_time) * 1000, 2)
+    if request.url.path != "/health":
+        logger.info(
+            f"{request.method} {request.url.path} -> {response.status_code} ({duration_ms}ms)"
+        )
+    return response
 
 
 # Security Headers Middleware

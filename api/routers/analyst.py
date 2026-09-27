@@ -46,6 +46,12 @@ async def ask_analyst(payload: AnalystQueryRequest) -> AnalystQueryResponse:
     summary="Get Suggested Questions",
     description="Returns curated high-impact strategic inquiries for executive decision-makers."
 )
+@router.get(
+    "/suggestions",
+    response_model=List[SuggestedQuestion],
+    status_code=status.HTTP_200_OK,
+    include_in_schema=False
+)
 async def get_suggested_questions() -> List[SuggestedQuestion]:
     return ai_analyst_service.get_suggested_questions()
 
