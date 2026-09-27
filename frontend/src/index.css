@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Customer360 Design System & Theme Engine */
 :root {
   /* Common Brand Colors */

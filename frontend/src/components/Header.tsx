@@ -1,250 +1,129 @@
 import React from 'react';
-import { Sun, Moon, Laptop, ExternalLink, Activity } from 'lucide-react';
+import { Sun, Moon, ExternalLink, Activity, Menu } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import { HealthState } from '../types';
+import { HealthState, NavigationTab } from '../types';
 
 interface HeaderProps {
-  currentTab: string;
+  currentTab: NavigationTab;
   healthState: HealthState;
   onRefreshHealth: () => void;
+  onOpenMobileSidebar?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ currentTab, healthState, onRefreshHealth }) => {
-  const { themeMode, resolvedTheme, setThemeMode } = useTheme();
+export const Header: React.FC<HeaderProps> = ({
+  currentTab,
+  healthState,
+  onRefreshHealth,
+  onOpenMobileSidebar,
+}) => {
+  const { resolvedTheme, toggleTheme } = useTheme();
 
-  const getPageTitle = (tab: string) => {
+  const getPageTitle = (tab: NavigationTab) => {
     switch (tab) {
-      case 'overview':
-        return 'Customer Intelligence Platform Overview';
-      case 'diagnostics':
-        return 'API Health & System Diagnostics';
+      case 'dashboard':
+        return 'Executive Intelligence Dashboard';
+      case 'customers':
+        return 'Customer Directory & 360° Profiles';
+      case 'churn-analysis':
+        return 'Churn Investigation & Attrition Analysis';
+      case 'segments':
+        return 'RFM Behavioral Segmentation & Playbooks';
+      case 'cohorts':
+        return 'Cohort Retention Matrix & Heatmap';
+      case 'revenue':
+        return 'Revenue Run-Rate & At-Risk Capital';
+      case 'predictions':
+        return 'Machine Learning Churn Predictions (SHAP)';
+      case 'ai-analyst':
+        return 'AI Customer Intelligence Analyst';
+      case 'data-quality':
+        return 'Data Quality & Schema Hygiene Scorecard';
+      case 'settings':
+        return 'Platform Settings & API Diagnostics';
       default:
         return 'Customer360 Intelligence';
     }
   };
 
   return (
-    <header style={styles.header}>
-      {/* Left side: breadcrumb / title */}
-      <div>
-        <div style={styles.platformBadge}>
-          <span style={styles.platformBadgeDot} />
-          Customer360 Engine v0.1.0 • Phase 0 Scaffolding
+    <header className="sticky top-0 z-30 h-16 bg-white/90 dark:bg-[#0a0f1d]/90 backdrop-blur-md border-b border-slate-200 dark:border-[#19243b] px-5 sm:px-8 flex items-center justify-between transition-colors">
+      {/* Left: Mobile hamburger & View Title */}
+      <div className="flex items-center gap-3">
+        {onOpenMobileSidebar && (
+          <button
+            onClick={onOpenMobileSidebar}
+            aria-label="Open sidebar menu"
+            className="lg:hidden p-2 rounded-lg text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          >
+            <Menu className="w-5 h-5" />
+          </button>
+        )}
+
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="text-[11px] font-semibold tracking-wider uppercase text-blue-600 dark:text-blue-400">
+              Customer360
+            </span>
+            <span className="text-slate-300 dark:text-slate-700">•</span>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+              Understand customers. Predict churn. Protect revenue.
+            </span>
+          </div>
+          <h1 className="text-base font-bold text-slate-900 dark:text-white leading-tight">
+            {getPageTitle(currentTab)}
+          </h1>
         </div>
-        <h2 style={styles.pageTitle}>{getPageTitle(currentTab)}</h2>
       </div>
 
-      {/* Right side: Health status pill, Theme Selector, API Docs */}
-      <div style={styles.actionsGroup}>
-        {/* Backend Live Indicator */}
+      {/* Right: Actions (Health Pulse, Theme Toggle, OpenAPI Docs) */}
+      <div className="flex items-center gap-2.5">
+        {/* Live Backend Pulse */}
         <button
           onClick={onRefreshHealth}
-          title="Click to re-check FastAPI /health endpoint"
-          style={{
-            ...styles.statusButton,
-            ...(healthState.status === 'healthy' ? styles.statusButtonHealthy : {}),
-            ...(healthState.status === 'unreachable' ? styles.statusButtonError : {}),
-          }}
+          title="Click to ping FastAPI /health endpoint"
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
+            healthState.status === 'healthy'
+              ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20'
+              : healthState.status === 'unreachable'
+              ? 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/20'
+              : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700'
+          }`}
         >
-          <Activity
-            size={14}
-            className={healthState.status === 'checking' ? 'spin' : ''}
-            style={{
-              color:
-                healthState.status === 'healthy'
-                  ? 'var(--status-success)'
-                  : healthState.status === 'unreachable'
-                  ? 'var(--status-error)'
-                  : 'var(--text-muted)',
-            }}
-          />
-          <span style={styles.statusButtonText}>
-            Backend: {healthState.status === 'healthy' ? 'Online' : healthState.status === 'checking' ? 'Pinging...' : 'Offline'}
+          <Activity className={`w-3.5 h-3.5 ${healthState.status === 'checking' ? 'animate-spin' : ''}`} />
+          <span className="hidden sm:inline">
+            {healthState.status === 'healthy' ? 'API Online' : healthState.status === 'unreachable' ? 'Offline' : 'Checking'}
           </span>
-          {healthState.latencyMs !== undefined && (
-            <span style={styles.latencyBadge}>{healthState.latencyMs}ms</span>
+          {healthState.latencyMs && (
+            <span className="font-mono text-[10px] opacity-80">({healthState.latencyMs}ms)</span>
           )}
         </button>
 
-        {/* API Docs Link */}
-        <a
-          href="http://localhost:8000/docs"
-          target="_blank"
-          rel="noreferrer"
-          style={styles.docsLink}
-          title="Open FastAPI Swagger Interactive Documentation"
+        {/* Theme Toggle Button */}
+        <button
+          onClick={toggleTheme}
+          aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
+          title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
+          className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-[#1e2d4d] transition-colors"
         >
-          <span>API Docs</span>
-          <ExternalLink size={13} />
+          {resolvedTheme === 'dark' ? (
+            <Sun className="w-4 h-4 text-amber-400" />
+          ) : (
+            <Moon className="w-4 h-4 text-slate-600" />
+          )}
+        </button>
+
+        {/* FastAPI Docs Link */}
+        <a
+          href="http://127.0.0.1:8000/docs"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Open FastAPI interactive Swagger documentation"
+          className="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-[#1e2d4d] transition-colors"
+        >
+          <span>OpenAPI Docs</span>
+          <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
         </a>
-
-        {/* Theme Segmented Switcher (Dark, Light, System) */}
-        <div style={styles.themeSelector} role="radiogroup" aria-label="Theme selection">
-          <button
-            type="button"
-            onClick={() => setThemeMode('dark')}
-            title="Dark theme (Default)"
-            aria-checked={themeMode === 'dark'}
-            role="radio"
-            style={{
-              ...styles.themeButton,
-              ...(themeMode === 'dark' ? styles.themeButtonActive : {}),
-            }}
-          >
-            <Moon size={14} />
-            <span style={styles.themeLabel}>Dark</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setThemeMode('light')}
-            title="Light theme"
-            aria-checked={themeMode === 'light'}
-            role="radio"
-            style={{
-              ...styles.themeButton,
-              ...(themeMode === 'light' ? styles.themeButtonActive : {}),
-            }}
-          >
-            <Sun size={14} />
-            <span style={styles.themeLabel}>Light</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setThemeMode('system')}
-            title={`System preference (currently ${resolvedTheme})`}
-            aria-checked={themeMode === 'system'}
-            role="radio"
-            style={{
-              ...styles.themeButton,
-              ...(themeMode === 'system' ? styles.themeButtonActive : {}),
-            }}
-          >
-            <Laptop size={14} />
-            <span style={styles.themeLabel}>Auto</span>
-          </button>
-        </div>
       </div>
     </header>
   );
-};
-
-const styles: Record<string, React.CSSProperties> = {
-  header: {
-    height: '72px',
-    backgroundColor: 'var(--bg-header)',
-    backdropFilter: 'blur(12px)',
-    borderBottom: '1px solid var(--border-subtle)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '0 2.5rem',
-    position: 'sticky',
-    top: 0,
-    zIndex: 20,
-    transition: 'background-color var(--transition-base), border-color var(--transition-base)',
-  },
-  platformBadge: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '0.4rem',
-    fontSize: '0.6875rem',
-    fontWeight: 600,
-    color: 'var(--text-muted)',
-    letterSpacing: '0.02em',
-    marginBottom: '0.15rem',
-  },
-  platformBadgeDot: {
-    width: '6px',
-    height: '6px',
-    borderRadius: '50%',
-    backgroundColor: 'var(--brand-primary)',
-  },
-  pageTitle: {
-    fontSize: '1.15rem',
-    fontWeight: 700,
-    color: 'var(--text-primary)',
-    letterSpacing: '-0.015em',
-  },
-  actionsGroup: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.85rem',
-  },
-  statusButton: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.45rem',
-    padding: '0.35rem 0.75rem',
-    borderRadius: '20px',
-    backgroundColor: 'var(--bg-surface)',
-    border: '1px solid var(--border-subtle)',
-    fontSize: '0.75rem',
-    fontWeight: 500,
-    color: 'var(--text-secondary)',
-    transition: 'all var(--transition-fast)',
-  },
-  statusButtonHealthy: {
-    borderColor: 'rgba(16, 185, 129, 0.3)',
-    backgroundColor: 'var(--status-success-bg)',
-    color: 'var(--status-success)',
-  },
-  statusButtonError: {
-    borderColor: 'rgba(239, 68, 68, 0.3)',
-    backgroundColor: 'var(--status-error-bg)',
-    color: 'var(--status-error)',
-  },
-  statusButtonText: {
-    fontWeight: 600,
-  },
-  latencyBadge: {
-    fontSize: '0.65rem',
-    fontFamily: 'var(--font-mono)',
-    padding: '0.1rem 0.35rem',
-    borderRadius: '10px',
-    backgroundColor: 'rgba(0, 0, 0, 0.1)',
-  },
-  docsLink: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.35rem',
-    padding: '0.35rem 0.75rem',
-    borderRadius: '8px',
-    backgroundColor: 'var(--bg-surface)',
-    border: '1px solid var(--border-subtle)',
-    fontSize: '0.75rem',
-    fontWeight: 600,
-    color: 'var(--text-primary)',
-    transition: 'all var(--transition-fast)',
-  },
-  themeSelector: {
-    display: 'flex',
-    alignItems: 'center',
-    backgroundColor: 'var(--bg-surface)',
-    border: '1px solid var(--border-subtle)',
-    borderRadius: '8px',
-    padding: '2px',
-    gap: '2px',
-  },
-  themeButton: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.3rem',
-    padding: '0.3rem 0.55rem',
-    borderRadius: '6px',
-    fontSize: '0.75rem',
-    fontWeight: 500,
-    color: 'var(--text-muted)',
-    transition: 'all var(--transition-fast)',
-  },
-  themeButtonActive: {
-    backgroundColor: 'var(--bg-surface-elevated)',
-    color: 'var(--text-primary)',
-    fontWeight: 600,
-    boxShadow: 'var(--shadow-sm)',
-  },
-  themeLabel: {
-    fontSize: '0.7rem',
-  },
 };

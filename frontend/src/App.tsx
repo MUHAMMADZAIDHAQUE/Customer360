@@ -1,120 +1,109 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
-import { StatusCard } from './components/StatusCard';
-import { LandingHero } from './components/LandingHero';
-import { ArchitectureView } from './components/ArchitectureView';
-import { DiagnosticsView } from './components/DiagnosticsView';
-import { DataFoundationView } from './components/DataFoundationView';
-import { UpcomingModuleView } from './components/UpcomingModuleView';
-import { HealthState } from './types';
+import { NavigationTab, HealthState } from './types';
+import { api } from './services/api';
+
+// Views
+import { DashboardView } from './views/DashboardView';
+import { CustomersView } from './views/CustomersView';
+import { ChurnAnalysisView } from './views/ChurnAnalysisView';
+import { SegmentsView } from './views/SegmentsView';
+import { CohortsView } from './views/CohortsView';
+import { RevenueView } from './views/RevenueView';
+import { PredictionsView } from './views/PredictionsView';
+import { AIAnalystView } from './views/AIAnalystView';
+import { DataQualityView } from './views/DataQualityView';
+import { SettingsView } from './views/SettingsView';
 
 export const App: React.FC = () => {
-  const [currentTab, setCurrentTab] = useState<string>('overview');
+  const [currentTab, setCurrentTab] = useState<NavigationTab>('dashboard');
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState<boolean>(false);
 
   const [healthState, setHealthState] = useState<HealthState>({
     status: 'idle',
-    endpointUrl: 'http://localhost:8000/health',
+    endpointUrl: 'http://127.0.0.1:8000/health',
   });
 
   const checkHealth = useCallback(async () => {
     setHealthState((prev) => ({ ...prev, status: 'checking' }));
-    const startTime = performance.now();
-
+    const t0 = performance.now();
     try {
-      // First try relative /api/health (proxied via Vite) or direct http://localhost:8000/health
-      const endpoint = 'http://localhost:8000/health';
-      const response = await fetch(endpoint, {
-        method: 'GET',
-        headers: { Accept: 'application/json' },
-      });
+      const data = await api.getHealth();
+      const t1 = performance.now();
+      const latencyMs = Math.round(t1 - t0);
 
-      const endTime = performance.now();
-      const latencyMs = Math.round(endTime - startTime);
-
-      if (response.ok) {
-        const data = await response.json();
-        if (data.status === 'ok') {
-          setHealthState({
-            status: 'healthy',
-            message: 'Status 200 OK - Backend Operational',
-            latencyMs,
-            lastChecked: new Date().toLocaleTimeString(),
-            endpointUrl: endpoint,
-          });
-          return;
-        }
+      if (data.status === 'ok') {
+        setHealthState({
+          status: 'healthy',
+          message: 'Status 200 OK - Backend Analytical Engine Operational',
+          database: data.database,
+          modelLoaded: data.model_loaded,
+          version: data.version,
+          latencyMs,
+          lastChecked: new Date().toLocaleTimeString(),
+          endpointUrl: 'http://127.0.0.1:8000/health',
+        });
+      } else {
+        setHealthState({
+          status: 'unreachable',
+          message: `Service status: ${data.status}`,
+          latencyMs,
+          lastChecked: new Date().toLocaleTimeString(),
+          endpointUrl: 'http://127.0.0.1:8000/health',
+        });
       }
-
+    } catch (err: any) {
+      const latencyMs = Math.round(performance.now() - t0);
       setHealthState({
         status: 'unreachable',
-        message: `HTTP ${response.status}: Unexpected response payload`,
+        message: err.message || 'FastAPI service unavailable',
         latencyMs,
         lastChecked: new Date().toLocaleTimeString(),
-        endpointUrl: endpoint,
-      });
-    } catch (err: unknown) {
-      const latencyMs = Math.round(performance.now() - startTime);
-      const errorMessage = err instanceof Error ? err.message : String(err);
-      setHealthState({
-        status: 'unreachable',
-        message: errorMessage,
-        latencyMs,
-        lastChecked: new Date().toLocaleTimeString(),
-        endpointUrl: 'http://localhost:8000/health',
+        endpointUrl: 'http://127.0.0.1:8000/health',
       });
     }
   }, []);
 
-  // Poll health on initial load and setup interval
+  // Poll health on mount and every 30s
   useEffect(() => {
     checkHealth();
-    const interval = setInterval(checkHealth, 30000); // 30s background pulse
-    return () => clearInterval(interval);
+    const timer = setInterval(checkHealth, 30000);
+    return () => clearInterval(timer);
   }, [checkHealth]);
 
   return (
-    <div className="app-container">
-      {/* Fixed Left Navigation Sidebar */}
-      <Sidebar currentTab={currentTab} onSelectTab={setCurrentTab} />
+    <div className="min-h-screen bg-slate-50 dark:bg-[#080c14] text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
+      {/* Navigation Sidebar */}
+      <Sidebar
+        currentTab={currentTab}
+        onSelectTab={setCurrentTab}
+        isOpenMobile={isMobileSidebarOpen}
+        onCloseMobile={() => setIsMobileSidebarOpen(false)}
+      />
 
-      {/* Main Content Area */}
-      <div className="main-content">
+      {/* Main Content Viewport (offset on desktop by sidebar width) */}
+      <div className="flex-1 flex flex-col lg:pl-64 min-w-0">
+        {/* Top Header */}
         <Header
           currentTab={currentTab}
           healthState={healthState}
           onRefreshHealth={checkHealth}
+          onOpenMobileSidebar={() => setIsMobileSidebarOpen(true)}
         />
 
-        <main className="content-viewport">
-          {currentTab === 'overview' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              <StatusCard healthState={healthState} onRefresh={checkHealth} />
-              <LandingHero onExploreHealth={() => setCurrentTab('diagnostics')} />
-              <ArchitectureView />
-            </div>
-          )}
-
-          {currentTab === 'diagnostics' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              <StatusCard healthState={healthState} onRefresh={checkHealth} />
-              <DiagnosticsView healthState={healthState} onRefreshHealth={checkHealth} />
-            </div>
-          )}
-
-          {currentTab === 'data-foundation' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              <StatusCard healthState={healthState} onRefresh={checkHealth} />
-              <DataFoundationView />
-            </div>
-          )}
-
-          {currentTab !== 'overview' && currentTab !== 'diagnostics' && currentTab !== 'data-foundation' && (
-            <UpcomingModuleView
-              tabId={currentTab}
-              onBackToOverview={() => setCurrentTab('overview')}
-            />
-          )}
+        {/* View Content */}
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto">
+          {currentTab === 'dashboard' && <DashboardView />}
+          {currentTab === 'customers' && <CustomersView />}
+          {currentTab === 'churn-analysis' && <ChurnAnalysisView />}
+          {currentTab === 'segments' && <SegmentsView />}
+          {currentTab === 'cohorts' && <CohortsView />}
+          {currentTab === 'revenue' && <RevenueView />}
+          {currentTab === 'predictions' && <PredictionsView />}
+          {currentTab === 'ai-analyst' && <AIAnalystView />}
+          {currentTab === 'data-quality' && <DataQualityView />}
+          {currentTab === 'settings' && <SettingsView />}
         </main>
       </div>
     </div>
