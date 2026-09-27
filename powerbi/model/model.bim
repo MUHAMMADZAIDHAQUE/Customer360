@@ -1,0 +1,362 @@
+{
+  "name": "Customer360_Semantic_Model",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "FactTransactions_DimCustomer",
+        "fromTable": "FactTransactions",
+        "fromColumn": "customer_id",
+        "toTable": "DimCustomer",
+        "toColumn": "customer_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactTransactions_DimDate",
+        "fromTable": "FactTransactions",
+        "fromColumn": "date_key",
+        "toTable": "DimDate",
+        "toColumn": "date_key",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactTransactions_DimPlan",
+        "fromTable": "FactTransactions",
+        "fromColumn": "plan_id",
+        "toTable": "DimPlan",
+        "toColumn": "plan_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactTransactions_DimContract",
+        "fromTable": "FactTransactions",
+        "fromColumn": "contract_id",
+        "toTable": "DimContract",
+        "toColumn": "contract_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactEngagement_DimCustomer",
+        "fromTable": "FactEngagement",
+        "fromColumn": "customer_id",
+        "toTable": "DimCustomer",
+        "toColumn": "customer_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactEngagement_DimDate",
+        "fromTable": "FactEngagement",
+        "fromColumn": "date_key",
+        "toTable": "DimDate",
+        "toColumn": "date_key",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactSupport_DimCustomer",
+        "fromTable": "FactSupport",
+        "fromColumn": "customer_id",
+        "toTable": "DimCustomer",
+        "toColumn": "customer_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactSupport_DimDate",
+        "fromTable": "FactSupport",
+        "fromColumn": "date_key",
+        "toTable": "DimDate",
+        "toColumn": "date_key",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactChurn_DimCustomer",
+        "fromTable": "FactChurn",
+        "fromColumn": "customer_id",
+        "toTable": "DimCustomer",
+        "toColumn": "customer_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "FactChurn_DimDate",
+        "fromTable": "FactChurn",
+        "fromColumn": "date_key",
+        "toTable": "DimDate",
+        "toColumn": "date_key",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "DimCustomer_DimRegion",
+        "fromTable": "DimCustomer",
+        "fromColumn": "region_id",
+        "toTable": "DimRegion",
+        "toColumn": "region_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "DimCustomer_DimContract",
+        "fromTable": "DimCustomer",
+        "fromColumn": "contract_id",
+        "toTable": "DimContract",
+        "toColumn": "contract_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "DimCustomer_DimPlan",
+        "fromTable": "DimCustomer",
+        "fromColumn": "plan_id",
+        "toTable": "DimPlan",
+        "toColumn": "plan_id",
+        "crossFilteringBehavior": "oneDirection"
+      },
+      {
+        "name": "DimCustomer_DimAcquisitionChannel",
+        "fromTable": "DimCustomer",
+        "fromColumn": "channel_id",
+        "toTable": "DimAcquisitionChannel",
+        "toColumn": "channel_id",
+        "crossFilteringBehavior": "oneDirection"
+      }
+    ],
+    "tables": [
+      {
+        "name": "DimCustomer",
+        "columns": [
+          { "name": "customer_id", "dataType": "string", "isKey": true },
+          { "name": "full_name", "dataType": "string" },
+          { "name": "email", "dataType": "string" },
+          { "name": "age", "dataType": "int64" },
+          { "name": "age_bracket", "dataType": "string" },
+          { "name": "gender", "dataType": "string" },
+          { "name": "country", "dataType": "string" },
+          { "name": "region", "dataType": "string" },
+          { "name": "city", "dataType": "string" },
+          { "name": "signup_date", "dataType": "dateTime" },
+          { "name": "signup_date_key", "dataType": "int64" },
+          { "name": "customer_status", "dataType": "string" },
+          { "name": "is_churned", "dataType": "boolean" },
+          { "name": "current_mrr", "dataType": "double", "formatString": "$#,##0.00" },
+          { "name": "current_arr", "dataType": "double", "formatString": "$#,##0" },
+          { "name": "tenure_months", "dataType": "double" },
+          { "name": "tenure_bracket", "dataType": "string" },
+          { "name": "lifetime_billed_revenue", "dataType": "double", "formatString": "$#,##0" },
+          { "name": "is_at_risk", "dataType": "boolean" },
+          { "name": "revenue_at_risk", "dataType": "double", "formatString": "$#,##0" },
+          { "name": "rfm_segment", "dataType": "string" },
+          { "name": "retention_playbook", "dataType": "string" },
+          { "name": "churn_probability", "dataType": "double", "formatString": "0.0%" },
+          { "name": "risk_tier", "dataType": "string" },
+          { "name": "primary_risk_factor", "dataType": "string" },
+          { "name": "region_id", "dataType": "int64", "isHidden": true },
+          { "name": "contract_id", "dataType": "int64", "isHidden": true },
+          { "name": "plan_id", "dataType": "string", "isHidden": true },
+          { "name": "channel_id", "dataType": "int64", "isHidden": true }
+        ],
+        "measures": [
+          {
+            "name": "Total Customers",
+            "expression": "DISTINCTCOUNT(DimCustomer[customer_id])",
+            "formatString": "#,##0",
+            "displayFolder": "1. Core KPIs"
+          },
+          {
+            "name": "Active Customers",
+            "expression": "CALCULATE(DISTINCTCOUNT(DimCustomer[customer_id]), DimCustomer[customer_status] = \"active\")",
+            "formatString": "#,##0",
+            "displayFolder": "1. Core KPIs"
+          },
+          {
+            "name": "Churned Customers",
+            "expression": "CALCULATE(DISTINCTCOUNT(DimCustomer[customer_id]), DimCustomer[is_churned] = TRUE())",
+            "formatString": "#,##0",
+            "displayFolder": "1. Core KPIs"
+          },
+          {
+            "name": "Churn Rate",
+            "expression": "DIVIDE([Churned Customers], [Total Customers], 0)",
+            "formatString": "0.0%",
+            "displayFolder": "1. Core KPIs"
+          },
+          {
+            "name": "Retention Rate",
+            "expression": "1 - [Churn Rate]",
+            "formatString": "0.0%",
+            "displayFolder": "1. Core KPIs"
+          },
+          {
+            "name": "MRR",
+            "expression": "CALCULATE(SUM(DimCustomer[current_mrr]), DimCustomer[customer_status] = \"active\")",
+            "formatString": "$#,##0",
+            "displayFolder": "2. Financial Metrics"
+          },
+          {
+            "name": "ARR",
+            "expression": "[MRR] * 12",
+            "formatString": "$#,##0",
+            "displayFolder": "2. Financial Metrics"
+          },
+          {
+            "name": "ARPU",
+            "expression": "DIVIDE([MRR], [Active Customers], 0)",
+            "formatString": "$#,##0.00",
+            "displayFolder": "2. Financial Metrics"
+          },
+          {
+            "name": "CLV",
+            "expression": "AVERAGEX(DimCustomer, DimCustomer[lifetime_billed_revenue])",
+            "formatString": "$#,##0",
+            "displayFolder": "2. Financial Metrics"
+          },
+          {
+            "name": "Revenue at Risk",
+            "expression": "CALCULATE(SUM(DimCustomer[current_arr]), DimCustomer[is_at_risk] = TRUE(), DimCustomer[customer_status] = \"active\")",
+            "formatString": "$#,##0",
+            "displayFolder": "2. Financial Metrics"
+          },
+          {
+            "name": "Average Tenure",
+            "expression": "AVERAGEX(DimCustomer, DimCustomer[tenure_months])",
+            "formatString": "0.0 \"mo\"",
+            "displayFolder": "1. Core KPIs"
+          },
+          {
+            "name": "Customer Growth",
+            "expression": "VAR CurrentActive = [Active Customers] VAR PriorMonthActive = CALCULATE([Active Customers], DATEADD(DimDate[date], -1, MONTH)) RETURN DIVIDE(CurrentActive - PriorMonthActive, PriorMonthActive, 0)",
+            "formatString": "+0.0%;-0.0%;0.0%",
+            "displayFolder": "3. Time Intelligence"
+          }
+        ]
+      },
+      {
+        "name": "DimDate",
+        "dataCategory": "Time",
+        "columns": [
+          { "name": "date", "dataType": "dateTime", "isKey": true },
+          { "name": "date_key", "dataType": "int64" },
+          { "name": "year", "dataType": "int64" },
+          { "name": "quarter", "dataType": "string" },
+          { "name": "year_quarter", "dataType": "string" },
+          { "name": "month", "dataType": "int64" },
+          { "name": "month_name", "dataType": "string", "sortByColumn": "month" },
+          { "name": "year_month", "dataType": "string" },
+          { "name": "week_of_year", "dataType": "int64" },
+          { "name": "day_of_month", "dataType": "int64" },
+          { "name": "day_of_week", "dataType": "int64" },
+          { "name": "day_name", "dataType": "string", "sortByColumn": "day_of_week" },
+          { "name": "is_weekend", "dataType": "boolean" }
+        ]
+      },
+      {
+        "name": "DimPlan",
+        "columns": [
+          { "name": "plan_id", "dataType": "string", "isKey": true },
+          { "name": "plan_name", "dataType": "string" },
+          { "name": "plan_tier", "dataType": "string" },
+          { "name": "monthly_price", "dataType": "double", "formatString": "$#,##0.00" },
+          { "name": "annual_price", "dataType": "double", "formatString": "$#,##0.00" },
+          { "name": "max_seats", "dataType": "int64" }
+        ]
+      },
+      {
+        "name": "DimContract",
+        "columns": [
+          { "name": "contract_id", "dataType": "int64", "isKey": true },
+          { "name": "contract_type", "dataType": "string" },
+          { "name": "billing_frequency", "dataType": "string" },
+          { "name": "commitment_months", "dataType": "int64" },
+          { "name": "flexibility_tier", "dataType": "string" }
+        ]
+      },
+      {
+        "name": "DimRegion",
+        "columns": [
+          { "name": "region_id", "dataType": "int64", "isKey": true },
+          { "name": "country", "dataType": "string" },
+          { "name": "region", "dataType": "string" },
+          { "name": "city", "dataType": "string" },
+          { "name": "global_theater", "dataType": "string" }
+        ]
+      },
+      {
+        "name": "DimAcquisitionChannel",
+        "columns": [
+          { "name": "channel_id", "dataType": "int64", "isKey": true },
+          { "name": "channel_name", "dataType": "string" },
+          { "name": "channel_category", "dataType": "string" }
+        ]
+      },
+      {
+        "name": "FactTransactions",
+        "columns": [
+          { "name": "transaction_id", "dataType": "string", "isKey": true },
+          { "name": "customer_id", "dataType": "string" },
+          { "name": "date_key", "dataType": "int64" },
+          { "name": "plan_id", "dataType": "string" },
+          { "name": "contract_id", "dataType": "int64" },
+          { "name": "transaction_date", "dataType": "dateTime" },
+          { "name": "amount", "dataType": "double", "formatString": "$#,##0.00" },
+          { "name": "currency", "dataType": "string" },
+          { "name": "payment_method", "dataType": "string" },
+          { "name": "payment_status", "dataType": "string" },
+          { "name": "transaction_type", "dataType": "string" },
+          { "name": "is_successful", "dataType": "int64" },
+          { "name": "is_failed", "dataType": "int64" }
+        ]
+      },
+      {
+        "name": "FactEngagement",
+        "columns": [
+          { "name": "engagement_key", "dataType": "int64", "isKey": true },
+          { "name": "customer_id", "dataType": "string" },
+          { "name": "date_key", "dataType": "int64" },
+          { "name": "plan_id", "dataType": "string" },
+          { "name": "contract_id", "dataType": "int64" },
+          { "name": "observation_month", "dataType": "dateTime" },
+          { "name": "sessions_count", "dataType": "int64" },
+          { "name": "session_minutes", "dataType": "double" },
+          { "name": "logins_count", "dataType": "int64" },
+          { "name": "active_days", "dataType": "int64" }
+        ]
+      },
+      {
+        "name": "FactSupport",
+        "columns": [
+          { "name": "ticket_id", "dataType": "string", "isKey": true },
+          { "name": "customer_id", "dataType": "string" },
+          { "name": "date_key", "dataType": "int64" },
+          { "name": "plan_id", "dataType": "string" },
+          { "name": "contract_id", "dataType": "int64" },
+          { "name": "created_date", "dataType": "dateTime" },
+          { "name": "category", "dataType": "string" },
+          { "name": "priority", "dataType": "string" },
+          { "name": "status", "dataType": "string" },
+          { "name": "resolution_time_hours", "dataType": "double" },
+          { "name": "satisfaction_score", "dataType": "int64" },
+          { "name": "is_escalated", "dataType": "int64" },
+          { "name": "has_friction", "dataType": "int64" }
+        ]
+      },
+      {
+        "name": "FactChurn",
+        "columns": [
+          { "name": "churn_id", "dataType": "string", "isKey": true },
+          { "name": "customer_id", "dataType": "string" },
+          { "name": "date_key", "dataType": "int64" },
+          { "name": "plan_id", "dataType": "string" },
+          { "name": "contract_id", "dataType": "int64" },
+          { "name": "churn_date", "dataType": "dateTime" },
+          { "name": "churn_reason", "dataType": "string" },
+          { "name": "churn_type", "dataType": "string" },
+          { "name": "feedback", "dataType": "string" },
+          { "name": "mrr_lost", "dataType": "double", "formatString": "$#,##0.00" },
+          { "name": "arr_lost", "dataType": "double", "formatString": "$#,##0" },
+          { "name": "tenure_at_churn_months", "dataType": "double" }
+        ]
+      }
+    ]
+  }
+}

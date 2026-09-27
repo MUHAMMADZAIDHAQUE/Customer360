@@ -1,0 +1,223 @@
+// ============================================================================
+// Customer360 - Official DAX Measure Library
+// ============================================================================
+// Authoritative calculation definitions matching canonical SaaS metrics.
+// Optimized for star schema navigation, slicer context, and time intelligence.
+
+// ----------------------------------------------------------------------------
+// 1. Total Customers
+// ----------------------------------------------------------------------------
+Total Customers = 
+DISTINCTCOUNT(DimCustomer[customer_id])
+/* Description: Cumulative unique customer accounts in the portfolio */
+/* Format: #,##0 */
+/* Display Folder: 1. Core KPIs */
+
+// ----------------------------------------------------------------------------
+// 2. Active Customers
+// ----------------------------------------------------------------------------
+Active Customers = 
+CALCULATE(
+    DISTINCTCOUNT(DimCustomer[customer_id]),
+    DimCustomer[customer_status] = "active"
+)
+/* Description: Count of currently paying active subscriber accounts */
+/* Format: #,##0 */
+/* Display Folder: 1. Core KPIs */
+
+// ----------------------------------------------------------------------------
+// 3. Churned Customers
+// ----------------------------------------------------------------------------
+Churned Customers = 
+CALCULATE(
+    DISTINCTCOUNT(DimCustomer[customer_id]),
+    DimCustomer[is_churned] = TRUE()
+)
+/* Description: Total historical cancelled accounts */
+/* Format: #,##0 */
+/* Display Folder: 1. Core KPIs */
+
+// ----------------------------------------------------------------------------
+// 4. Churn Rate
+// ----------------------------------------------------------------------------
+Churn Rate = 
+DIVIDE(
+    [Churned Customers],
+    [Total Customers],
+    0
+)
+/* Description: Overall percentage of accounts that have churned */
+/* Format: 0.0% */
+/* Display Folder: 1. Core KPIs */
+
+// ----------------------------------------------------------------------------
+// 5. Retention Rate
+// ----------------------------------------------------------------------------
+Retention Rate = 
+1 - [Churn Rate]
+/* Description: Overall percentage of retained accounts */
+/* Format: 0.0% */
+/* Display Folder: 1. Core KPIs */
+
+// ----------------------------------------------------------------------------
+// 6. MRR (Monthly Recurring Revenue)
+// ----------------------------------------------------------------------------
+MRR = 
+CALCULATE(
+    SUM(DimCustomer[current_mrr]),
+    DimCustomer[customer_status] = "active"
+)
+/* Description: Contracted monthly recurring revenue from active subscribers */
+/* Format: $#,##0 */
+/* Display Folder: 2. Financial Metrics */
+
+// ----------------------------------------------------------------------------
+// 7. ARR (Annual Recurring Revenue)
+// ----------------------------------------------------------------------------
+ARR = 
+[MRR] * 12
+/* Description: Annual run-rate contracted from active subscribers */
+/* Format: $#,##0 */
+/* Display Folder: 2. Financial Metrics */
+
+// ----------------------------------------------------------------------------
+// 8. ARPU (Average Revenue Per User)
+// ----------------------------------------------------------------------------
+ARPU = 
+DIVIDE(
+    [MRR],
+    [Active Customers],
+    0
+)
+/* Description: Average monthly revenue contributed per active account */
+/* Format: $#,##0.00 */
+/* Display Folder: 2. Financial Metrics */
+
+// ----------------------------------------------------------------------------
+// 9. CLV (Customer Lifetime Value)
+// ----------------------------------------------------------------------------
+CLV = 
+AVERAGEX(
+    DimCustomer,
+    DimCustomer[lifetime_billed_revenue]
+)
+/* Description: Average realized gross cash collected per customer account */
+/* Format: $#,##0 */
+/* Display Folder: 2. Financial Metrics */
+
+// ----------------------------------------------------------------------------
+// 10. Revenue at Risk
+// ----------------------------------------------------------------------------
+Revenue at Risk = 
+CALCULATE(
+    SUM(DimCustomer[current_arr]),
+    DimCustomer[is_at_risk] = TRUE(),
+    DimCustomer[customer_status] = "active"
+)
+/* Description: Annual ARR contributed by active accounts exhibiting engagement decay, support friction, or high ML churn probability */
+/* Format: $#,##0 */
+/* Display Folder: 2. Financial Metrics */
+
+// ----------------------------------------------------------------------------
+// 11. Average Tenure
+// ----------------------------------------------------------------------------
+Average Tenure = 
+AVERAGEX(
+    DimCustomer,
+    DimCustomer[tenure_months]
+)
+/* Description: Mean customer account lifespan in months */
+/* Format: 0.0 "mo" */
+/* Display Folder: 1. Core KPIs */
+
+// ----------------------------------------------------------------------------
+// 12. Customer Growth
+// ----------------------------------------------------------------------------
+Customer Growth = 
+VAR CurrentActive = [Active Customers]
+VAR PriorMonthActive = 
+    CALCULATE(
+        [Active Customers],
+        DATEADD(DimDate[date], -1, MONTH)
+    )
+RETURN
+    DIVIDE(
+        CurrentActive - PriorMonthActive,
+        PriorMonthActive,
+        0
+    )
+/* Description: Month-over-Month percentage growth in active subscriber accounts */
+/* Format: +0.0%;-0.0%;0.0% */
+/* Display Folder: 3. Time Intelligence */
+
+// ============================================================================
+// SUPPLEMENTARY ADVANCED MEASURES
+// ============================================================================
+
+// 13. At-Risk Accounts Count
+At-Risk Accounts Count = 
+CALCULATE(
+    DISTINCTCOUNT(DimCustomer[customer_id]),
+    DimCustomer[is_at_risk] = TRUE(),
+    DimCustomer[customer_status] = "active"
+)
+/* Format: #,##0 */
+/* Display Folder: 4. Risk & Predictions */
+
+// 14. Revenue at Risk % of Total ARR
+Revenue at Risk % = 
+DIVIDE(
+    [Revenue at Risk],
+    [ARR],
+    0
+)
+/* Format: 0.0% */
+/* Display Folder: 2. Financial Metrics */
+
+// 15. Average Churn Probability
+Average Churn Probability = 
+AVERAGEX(
+    DimCustomer,
+    DimCustomer[churn_probability]
+)
+/* Format: 0.0% */
+/* Display Folder: 4. Risk & Predictions */
+
+// 16. Monthly Churn Count
+Monthly Churn Count = 
+COUNTROWS(FactChurn)
+/* Format: #,##0 */
+/* Display Folder: 5. Churn Analysis */
+
+// 17. Gross Billed Cash Collected
+Total Billed Cash = 
+CALCULATE(
+    SUM(FactTransactions[amount]),
+    FactTransactions[is_successful] = 1
+)
+/* Format: $#,##0 */
+/* Display Folder: 2. Financial Metrics */
+
+// 18. Failed Payment Transactions
+Failed Payment Count = 
+CALCULATE(
+    COUNTROWS(FactTransactions),
+    FactTransactions[is_failed] = 1
+)
+/* Format: #,##0 */
+/* Display Folder: 2. Financial Metrics */
+
+// 19. Average Support CSAT
+Average CSAT = 
+AVERAGEX(
+    FactSupport,
+    FactSupport[satisfaction_score]
+)
+/* Format: 0.00 */
+/* Display Folder: 6. Customer Support */
+
+// 20. Total Active Sessions
+Total Sessions = 
+SUM(FactEngagement[sessions_count])
+/* Format: #,##0 */
+/* Display Folder: 7. Telemetry & Engagement */
