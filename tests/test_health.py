@@ -13,9 +13,13 @@ def test_health_check_status_code():
 
 
 def test_health_check_payload():
-    """Verify GET /health returns exact status: ok dictionary."""
+    """Verify GET /health returns operational health status payload."""
     response = client.get("/health")
-    assert response.json() == {"status": "ok"}
+    data = response.json()
+    assert data["status"] == "ok"
+    assert data["database"] == "connected"
+    assert data["model_loaded"] is True
+    assert "version" in data
 
 
 def test_root_endpoint():

@@ -18,8 +18,15 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from typing import Dict, List, Any
+import sys
+ml_dir = os.path.dirname(os.path.abspath(__file__))
+if ml_dir not in sys.path:
+    sys.path.insert(0, ml_dir)
 
-from features import FeatureEngineer
+try:
+    from ml.features import FeatureEngineer
+except ImportError:
+    from features import FeatureEngineer
 
 ARTIFACT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "artifacts"))
 FIG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../reports/figures"))

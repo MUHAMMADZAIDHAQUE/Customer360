@@ -13,8 +13,17 @@ import numpy as np
 import pandas as pd
 from typing import Dict, Any, List
 
-from features import FeatureEngineer
-from explainability import ChurnExplainer
+import sys
+ml_dir = os.path.dirname(os.path.abspath(__file__))
+if ml_dir not in sys.path:
+    sys.path.insert(0, ml_dir)
+
+try:
+    from ml.features import FeatureEngineer
+    from ml.explainability import ChurnExplainer
+except ImportError:
+    from features import FeatureEngineer
+    from explainability import ChurnExplainer
 
 ARTIFACT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "artifacts"))
 
